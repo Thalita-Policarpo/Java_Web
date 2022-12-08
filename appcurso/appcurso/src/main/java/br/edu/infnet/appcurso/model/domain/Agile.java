@@ -1,0 +1,5 @@
+package br.edu.infnet.appcurso.model.domain;
+
+public class Agile extends Curso {
+
+}
