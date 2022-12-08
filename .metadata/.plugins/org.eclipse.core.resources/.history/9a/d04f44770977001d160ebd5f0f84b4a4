@@ -1,0 +1,24 @@
+package br.edu.infnet.appcurso.model.test;
+
+import br.edu.infnet.appcurso.model.domain.Pacote;
+
+public class PacoteTeste {
+
+	public static void main(String[] args) {
+		
+		Pacote p1 = new Pacote();
+		p1.setDescricao("Curso basico");
+//		p1.setCliente(cliente);
+		p1.setMobile(false);
+		System.out.println(p1);
+
+		
+		
+		Pacote p2 = new Pacote();
+		p2.setDescricao("Curso basico");
+//		p2.setCliente(cliente);
+		p2.setMobile(true);
+		System.out.println(p2);
+		
+	}
+}

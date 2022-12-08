@@ -1,0 +1,11 @@
+package br.edu.infnet.appcurso.model.domain;
+
+public class Agile extends Curso {
+
+	@Override
+	public float calcularValor() {
+		
+		return 0;
+	}
+	
+}

@@ -1,0 +1,34 @@
+package br.edu.infnet.appcurso.model.domain;
+
+public abstract class Curso {
+	private String nome;
+	private float valor;
+	private int codigo;
+	
+	
+	public Curso(String nome, float valor, int codigo) {
+		this.nome = nome;
+		this.valor = valor;
+		this.codigo = codigo;
+	}
+
+	
+	public abstract float calcularValor();
+	
+	
+
+	public String getNome() {
+		return nome;
+	}
+
+
+	public float getValor() {
+		return valor;
+	}
+
+
+	public int getCodigo() {
+		return codigo;
+	}
+
+}

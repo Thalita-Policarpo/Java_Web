@@ -1,0 +1,14 @@
+package br.edu.infnet.appcurso.model.test;
+
+import br.edu.infnet.appcurso.model.domain.Cliente;
+
+public class ClienteTeste {
+	
+	
+	public static void main(String[] args) {
+		
+		Cliente c1 = new Cliente("thalita", "123456789-00", 28);
+		System.out.println(c1);
+	
+	}
+}
