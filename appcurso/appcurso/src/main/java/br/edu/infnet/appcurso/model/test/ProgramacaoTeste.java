@@ -9,10 +9,10 @@ public class ProgramacaoTeste {
 		Programacao p1 = new Programacao("Java basico", 800, 1, "java", "Infnet", "Java como programar");
 		System.out.println(p1);
 		
-		Programacao p2 = new Programacao("Java intermediario", 900, 1, "java", "Infnet", "Java como programar");
+		Programacao p2 = new Programacao("Java intermediario", 900, 2, "java", "Infnet", "Java como programar");
 		System.out.println(p2);
 
-		Programacao p3 = new Programacao("Java avancado", 1000, 1, "java", "Infnet", "Java como programar");
+		Programacao p3 = new Programacao("Java avancado", 1000, 3, "java", "Infnet", "Java como programar");
 		System.out.println(p3);
 		
 	}
