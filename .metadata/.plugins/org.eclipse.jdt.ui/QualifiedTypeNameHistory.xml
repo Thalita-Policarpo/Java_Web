@@ -9,4 +9,6 @@
     <fullyQualifiedTypeName name="java.lang.StringBuffer"/>
     <fullyQualifiedTypeName name="java.lang.StringBuilder"/>
     <fullyQualifiedTypeName name="br.edu.infnet.appcurso.model.domain.Curso"/>
+    <fullyQualifiedTypeName name="br.edu.infnet.appcurso.model.domain.Agile"/>
+    <fullyQualifiedTypeName name="br.edu.infnet.appcurso.model.domain.Programacao"/>
 </qualifiedTypeNameHistroy>
