@@ -6,12 +6,12 @@ public class CursoTeste {
 	
 	public static void main(String[] args) {
 		
-		Curso c1 = new Curso("zezinho", 100, 1) {
+		Curso c1 = new Curso("kamban", 70, 1) {
 			
 			@Override
 			public String retornarMensagem() {
 				// TODO Auto-generated method stub
-				return "";
+				return ". O curso de " + getNomeCurso() + " foi cadastrado com sucesso!";
 			}
 		};
 		
@@ -20,12 +20,11 @@ public class CursoTeste {
 		
 		
 		
-		Curso c2 = new Curso("huguinho", 100, 1) {
+		Curso c2 = new Curso("Java", 1000, 2) {
 			
 			@Override
 			public String retornarMensagem() {
-				// TODO Auto-generated method stub
-				return "";
+				return ". O curso de " + getNomeCurso() + " foi cadastrado com sucesso!";
 			}
 		};
 		
@@ -34,12 +33,12 @@ public class CursoTeste {
 		
 		
 		
-		Curso c3 = new Curso("luizinho", 100, 1) {
+		Curso c3 = new Curso("JSON", 500, 3) {
 			
 			@Override
 			public String retornarMensagem() {
-				// TODO Auto-generated method stub
-				return "";
+				
+				return ". O curso de " + getNomeCurso() + " foi cadastrado com sucesso!";
 			}
 		};
 		
