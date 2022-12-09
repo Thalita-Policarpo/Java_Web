@@ -8,3 +8,6 @@
 1670508594061	Rename field 'titulo'
 1670511257251	Rename local variable 'p1'
 1670513808834	Rename local variable 'c1'
+1670546908291	Rename field 'nome'
+1670546918490	Rename local variable 'nome'
+1670546938673	Rename method 'getNome'
