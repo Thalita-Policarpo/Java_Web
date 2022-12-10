@@ -1,0 +1,14 @@
+package br.edu.infnet.appcurso.model.exceptions;
+
+public class DadosPessoaisNaoPreenchidosExceptions extends Exception {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	public DadosPessoaisNaoPreenchidosExceptions(String mensagem) {
+		super(mensagem);
+	}
+	
+}
