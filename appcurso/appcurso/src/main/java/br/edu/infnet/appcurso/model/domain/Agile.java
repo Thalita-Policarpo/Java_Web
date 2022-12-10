@@ -1,15 +1,25 @@
 package br.edu.infnet.appcurso.model.domain;
 
+import br.edu.infnet.appcurso.model.exceptions.DuracaoInvalidaException;
 import br.edu.infnet.appcurso.model.exceptions.ValorZeradoException;
 
 public class Agile extends Curso {
 	private String metodologia;
-	private String duracao;
+	private int duracao;
 	private boolean presencial;
 	
 	
-	public Agile(String nomeCurso, float valor, int codigo, String metodologia, String duracao, boolean presencial) throws ValorZeradoException {
+	public Agile(String nomeCurso, float valor, int codigo, String metodologia, int duracao, boolean presencial) throws ValorZeradoException, DuracaoInvalidaException {
 		super(nomeCurso, valor, codigo);
+		
+		if(duracao < 1 ) {
+			throw new DuracaoInvalidaException("A duracao do curso nao pode ser inferior a 1 mes");
+		}
+
+		if(duracao > 6 ) {
+			throw new DuracaoInvalidaException("A duracao do curso nao pode ser superior a 6 meses");
+		}
+		
 		this.metodologia = metodologia;
 		this.duracao = duracao;
 		this.presencial = presencial;
@@ -18,8 +28,13 @@ public class Agile extends Curso {
 
 	@Override
 	public String retornarMensagem() {
-		
-		return "O curso "  + getNomeCurso() + ", com duracao de " + getDuracao() + " foi cadastrado!";
+		String tempo;
+		if(getDuracao() == 1) {
+			tempo = " mes";
+		}else {
+			tempo = " meses";
+		}
+		return "O curso "  + getNomeCurso() + ", com duracao de " + getDuracao() + tempo + ", foi cadastrado!";
 	}
 
 
@@ -47,11 +62,11 @@ public class Agile extends Curso {
 		this.metodologia = metodologia;
 	}
 
-	public String getDuracao() {
+	public int getDuracao() {
 		return duracao;
 	}
 
-	public void setDuracao(String duracao) {
+	public void setDuracao(int duracao) {
 		this.duracao = duracao;
 	}
 

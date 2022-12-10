@@ -20,7 +20,7 @@ public class BancoDeDados extends Curso {
 	@Override
 	public String retornarMensagem()  {
 		
-		return "O curso "  + getNomeCurso() + isExigencia();
+		return "O curso "  + getNomeCurso() + ": " + getTipo() + ", foi cadastrado!";
 	}
 	
 

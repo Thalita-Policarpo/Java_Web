@@ -35,7 +35,7 @@ public class Programacao extends Curso {
 		}else {
 			tempo = "hs";
 		}
-		return " O curso "  + getNomeCurso() + ", com duracao de " + getDuracao() + tempo + " foi cadastrado! ";
+		return "O curso "  + getNomeCurso() + ", com duracao de " + getDuracao() + tempo + ", foi cadastrado!";
 	}
 	
 	
