@@ -35,7 +35,7 @@ public abstract class Curso {
 		sb.append(" ; ");
 		sb.append(codigo);
 		
-		return sb.toString() + retornarMensagem();
+		return sb.toString();
 	}
 
 	public String getNomeCurso() {
