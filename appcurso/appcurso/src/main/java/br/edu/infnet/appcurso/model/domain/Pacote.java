@@ -32,10 +32,13 @@ public class Pacote {
 	}
 	
 	public void imprimir() {
-		System.out.println("pedido: " + toString());
+		System.out.println("\nCadastro " + toString());
+		System.out.println("Solicitante: " + cliente);
 		System.out.println("Quantidade: " + cursos.size());
-		System.out.println("Solicitante: " + cliente + "\n");
-		
+		System.out.println("Cursos:");
+		for(Curso c : cursos) {
+			System.out.println("- " + c.getNomeCurso());
+		}
 	}
 
 	public String getDescricao() {
