@@ -1,0 +1,33 @@
+package br.edu.infnet.appcurso.model.test;
+
+import br.edu.infnet.appcurso.model.domain.Agile;
+import br.edu.infnet.appcurso.model.exceptions.ValorZeradoException;
+
+public class AgileTeste {
+	
+	public static void main(String[] args) {
+		
+		try {
+			Agile a1 = new Agile("Metodologia agil", 70, 1, "Kamban", "1 mes", false);
+			System.out.println(a1);
+		} catch (ValorZeradoException e) {
+			System.out.println("[ERRO] " + e.getMessage());
+		}
+		
+		try {	
+			Agile a2 = new Agile("Programacao", -70, 1, "Java", "6 meses", true);
+			System.out.println(a2);
+		} catch (ValorZeradoException e) {
+			System.out.println("[ERRO] " + e.getMessage());
+		}
+	
+	
+		try {
+			Agile a3 = new Agile("Banco de Dados", 0, 1, "JSON", "3 meses", true);
+			System.out.println(a3);
+		} catch (ValorZeradoException e) {
+			System.out.println("[ERRO] " + e.getMessage());
+		}
+}
+
+}
