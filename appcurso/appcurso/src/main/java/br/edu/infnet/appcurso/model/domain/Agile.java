@@ -1,12 +1,14 @@
 package br.edu.infnet.appcurso.model.domain;
 
+import br.edu.infnet.appcurso.model.exceptions.ValorZeradoException;
+
 public class Agile extends Curso {
 	private String metodologia;
 	private String duracao;
 	private boolean presencial;
 	
 	
-	public Agile(String nomeCurso, float valor, int codigo, String metodologia, String duracao, boolean presencial) {
+	public Agile(String nomeCurso, float valor, int codigo, String metodologia, String duracao, boolean presencial) throws ValorZeradoException {
 		super(nomeCurso, valor, codigo);
 		this.metodologia = metodologia;
 		this.duracao = duracao;

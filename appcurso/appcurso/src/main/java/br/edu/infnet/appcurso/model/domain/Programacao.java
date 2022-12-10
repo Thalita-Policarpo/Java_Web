@@ -1,24 +1,41 @@
 package br.edu.infnet.appcurso.model.domain;
 
+import br.edu.infnet.appcurso.model.exceptions.DuracaoInvalidaException;
+import br.edu.infnet.appcurso.model.exceptions.ValorZeradoException;
+
 public class Programacao extends Curso {
 	private String linguagem;
 	private String instituicao;
-	private String bibliografia;
+	private int duracao;
 	
 	
 	public Programacao(String nomeCurso, float valor, int codigo, String linguagem, String instituição,
-			String bibliografia) {
+			int duracao) throws ValorZeradoException, DuracaoInvalidaException {
 		super(nomeCurso, valor, codigo);
+		
+		if(duracao < 1 ) {
+			throw new DuracaoInvalidaException("A duracao do curso nao pode ser inferior a 1h");
+		}
+
+		if(duracao > 40 ) {
+			throw new DuracaoInvalidaException("A duracao do curso nao pode ser superior a 40h");
+		}
+		
 		this.linguagem = linguagem;
 		this.instituicao = instituição;
-		this.bibliografia = bibliografia;
+		this.duracao = duracao;
 	}
 
 
 	@Override
 	public String retornarMensagem() {
-		
-		return "O curso "  + getNomeCurso() + ", da instituicao " + getInstituicao() + " foi cadastrado!";
+		String tempo;
+		if(getDuracao() == 1) {
+			tempo = "h";
+		}else {
+			tempo = "hs";
+		}
+		return " O curso "  + getNomeCurso() + ", com duracao de " + getDuracao() + tempo + " foi cadastrado! ";
 	}
 	
 	
@@ -31,7 +48,7 @@ public class Programacao extends Curso {
 		sb.append(" ; ");
 		sb.append(instituicao);
 		sb.append(" ; ");
-		sb.append(bibliografia);
+		sb.append(duracao);
 		
 		return sb.toString();
 	}
@@ -57,13 +74,13 @@ public class Programacao extends Curso {
 	}
 
 
-	public String getBibliografia() {
-		return bibliografia;
+	public int getDuracao() {
+		return duracao;
 	}
 
 
-	public void setBibliografia(String bibliografia) {
-		this.bibliografia = bibliografia;
+	public void setDuracao(int duracao) {
+		this.duracao = duracao;
 	}	
 
 }

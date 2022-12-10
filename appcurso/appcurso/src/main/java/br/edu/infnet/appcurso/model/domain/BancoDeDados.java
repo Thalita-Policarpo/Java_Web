@@ -1,5 +1,7 @@
 package br.edu.infnet.appcurso.model.domain;
 
+import br.edu.infnet.appcurso.model.exceptions.ValorZeradoException;
+
 public class BancoDeDados extends Curso {
 	private String tipo;
 	private boolean exigencia;
@@ -7,7 +9,7 @@ public class BancoDeDados extends Curso {
 	
 	
 
-	public BancoDeDados(String nomeCurso, float valor, int codigo, String tipo, boolean exigencia, boolean relacional) {
+	public BancoDeDados(String nomeCurso, float valor, int codigo, String tipo, boolean exigencia, boolean relacional) throws ValorZeradoException {
 		super(nomeCurso, valor, codigo);
 		this.tipo = tipo;
 		this.exigencia = exigencia;
