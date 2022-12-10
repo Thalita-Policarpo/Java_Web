@@ -9,15 +9,17 @@ public class BancoDeDadosTeste {
 		try {
 			BancoDeDados b1 = new BancoDeDados("Banco de dados", 800, 1, "SQL", true, true);
 			System.out.println(b1);
+			System.out.println(b1.retornarMensagem());
 		} catch (ValorZeradoException e) {
 			System.out.println("[ERRO] " + e.getMessage());
-		}
+		} 
 		
 		
 		
 		try {
 			BancoDeDados b2 = new BancoDeDados("Banco de dados", 600, 2, "NoSQL", false, false);
 			System.out.println(b2);
+			System.out.println(b2.retornarMensagem());
 		} catch (ValorZeradoException e) {
 			System.out.println("[ERRO] " + e.getMessage());
 		}
@@ -27,6 +29,7 @@ public class BancoDeDadosTeste {
 		try {
 			BancoDeDados b3 = new BancoDeDados("Banco de dados", 500, 3, "JSON", true , false);
 			System.out.println(b3);
+			System.out.println(b3.retornarMensagem());
 		} catch (ValorZeradoException e) {
 			System.out.println("[ERRO] " + e.getMessage());
 		}
@@ -34,8 +37,9 @@ public class BancoDeDadosTeste {
 		
 
 		try {
-			BancoDeDados b2 = new BancoDeDados("Banco de dados", -600, 2, "NoSQL", false, false);
-			System.out.println(b2);
+			BancoDeDados b3 = new BancoDeDados("Banco de dados", -600, 2, "NoSQL", false, false);
+			System.out.println(b3);
+			System.out.println(b3.retornarMensagem());
 		} catch (ValorZeradoException e) {
 			System.out.println("[ERRO] " + e.getMessage());
 		}
@@ -43,8 +47,9 @@ public class BancoDeDadosTeste {
 		
 		
 		try {
-			BancoDeDados b3 = new BancoDeDados("Banco de dados", 0, 3, "JSON", true , false);
-			System.out.println(b3);
+			BancoDeDados b4 = new BancoDeDados("Banco de dados", 0, 3, "JSON", true , false);
+			System.out.println(b4);
+			System.out.println(b4.retornarMensagem());
 		} catch (ValorZeradoException e) {
 			System.out.println("[ERRO] " + e.getMessage());
 		}
