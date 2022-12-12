@@ -37,11 +37,6 @@ public class Agile extends Curso {
 		return "O curso "  + getNomeCurso() + ", com duracao de " + getDuracao() + tempo + ", foi cadastrado!";
 	}
 
-	@Override
-	public String obterLinha() {
-		return getNomeCurso() + ";" + getValor() + ";" +  this.getMetodologia()+ ";" + this.getDuracao() + ";" + this.isPresencial() +"\r\n";
-
-	}
 
 	@Override
 	public String toString() {
@@ -82,7 +77,5 @@ public class Agile extends Curso {
 	public void setPresencial(boolean presencial) {
 		this.presencial = presencial;
 	}
-
-
 		
 }

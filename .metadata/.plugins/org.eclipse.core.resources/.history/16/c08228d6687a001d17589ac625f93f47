@@ -23,11 +23,6 @@ public class BancoDeDados extends Curso {
 		return "O curso "  + getNomeCurso() + ": " + getTipo() + ", foi cadastrado!";
 	}
 	
-	@Override
-	public String obterLinha() {
-		return getNomeCurso() + ";" + getValor() + ";" +  this.getTipo()+ ";" + this.isExigencia() + ";" + this.isRelacional();
-	}
-	
 
 	@Override
 	public String toString() {

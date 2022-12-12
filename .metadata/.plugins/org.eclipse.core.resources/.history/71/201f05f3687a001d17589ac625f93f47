@@ -38,11 +38,6 @@ public class Programacao extends Curso {
 		return "O curso "  + getNomeCurso() + ", com duracao de " + getDuracao() + tempo + ", foi cadastrado!";
 	}
 	
-	@Override
-	public String obterLinha() {
-		return getNomeCurso() + ";" + getValor() + ";" +  this.getLinguagem()+ ";" + this.getInstituicao() + ";" + this.getDuracao();
-	}
-	
 	
 	@Override
 	public String toString() {

@@ -21,9 +21,6 @@ public abstract class Curso {
 		this.valor = valor;
 		this.codigo = codigo;
 	}
-	
-	
-	public abstract String obterLinha();
 
 	
 	public abstract String retornarMensagem(); 

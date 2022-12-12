@@ -39,7 +39,7 @@ public class Agile extends Curso {
 
 	@Override
 	public String obterLinha() {
-		return getNomeCurso() + ";" + getValor() + ";" +  this.getMetodologia()+ ";" + this.getDuracao() + ";" + this.isPresencial() +"\r\n";
+		return getNomeCurso() + ";" + getValor() + ";" +  this.getMetodologia()+ ";" + this.getDuracao() + ";" + (this.isPresencial()? "E presencial" : "Nao e presencial") +"\r\n";
 
 	}
 

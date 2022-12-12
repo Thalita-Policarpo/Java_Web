@@ -104,8 +104,6 @@ public class ArquivoTeste {
 				
 				escrita.write(pacote.obterLinha());
 				escrita.write(agile.obterLinha());
-				escrita.write(bancoDados.obterLinha());
-				escrita.write(programacao.obterLinha());
 				
 				escrita.close();
 				leitura.close();
