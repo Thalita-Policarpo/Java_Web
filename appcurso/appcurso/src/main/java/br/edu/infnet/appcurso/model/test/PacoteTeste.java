@@ -8,8 +8,10 @@ import br.edu.infnet.appcurso.model.domain.BancoDeDados;
 import br.edu.infnet.appcurso.model.domain.Cliente;
 import br.edu.infnet.appcurso.model.domain.Curso;
 import br.edu.infnet.appcurso.model.domain.Pacote;
+import br.edu.infnet.appcurso.model.domain.PacoteSemCursosException;
 import br.edu.infnet.appcurso.model.exceptions.DadosPessoaisNaoPreenchidosException;
 import br.edu.infnet.appcurso.model.exceptions.DuracaoInvalidaException;
+import br.edu.infnet.appcurso.model.exceptions.PacoteSemClienteException;
 import br.edu.infnet.appcurso.model.exceptions.ValorZeradoException;
 
 public class PacoteTeste {
@@ -23,6 +25,8 @@ public class PacoteTeste {
 		List<Curso> cursoP5 = new ArrayList<Curso>();
 		List<Curso> cursoP6 = new ArrayList<Curso>();
 		List<Curso> cursoP7 = new ArrayList<Curso>();
+		List<Curso> cursoP8 = new ArrayList<Curso>();
+		List<Curso> cursoP9 = new ArrayList<Curso>();
 		
 		try {
 			BancoDeDados b1 = new BancoDeDados("SQL", 800, 1, "Banco de dados", true, true);
@@ -89,99 +93,114 @@ public class PacoteTeste {
 
 				
 		try {
-			Pacote p1 = new Pacote();
+			Cliente c1 = new Cliente("Zezinho", "123456789-00", 18);
+			Pacote p1 = new Pacote(c1, cursoP1);
 			p1.setDescricao("Curso basico");
-			p1.setCliente(new Cliente("Zezinho", "123456789-00", 18));
 			p1.setMobile(false);
-			p1.setCursos(cursoP1);
 			p1.imprimir();
-		} catch (DadosPessoaisNaoPreenchidosException e) {
+		} catch (DadosPessoaisNaoPreenchidosException | PacoteSemClienteException | PacoteSemCursosException e) {
 			System.out.println("[ERRO] " + e.getMessage());
-		}
+		} 
 		
 				
 		try {
-			Pacote p2 = new Pacote();
+			Cliente c2 = new Cliente("Huguinho", "123456789-00", 21);
+			Pacote p2 = new Pacote(c2, cursoP2);
 			p2.setDescricao("Curso intermediario");
-			p2.setCliente(new Cliente("Huguinho", "123456789-00", 21));
 			p2.setMobile(true);
-			p2.setCursos(cursoP2);
 			p2.imprimir();
-		} catch (DadosPessoaisNaoPreenchidosException e) {
+		} catch (DadosPessoaisNaoPreenchidosException | PacoteSemClienteException | PacoteSemCursosException e) {
 			System.out.println("[ERRO] " + e.getMessage());
 		}
 		
 		
 		try {
-			Pacote p3 = new Pacote();
+			Cliente c3 = new Cliente("luizinho", "123456789-00", 21);
+			Pacote p3 = new Pacote(c3, cursoP3);
 			p3.setDescricao("Curso avancado");
-			p3.setCliente(new Cliente("luizinho", "123456789-00", 21));
 			p3.setMobile(true);
-			p3.setCursos(cursoP3);
 			p3.imprimir();
-		} catch (DadosPessoaisNaoPreenchidosException e) {
+		} catch (DadosPessoaisNaoPreenchidosException | PacoteSemClienteException | PacoteSemCursosException e) {
 			System.out.println("[ERRO] " + e.getMessage());
 		}
 
 		
 		try {
-			Pacote p4 = new Pacote();
+			Cliente c4 = new Cliente("Hugo", "123456789-00", 28);
+			Pacote p4 = new Pacote(c4, cursoP4);
 			p4.setDescricao("Curso intermediario");
-			p4.setCliente(new Cliente("felipinho", "123456789-00", 28));
 			p4.setMobile(true);
-			p4.setCursos(cursoP4);
 			p4.imprimir();
-		} catch (DadosPessoaisNaoPreenchidosException e) {
+		} catch (DadosPessoaisNaoPreenchidosException | PacoteSemClienteException | PacoteSemCursosException e) {
 			System.out.println("[ERRO] " + e.getMessage());
 		}
 		
 		
 		try {
-			Pacote p5 = new Pacote();
+			Cliente c5 = new Cliente("Joao", "123456789-00", 30);
+			Pacote p5 = new Pacote(c5, cursoP5);
 			p5.setDescricao("Curso avancado");
-			p5.setCliente(new Cliente("joaozinho", "123456789-00", 30));
 			p5.setMobile(true);
-			p5.setCursos(cursoP5);
 			p5.imprimir();
-		} catch (DadosPessoaisNaoPreenchidosException e) {
+		} catch (DadosPessoaisNaoPreenchidosException | PacoteSemClienteException | PacoteSemCursosException e) {
 			System.out.println("[ERRO] " + e.getMessage());
 		}
 
 		
 		try {
-			Pacote p6 = new Pacote();
+			Cliente c6 = new Cliente("Pedro", null, 28);
+			Pacote p6 = new Pacote(c6, cursoP6);
 			p6.setDescricao("Curso intermediario");
-			p6.setCliente(new Cliente("pedrino", null, 28));
 			p6.setMobile(true);
-			p6.setCursos(cursoP6);
 			p6.imprimir();
-		} catch (DadosPessoaisNaoPreenchidosException e) {
+		} catch (DadosPessoaisNaoPreenchidosException | PacoteSemClienteException | PacoteSemCursosException e) {
 			System.out.println("[ERRO] " + e.getMessage());
 		}
 		
 		
 		try {
-			Pacote p7 = new Pacote();
+			Cliente c7 = new Cliente(null, "123456789-00", 30);
+			Pacote p7 = new Pacote(c7, cursoP7);
 			p7.setDescricao("Curso avancado");
-			p7.setCliente(new Cliente(null, "123456789-00", 30));
 			p7.setMobile(true);
-			p7.setCursos(cursoP7);
 			p7.imprimir();
-		} catch (DadosPessoaisNaoPreenchidosException e) {
+		} catch (DadosPessoaisNaoPreenchidosException | PacoteSemClienteException | PacoteSemCursosException e) {
+			System.out.println("[ERRO] " + e.getMessage());
+		}
+		
+
+		try {
+			Cliente c8 = new Cliente("maria", "123456789-00", 15);
+			Pacote p8 = new Pacote(c8, cursoP8);
+			p8.setDescricao("Curso avancado");
+			p8.setMobile(true);
+			p8.imprimir();
+		} catch (DadosPessoaisNaoPreenchidosException | PacoteSemClienteException | PacoteSemCursosException e) {
 			System.out.println("[ERRO] " + e.getMessage());
 		}
 
+		
 		try {
-			Pacote p8 = new Pacote();
-			p8.setDescricao("Curso avancado");
-			p8.setCliente(new Cliente("mariazinha", "123456789-00", 15));
-			p8.setMobile(true);
-			p8.setCursos(cursoP7);
-			p8.imprimir();
-		} catch (DadosPessoaisNaoPreenchidosException e) {
+			
+			Pacote p9 = new Pacote(null, cursoP9);
+			p9.setDescricao("Curso avancado");
+			p9.setMobile(true);
+			p9.imprimir();
+		} catch (PacoteSemClienteException | PacoteSemCursosException e) {
 			System.out.println("[ERRO] " + e.getMessage());
 		}
 		
+		
+		try {
+			Cliente c9 = new Cliente("maria", "123456789-00", 32);
+			Pacote p9 = new Pacote(c9, null);
+			p9.setDescricao("Curso avancado");
+			p9.setMobile(true);
+			p9.imprimir();
+		} catch (DadosPessoaisNaoPreenchidosException | PacoteSemClienteException | PacoteSemCursosException e) {
+			System.out.println("[ERRO] " + e.getMessage());
+		}
+
 	}
 }
 
