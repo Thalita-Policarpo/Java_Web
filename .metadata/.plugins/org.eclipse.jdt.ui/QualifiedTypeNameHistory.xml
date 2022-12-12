@@ -8,7 +8,11 @@
     <fullyQualifiedTypeName name="ch.qos.logback.core.net.SyslogOutputStream"/>
     <fullyQualifiedTypeName name="java.lang.StringBuffer"/>
     <fullyQualifiedTypeName name="java.lang.StringBuilder"/>
-    <fullyQualifiedTypeName name="br.edu.infnet.appcurso.model.domain.Curso"/>
-    <fullyQualifiedTypeName name="br.edu.infnet.appcurso.model.domain.Agile"/>
     <fullyQualifiedTypeName name="br.edu.infnet.appcurso.model.domain.Programacao"/>
+    <fullyQualifiedTypeName name="br.edu.infnet.appcurso.model.domain.Curso"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="br.edu.infnet.appcurso.model.exceptions.ValorZeradoException"/>
+    <fullyQualifiedTypeName name="br.edu.infnet.appcurso.model.domain.BancoDeDados"/>
+    <fullyQualifiedTypeName name="br.edu.infnet.appcurso.model.domain.Agile"/>
+    <fullyQualifiedTypeName name="br.edu.infnet.appcurso.model.exceptions.DuracaoInvalidaException"/>
 </qualifiedTypeNameHistroy>

@@ -1,0 +1,99 @@
+package br.edu.infnet.appcurso.model.test;
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+
+import br.edu.infnet.appcurso.model.domain.Agile;
+import br.edu.infnet.appcurso.model.domain.Cliente;
+import br.edu.infnet.appcurso.model.domain.Curso;
+import br.edu.infnet.appcurso.model.domain.Pacote;
+import br.edu.infnet.appcurso.model.domain.PacoteSemCursosException;
+import br.edu.infnet.appcurso.model.exceptions.DadosPessoaisNaoPreenchidosException;
+import br.edu.infnet.appcurso.model.exceptions.DuracaoInvalidaException;
+import br.edu.infnet.appcurso.model.exceptions.PacoteSemClienteException;
+import br.edu.infnet.appcurso.model.exceptions.ValorZeradoException;
+
+public class ArquivoTeste {
+
+	public static void main(String[] args) {
+		
+//		String dir = "C:\\Users\\Thalita\\Desktop\\AT_Fundamentos_Java\\appcurso\\appcurso\\";
+		String arq = "pacotes.txt";
+		
+		
+		
+		try {
+			FileReader fileR = new FileReader(arq);
+			BufferedReader leitura = new BufferedReader(fileR);	
+			
+			FileWriter fileW = new FileWriter("out_"+arq);
+			BufferedWriter escrita = new BufferedWriter(fileW);				
+			
+			String linha = leitura.readLine();
+			String[] campos = null;
+			
+			List<Curso> curso = new ArrayList<Curso>();
+			Pacote pacote = null;
+			
+			while (linha != null) {
+				
+				campos = linha.split(";");
+				
+				switch (campos[0].toUpperCase()) {
+				case "PAC":
+					
+					try {
+						Cliente cliente = new Cliente(campos[3], campos[4], Integer. parseInt(campos[5]));
+						pacote = new Pacote(cliente, curso);
+						pacote.setDescricao(campos[1]);
+						pacote.setMobile(Boolean.valueOf(campos[2]));
+					} catch (DadosPessoaisNaoPreenchidosException | PacoteSemClienteException | PacoteSemCursosException e) {
+						System.out.println("[ERRO] " + e.getMessage());
+					} 
+					
+					
+					break;
+				case "AGI": 
+					
+					try {
+						Agile agile  = new Agile(campos[1], Float.valueOf(campos[2]).floatValue(), Integer. parseInt(campos[3]), campos[4],Integer. parseInt(campos[5]) , Boolean.valueOf(campos[2]));
+						curso.add(agile);
+					} catch (ValorZeradoException | DuracaoInvalidaException e) {
+						System.out.println("[ERRO] " + e.getMessage());
+					} 
+					
+					break;
+				case "BAN": 
+					System.out.println("Banco de Dados");
+					break;
+				case "PRO": 
+					System.out.println("Programacao");
+					break;
+				
+				default:
+					System.out.println("Invalido");
+					break;
+				}
+				
+				linha = leitura.readLine();
+			}
+			
+			
+			escrita.write(pacote.obterLinha());
+			
+			escrita.close();
+			leitura.close();
+			fileR.close();
+		
+		} catch (IOException e) {
+			System.out.println("[ERRO]" + e.getMessage());
+		
+		}
+		
+	}
+}

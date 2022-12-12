@@ -1,0 +1,31 @@
+package br.edu.infnet.appcurso.model.test;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+
+public class ArquivoTeste {
+
+	public static void main(String[] args) {
+		
+		String dir = "";
+		String arq = "pacotes.txt";
+		
+		
+		
+		try {
+			FileReader fileR = new FileReader(dir+arq);
+			BufferedReader leitura = new BufferedReader(fileR);	
+			
+			System.out.println(leitura.readLine());
+			
+			leitura.close();
+			fileR.close();
+		
+		} catch (IOException e) {
+			System.out.println("[ERRO]" + e.getMessage());
+		
+		}
+		
+	}
+}
