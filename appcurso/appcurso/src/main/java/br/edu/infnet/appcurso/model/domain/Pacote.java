@@ -5,6 +5,7 @@ import java.time.format.DateTimeFormatter;
 import java.util.List;
 
 import br.edu.infnet.appcurso.model.exceptions.PacoteSemClienteException;
+import br.edu.infnet.appcurso.model.exceptions.PacoteSemCursosException;
 
 
 

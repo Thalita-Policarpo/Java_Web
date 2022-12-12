@@ -8,10 +8,10 @@ import br.edu.infnet.appcurso.model.domain.BancoDeDados;
 import br.edu.infnet.appcurso.model.domain.Cliente;
 import br.edu.infnet.appcurso.model.domain.Curso;
 import br.edu.infnet.appcurso.model.domain.Pacote;
-import br.edu.infnet.appcurso.model.domain.PacoteSemCursosException;
 import br.edu.infnet.appcurso.model.exceptions.DadosPessoaisNaoPreenchidosException;
 import br.edu.infnet.appcurso.model.exceptions.DuracaoInvalidaException;
 import br.edu.infnet.appcurso.model.exceptions.PacoteSemClienteException;
+import br.edu.infnet.appcurso.model.exceptions.PacoteSemCursosException;
 import br.edu.infnet.appcurso.model.exceptions.ValorZeradoException;
 
 public class PacoteTeste {
