@@ -23,7 +23,7 @@ public abstract class Curso {
 	}
 
 	
-	public abstract String retornarMensagem(); // retornar mesagem com as informações de cadastro
+	public abstract String retornarMensagem(); 
 	
 	@Override
 	public String toString() {

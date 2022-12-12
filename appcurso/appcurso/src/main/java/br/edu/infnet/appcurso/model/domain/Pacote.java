@@ -4,6 +4,8 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.List;
 
+import br.edu.infnet.appcurso.model.exceptions.PacoteSemClienteException;
+
 
 
 public class Pacote {
@@ -14,10 +16,28 @@ public class Pacote {
 	private List<Curso> cursos;
 	
 	
-	public Pacote() {
+	public Pacote(Cliente cliente, List<Curso> cursos) throws PacoteSemClienteException, PacoteSemCursosException {
+		
+		if (cliente == null) {
+			throw new PacoteSemClienteException("Nao ha cliente associado ao pacote");
+		}
+
+		if (cursos == null) {
+			throw new PacoteSemCursosException("Nao ha curso associado ao pacote");
+		}
+		
+		this.cliente = cliente;
+		this.cursos = cursos;
+		
 		data= LocalDateTime.now();
 	}
 
+	
+	public String obterLinha() {
+		return this.getDescricao()+ ";" + this.getCliente() + ";" + this.getCursos().size() +"\r\n";
+	}
+	
+	
 	
 	@Override
 	public String toString() {
@@ -30,7 +50,7 @@ public class Pacote {
 				data.format(formato) 
 				);	
 	}
-	
+ 	
 	public void imprimir() {
 		System.out.println("\nCadastro " + toString());
 		System.out.println("Solicitante: " + cliente);
@@ -66,18 +86,8 @@ public class Pacote {
 	}
 
 
-	public void setCliente(Cliente cliente) {
-		this.cliente = cliente;
-	}
-
-
 	public List<Curso> getCursos() {
 		return cursos;
-	}
-
-
-	public void setCursos(List<Curso> cursos) {
-		this.cursos = cursos;
 	}
 
 
