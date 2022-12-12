@@ -45,6 +45,7 @@ public class BancoDeDadosTeste {
 		try {
 			BancoDeDados b4 = new BancoDeDados("Banco de dados", 0, 3, "JSON", true , false);
 			System.out.println(b4);
+			System.out.println(b4.retornarMensagem());
 		} catch (ValorZeradoException e) {
 			System.out.println("[ERRO] " + e.getMessage());
 		}

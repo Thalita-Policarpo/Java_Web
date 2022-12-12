@@ -11,6 +11,7 @@ public class ProgramacaoTeste {
 		try {
 			Programacao p1 = new Programacao("Java basico", 800, 1, "java", "Infnet", 1);
 			System.out.println(p1);
+			System.out.println(p1.retornarMensagem());
 		} catch (ValorZeradoException e) {
 			System.out.println("[ERRO] " + e.getMessage());
 		} catch (DuracaoInvalidaException ex) {
@@ -21,6 +22,7 @@ public class ProgramacaoTeste {
 		try {
 			Programacao p2 = new Programacao("Java intermediario", 900, 2, "java", "Infnet", 4);
 			System.out.println(p2);
+			System.out.println(p2.retornarMensagem());
 		} catch (ValorZeradoException e) {
 			System.out.println("[ERRO] " + e.getMessage());
 		} catch (DuracaoInvalidaException ex) {
@@ -31,6 +33,7 @@ public class ProgramacaoTeste {
 		try {
 			Programacao p3 = new Programacao("Java intermediario", -900, 2, "java", "Infnet", 4);
 			System.out.println(p3);
+			System.out.println(p3.retornarMensagem());
 		} catch (ValorZeradoException e) {
 			System.out.println("[ERRO] " + e.getMessage());
 		} catch (DuracaoInvalidaException ex) {
@@ -42,6 +45,7 @@ public class ProgramacaoTeste {
 		try {
 			Programacao p4 = new Programacao("Java avancado", 0, 3, "java", "Infnet", 3);
 			System.out.println(p4);
+			System.out.println(p4.retornarMensagem());
 		} catch (ValorZeradoException e) {
 			System.out.println("[ERRO] " + e.getMessage());
 		} catch (DuracaoInvalidaException ex) {
@@ -53,6 +57,7 @@ public class ProgramacaoTeste {
 		try {
 			Programacao p5 = new Programacao("Java avancado", 100, 3, "java", "Infnet", 0);
 			System.out.println(p5);
+			System.out.println(p5.retornarMensagem());
 		} catch (ValorZeradoException e) {
 			System.out.println("[ERRO] " + e.getMessage());
 		} catch (DuracaoInvalidaException ex) {
@@ -64,6 +69,7 @@ public class ProgramacaoTeste {
 		try {
 			Programacao p6 = new Programacao("Java avancado", 300, 3, "java", "Infnet", 50);
 			System.out.println(p6);
+			System.out.println(p6.retornarMensagem());
 		} catch (ValorZeradoException e) {
 			System.out.println("[ERRO] " + e.getMessage());
 		} catch (DuracaoInvalidaException ex) {

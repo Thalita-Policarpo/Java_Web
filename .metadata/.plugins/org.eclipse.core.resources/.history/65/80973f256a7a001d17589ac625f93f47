@@ -10,17 +10,10 @@ public class CursoTeste {
 		try {	
 			Curso c1 = new Curso("kamban", 70, 1) {
 				
-				
 				@Override
 				public String retornarMensagem() {
 					// TODO Auto-generated method stub
-					return "O curso de " + getNomeCurso() + " foi cadastrado com sucesso!";
-				}
-
-				@Override
-				public String obterLinha() {
-					// TODO Auto-generated method stub
-					return null;
+					return ". O curso de " + getNomeCurso() + " foi cadastrado com sucesso!";
 				}
 			};
 			
@@ -37,13 +30,7 @@ public class CursoTeste {
 				
 				@Override
 				public String retornarMensagem() {
-					return "O curso de " + getNomeCurso() + " foi cadastrado com sucesso!";
-				}
-
-				@Override
-				public String obterLinha() {
-					// TODO Auto-generated method stub
-					return null;
+					return ". O curso de " + getNomeCurso() + " foi cadastrado com sucesso!";
 				}
 			};
 			
@@ -61,13 +48,7 @@ public class CursoTeste {
 				@Override
 				public String retornarMensagem() {
 					
-					return "O curso de " + getNomeCurso() + " foi cadastrado com sucesso!";
-				}
-
-				@Override
-				public String obterLinha() {
-					// TODO Auto-generated method stub
-					return null;
+					return ". O curso de " + getNomeCurso() + " foi cadastrado com sucesso!";
 				}
 			};
 			
@@ -87,12 +68,6 @@ public class CursoTeste {
 					
 					return ". O curso de " + getNomeCurso() + " foi cadastrado com sucesso!";
 				}
-
-				@Override
-				public String obterLinha() {
-					// TODO Auto-generated method stub
-					return null;
-				}
 			};
 			
 			System.out.println(c4);
@@ -110,12 +85,6 @@ public class CursoTeste {
 				public String retornarMensagem() {
 					
 					return ". O curso de " + getNomeCurso() + " foi cadastrado com sucesso!";
-				}
-
-				@Override
-				public String obterLinha() {
-					// TODO Auto-generated method stub
-					return null;
 				}
 			};
 			

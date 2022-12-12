@@ -12,9 +12,9 @@ public class CursoTeste {
 				
 				
 				@Override
-				public String retornarMensagem() {
-					// TODO Auto-generated method stub
-					return "O curso de " + getNomeCurso() + " foi cadastrado com sucesso!";
+				public String retornarMensagem() { 
+					
+					return System.out.println(". O curso de " + getNomeCurso() + " foi cadastrado com sucesso!");
 				}
 
 				@Override
@@ -37,7 +37,7 @@ public class CursoTeste {
 				
 				@Override
 				public String retornarMensagem() {
-					return "O curso de " + getNomeCurso() + " foi cadastrado com sucesso!";
+					return ". O curso de " + getNomeCurso() + " foi cadastrado com sucesso!";
 				}
 
 				@Override
@@ -61,7 +61,7 @@ public class CursoTeste {
 				@Override
 				public String retornarMensagem() {
 					
-					return "O curso de " + getNomeCurso() + " foi cadastrado com sucesso!";
+					return ". O curso de " + getNomeCurso() + " foi cadastrado com sucesso!";
 				}
 
 				@Override

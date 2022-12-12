@@ -55,7 +55,7 @@ public class Programacao extends Curso {
 		sb.append(" ; ");
 		sb.append(duracao);
 		
-		return sb.toString() + "\r\n" +retornarMensagem();
+		return sb.toString();
 	}
 
 

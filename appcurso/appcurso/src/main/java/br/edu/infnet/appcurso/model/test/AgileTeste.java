@@ -9,9 +9,8 @@ public class AgileTeste {
 	public static void main(String[] args) {
 		
 		try {
-			Agile a1 = new Agile("Metodologia agil", 70, 1, "Kamban", 1, false);
+			Agile a1 = new Agile("Conhecendo metodologia agil", 70, 1, "Kamban", 1, false);
 			System.out.println(a1);
-			System.out.println(a1.retornarMensagem());
 		} catch (ValorZeradoException e) {
 			System.out.println("[ERRO] " + e.getMessage());
 		} catch (DuracaoInvalidaException ex) {
@@ -19,9 +18,8 @@ public class AgileTeste {
 		}
 		
 		try {	
-			Agile a2 = new Agile("Metodologia agil", 100, 2, "XP", 3, true);
+			Agile a2 = new Agile("Estudando metodologia agil", 100, 2, "XP", 3, true);
 			System.out.println(a2);
-			System.out.println(a2.retornarMensagem());
 		} catch (ValorZeradoException e) {
 			System.out.println("[ERRO] " + e.getMessage());
 		} catch (DuracaoInvalidaException ex) {
@@ -31,9 +29,8 @@ public class AgileTeste {
 	
 	
 		try {
-			Agile a3 = new Agile("Metodologia agil", -90, 3, "Kamban", 1, true);
+			Agile a3 = new Agile("Aprofundando em metodologia agil", -90, 3, "Kamban", 1, true);
 			System.out.println(a3);
-			System.out.println(a3.retornarMensagem());
 		} catch (ValorZeradoException e) {
 			System.out.println("[ERRO] " + e.getMessage());
 		} catch (DuracaoInvalidaException ex) {
@@ -45,7 +42,6 @@ public class AgileTeste {
 		try {
 			Agile a4 = new Agile("Metodologia agil", 0, 4, "XP", 3, true);
 			System.out.println(a4);
-			System.out.println(a4.retornarMensagem());
 		} catch (ValorZeradoException e) {
 			System.out.println("[ERRO] " + e.getMessage());
 		} catch (DuracaoInvalidaException ex) {
@@ -57,7 +53,6 @@ public class AgileTeste {
 		try {
 			Agile a3 = new Agile("Metodologia agil", 390, 3, "Kamban", 0, true);
 			System.out.println(a3);
-			System.out.println(a3.retornarMensagem());
 		} catch (ValorZeradoException e) {
 			System.out.println("[ERRO] " + e.getMessage());
 		} catch (DuracaoInvalidaException ex) {
@@ -69,7 +64,6 @@ public class AgileTeste {
 		try {
 			Agile a4 = new Agile("Metodologia agil", 400, 4, "XP", 7, true);
 			System.out.println(a4);
-			System.out.println(a4.retornarMensagem());
 		} catch (ValorZeradoException e) {
 			System.out.println("[ERRO] " + e.getMessage());
 		} catch (DuracaoInvalidaException ex) {

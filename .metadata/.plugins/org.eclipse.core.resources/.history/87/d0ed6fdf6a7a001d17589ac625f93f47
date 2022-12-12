@@ -10,11 +10,10 @@ public class CursoTeste {
 		try {	
 			Curso c1 = new Curso("kamban", 70, 1) {
 				
-				
 				@Override
 				public String retornarMensagem() {
 					// TODO Auto-generated method stub
-					return "O curso de " + getNomeCurso() + " foi cadastrado com sucesso!";
+					return ". O curso de " + getNomeCurso() + " foi cadastrado com sucesso!";
 				}
 
 				@Override
@@ -37,7 +36,7 @@ public class CursoTeste {
 				
 				@Override
 				public String retornarMensagem() {
-					return "O curso de " + getNomeCurso() + " foi cadastrado com sucesso!";
+					return ". O curso de " + getNomeCurso() + " foi cadastrado com sucesso!";
 				}
 
 				@Override
@@ -61,7 +60,7 @@ public class CursoTeste {
 				@Override
 				public String retornarMensagem() {
 					
-					return "O curso de " + getNomeCurso() + " foi cadastrado com sucesso!";
+					return ". O curso de " + getNomeCurso() + " foi cadastrado com sucesso!";
 				}
 
 				@Override

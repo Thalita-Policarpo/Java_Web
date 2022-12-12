@@ -40,7 +40,7 @@ public class BancoDeDados extends Curso {
 		sb.append(" ; ");
 		sb.append(relacional ? "Banco de dados relacional" : "Banco de dados nao relacional");
 		
-		return sb.toString() + "\r\n" +retornarMensagem();
+		return sb.toString();
 	}
 
 
