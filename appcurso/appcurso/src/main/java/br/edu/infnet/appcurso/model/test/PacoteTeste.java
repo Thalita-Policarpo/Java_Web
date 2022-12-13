@@ -12,6 +12,7 @@ import br.edu.infnet.appcurso.model.exceptions.DadosPessoaisNaoPreenchidosExcept
 import br.edu.infnet.appcurso.model.exceptions.DuracaoInvalidaException;
 import br.edu.infnet.appcurso.model.exceptions.PacoteSemClienteException;
 import br.edu.infnet.appcurso.model.exceptions.PacoteSemCursosException;
+import br.edu.infnet.appcurso.model.exceptions.TipoNuloException;
 import br.edu.infnet.appcurso.model.exceptions.ValorZeradoException;
 
 public class PacoteTeste {
@@ -33,7 +34,7 @@ public class PacoteTeste {
 			cursoP1.add(b1);
 			cursoP2.add(b1);
 			cursoP3.add(b1);
-		} catch (ValorZeradoException e) {
+		} catch (ValorZeradoException | TipoNuloException e) {
 			System.out.println("[ERRO] " + e.getMessage());
 		}
 		
@@ -42,7 +43,7 @@ public class PacoteTeste {
 			BancoDeDados b2 = new BancoDeDados("NoSQL", 800, 2, "Banco de dados", false, false);
 			cursoP2.add(b2);
 			cursoP3.add(b2);
-		} catch (ValorZeradoException e) {
+		} catch (ValorZeradoException | TipoNuloException e) {
 			System.out.println("[ERRO] " + e.getMessage());
 		}
 		
@@ -60,7 +61,7 @@ public class PacoteTeste {
 			BancoDeDados b4 = new BancoDeDados("NoSQL", -800, 2, "Banco de dados", false, false);
 			cursoP4.add(b4);
 			cursoP5.add(b4);
-		} catch (ValorZeradoException e) {
+		} catch (ValorZeradoException | TipoNuloException e) {
 			System.out.println("[ERRO] " + e.getMessage());
 		}
 		
@@ -68,7 +69,7 @@ public class PacoteTeste {
 		try {
 			BancoDeDados b5 = new BancoDeDados("JSON", 0, 3, "Banco de dados", true , false);
 			cursoP5.add(b5);
-		} catch (ValorZeradoException e) {
+		} catch (ValorZeradoException | TipoNuloException e) {
 			System.out.println("[ERRO] " + e.getMessage());
 		}
 
@@ -76,7 +77,7 @@ public class PacoteTeste {
 			BancoDeDados b6 = new BancoDeDados("NoSQL", 800, 2, "Banco de dados", false, false);
 			cursoP7.add(b6);
 			cursoP6.add(b6);
-		} catch (ValorZeradoException e) {
+		} catch (ValorZeradoException | TipoNuloException e) {
 			System.out.println("[ERRO] " + e.getMessage());
 		}
 		
@@ -85,7 +86,7 @@ public class PacoteTeste {
 			BancoDeDados b7 = new BancoDeDados("JSON", 900, 3, "Banco de dados", true , false);
 			cursoP6.add(b7);
 			cursoP7.add(b7);
-		} catch (ValorZeradoException e) {
+		} catch (ValorZeradoException | TipoNuloException e) {
 			System.out.println("[ERRO] " + e.getMessage());
 		}
 		

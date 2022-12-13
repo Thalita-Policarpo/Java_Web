@@ -6,38 +6,35 @@ public abstract class Curso {
 	private String nomeCurso;
 	private float valor;
 	private int codigo;
-	
-	
+
 	public Curso(String nomeCurso, float valor, int codigo) throws ValorZeradoException {
-		
-		if(valor < 0) {
+
+		if (valor < 0) {
 			throw new ValorZeradoException("O valor do produto nao pode ser negativo!");
 		}
-		if(valor == 0) {
+		if (valor == 0) {
 			throw new ValorZeradoException("O valor do produto nao pode ser 0 ");
 		}
-		
+
 		this.nomeCurso = nomeCurso;
 		this.valor = valor;
 		this.codigo = codigo;
 	}
-	
-	
+
 	public abstract String obterLinha();
 
-	
-	public abstract String retornarMensagem(); 
-	
+	public abstract String retornarMensagem();
+
 	@Override
 	public String toString() {
 
 		StringBuilder sb = new StringBuilder();
 		sb.append(nomeCurso);
-		sb.append(" ; ");
+		sb.append(";");
 		sb.append(valor);
-		sb.append(" ; ");
+		sb.append(";");
 		sb.append(codigo);
-		
+
 		return sb.toString();
 	}
 
@@ -45,11 +42,9 @@ public abstract class Curso {
 		return nomeCurso;
 	}
 
-
 	public float getValor() {
 		return valor;
 	}
-
 
 	public int getCodigo() {
 		return codigo;

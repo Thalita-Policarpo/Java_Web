@@ -7,39 +7,39 @@ public class Agile extends Curso {
 	private String metodologia;
 	private int duracao;
 	private boolean presencial;
-	
-	
-	public Agile(String nomeCurso, float valor, int codigo, String metodologia, int duracao, boolean presencial) throws ValorZeradoException, DuracaoInvalidaException {
+
+	public Agile(String nomeCurso, float valor, int codigo, String metodologia, int duracao, boolean presencial)
+			throws ValorZeradoException, DuracaoInvalidaException {
 		super(nomeCurso, valor, codigo);
-		
-		if(duracao < 1 ) {
+
+		if (duracao < 1) {
 			throw new DuracaoInvalidaException("A duracao do curso nao pode ser inferior a 1 mes");
 		}
 
-		if(duracao > 6 ) {
+		if (duracao > 6) {
 			throw new DuracaoInvalidaException("A duracao do curso nao pode ser superior a 6 meses");
 		}
-		
+
 		this.metodologia = metodologia;
 		this.duracao = duracao;
 		this.presencial = presencial;
 	}
 
-
 	@Override
 	public String retornarMensagem() {
 		String tempo;
-		if(getDuracao() == 1) {
+		if (getDuracao() == 1) {
 			tempo = " mes";
-		}else {
+		} else {
 			tempo = " meses";
 		}
-		return "O curso "  + getNomeCurso() + ", com duracao de " + getDuracao() + tempo + ", foi cadastrado!";
+		return "O curso " + getNomeCurso() + ", com duracao de " + getDuracao() + tempo + ", foi cadastrado!";
 	}
 
 	@Override
 	public String obterLinha() {
-		return getNomeCurso() + ";" + getValor() + ";" + this.getMetodologia()+ ";" + this.getDuracao() + ";" + this.isPresencial() +"\r\n";
+		return getNomeCurso() + ";" + getValor() + ";" + this.getMetodologia() + ";" + this.getDuracao() + ";"
+				+ this.isPresencial() + "\r\n";
 
 	}
 
@@ -47,17 +47,15 @@ public class Agile extends Curso {
 	public String toString() {
 		StringBuilder sb = new StringBuilder();
 		sb.append(super.toString());
-		sb.append(" ; ");
+		sb.append(";");
 		sb.append(metodologia);
-		sb.append(" ; ");
+		sb.append(";");
 		sb.append(duracao);
-		sb.append(" ; ");
+		sb.append(";");
 		sb.append(presencial ? "E presencial" : "Nao e presencial");
-		
 
-		return sb.toString() + "\r\n" +retornarMensagem();
+		return sb.toString() + "\r\n" + retornarMensagem();
 	}
-	
 
 	public String getMetodologia() {
 		return metodologia;
@@ -83,6 +81,4 @@ public class Agile extends Curso {
 		this.presencial = presencial;
 	}
 
-
-		
 }
