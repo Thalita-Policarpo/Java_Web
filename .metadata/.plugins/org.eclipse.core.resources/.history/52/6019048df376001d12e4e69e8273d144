@@ -1,5 +1,0 @@
-package br.edu.infnet.appcurso.model.domain;
-
-public class Nr_35 extends Cliente {
-
-}

@@ -13,10 +13,10 @@ public class BancoDeDados extends Curso {
 
 		super(nomeCurso, valor, codigo);
 
-		if(tipo == null) {
+		if (tipo == null) {
 			throw new TipoNuloException("O tipo do curso, precisa ser preenchido!");
 		}
-				
+
 		this.tipo = tipo;
 		this.exigencia = exigencia;
 		this.relacional = relacional;
@@ -31,7 +31,7 @@ public class BancoDeDados extends Curso {
 	@Override
 	public String obterLinha() {
 		return getNomeCurso() + ";" + getValor() + ";" + this.getTipo() + ";" + this.isExigencia() + ";"
-				+ this.isRelacional();
+				+ this.isRelacional() + "\r\n";
 	}
 
 	@Override

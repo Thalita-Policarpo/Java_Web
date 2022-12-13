@@ -63,7 +63,7 @@ public class ArquivoTeste {
 						}
 
 						break;
-					case "AGI":
+					case "A":
 
 						try {
 							agile = new Agile(campos[1], Float.valueOf(campos[2]), Integer.parseInt(campos[3]),
@@ -74,7 +74,7 @@ public class ArquivoTeste {
 						}
 
 						break;
-					case "BAN":
+					case "B":
 						try {
 							bancoDados = new BancoDeDados(campos[1], Float.valueOf(campos[2]),
 									Integer.parseInt(campos[3]), campos[4], Boolean.valueOf(campos[5]),
@@ -85,7 +85,7 @@ public class ArquivoTeste {
 						}
 
 						break;
-					case "PRO":
+					case "P":
 						try {
 							programacao = new Programacao(campos[1], Float.valueOf(campos[2]),
 									Integer.parseInt(campos[3]), campos[4], campos[5], Integer.parseInt(campos[6]));
@@ -104,6 +104,9 @@ public class ArquivoTeste {
 				}
 
 				escrita.write(pacote.obterLinha());
+				escrita.write(agile.obterLinha());
+				escrita.write(bancoDados.obterLinha());
+				escrita.write(programacao.obterLinha());
 
 				escrita.close();
 				leitura.close();

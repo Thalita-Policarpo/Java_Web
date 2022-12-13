@@ -39,7 +39,7 @@ public class Programacao extends Curso {
 	@Override
 	public String obterLinha() {
 		return getNomeCurso() + ";" + getValor() + ";" + this.getLinguagem() + ";" + this.getInstituicao() + ";"
-				+ this.getDuracao();
+				+ this.getDuracao() + "\r\n";
 	}
 
 	@Override
