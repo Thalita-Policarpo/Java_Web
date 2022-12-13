@@ -1,4 +1,4 @@
-PAC;Cursos avancados; false; thalita; 123654987-00;28;
+PAC;Cursos avancados; false; thalita; 123654987-00;29;
 A;conhecendo a metodologia agil;500;3;Kanbam;3;false;
 A;aprofundando em metodologia agil;300;2;XP;1;true;
 B;Aprendendo Banco de Dados;800;1;SQL;true;true;
