@@ -1,0 +1,28 @@
+package br.edu.infnet.appcurso.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+
+@Controller
+public class AppController {
+
+	@GetMapping(value = "/")
+	public String telaIndex() {
+		return "index";
+	}
+
+//	@RequestMapping(value = "/usuario", method = RequestMethod.GET ) - pode ser feito dessa forma ou da forma seguinte
+	@GetMapping(value = "/usuario")
+	public String telaCadastro() {
+
+		return "usuario/cadastro";
+	}
+
+	@PostMapping(value = "/usuario/incluir")
+	public String incluir() {
+		System.out.println("Inclusao realizada com sucesso!!");
+
+		return "redirect:/";
+	}
+}
