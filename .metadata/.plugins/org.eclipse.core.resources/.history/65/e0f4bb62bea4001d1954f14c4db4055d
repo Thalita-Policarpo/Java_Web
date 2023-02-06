@@ -1,0 +1,33 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="jsp/style/style.css">
+
+<title>Cadastro de Usuárioe</title>
+</head>
+<body>
+	<div claas="Container"> 
+		<form method="post" action="/usuario/incluir">
+			<fieldset>
+				<legend>Contato</legend>
+				<p>
+					<label for="oNome">Nome:</label>
+					<input type="text" name="nome" id="oNome" placeholder="Nome completo" required>
+				</p>
+				<p>
+					<label for="oEmail">E-mail:</label>
+					<input type="email" name="email" id="oEmail"  placeholder="exemplo@exmail.com.br" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required>
+				</p>
+				<p>
+					<label for="aMsg">Comentários:</label>
+					<textarea name="msg" id="aMsg" cols="30" rows="5" placeholder="Deixe sua opinião!" required></textarea>
+				</p>
+			</fieldset>
+					<input type="submit" value="Enviar &#10146;" id="botao">
+		</form>
+	</div>
+</body>
+</html>

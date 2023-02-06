@@ -2807,3 +2807,187 @@ org.eclipse.core.runtime.CoreException: Launch configuration ApplancheApplicatio
 2023-02-02 21:59:48,353 [Worker-28: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2023-02-02 21:59:48,353 [Worker-28: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
 2023-02-02 21:59:48,353 [Worker-28: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Thalita\Desktop\AT_Fundamentos_Java\appcurso\appcurso\src\test\resources
+2023-02-04 15:40:55,579 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2023-02-04 15:46:27,839 [Worker-12: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-04 15:46:27,839 [Worker-12: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-04 15:46:27,843 [Worker-12: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-02-04 15:46:27,870 [Worker-12: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-02-04 15:46:27,877 [Worker-12: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-04 15:46:27,877 [Worker-12: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-04 15:46:27,878 [Worker-12: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Thalita\Desktop\AT_Fundamentos_Java\appcurso\appcurso\src\test\resources
+2023-02-04 15:53:24,046 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-04 15:53:24,046 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-04 15:53:24,047 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-02-04 15:53:24,048 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-02-04 15:53:24,052 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-04 15:53:24,052 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-04 15:53:24,052 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Thalita\Desktop\AT_Fundamentos_Java\appcurso\appcurso\src\test\resources
+2023-02-04 15:54:21,552 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-04 15:54:21,552 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-04 15:54:21,552 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-02-04 15:54:21,553 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-02-04 15:54:21,557 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-04 15:54:21,557 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-04 15:54:21,557 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Thalita\Desktop\AT_Fundamentos_Java\appcurso\appcurso\src\test\resources
+2023-02-04 15:58:21,164 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-04 15:58:21,164 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-04 15:58:21,165 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-02-04 15:58:21,165 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-02-04 15:58:21,169 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-04 15:58:21,169 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-04 15:58:21,169 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Thalita\Desktop\AT_Fundamentos_Java\appcurso\appcurso\src\test\resources
+2023-02-04 16:01:52,674 [Worker-17: Launching AppcursoApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-04 16:01:52,674 [Worker-17: Launching AppcursoApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-04 16:01:52,674 [Worker-17: Launching AppcursoApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-02-04 16:01:52,675 [Worker-17: Launching AppcursoApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-02-04 16:01:52,679 [Worker-17: Launching AppcursoApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-04 16:01:52,680 [Worker-17: Launching AppcursoApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-04 16:01:52,680 [Worker-17: Launching AppcursoApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Thalita\Desktop\AT_Fundamentos_Java\appcurso\appcurso\src\test\resources
+2023-02-04 16:05:23,154 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-04 16:05:23,154 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-04 16:05:23,154 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-02-04 16:05:23,155 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-02-04 16:05:23,159 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-04 16:05:23,159 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-04 16:05:23,159 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Thalita\Desktop\AT_Fundamentos_Java\appcurso\appcurso\src\test\resources
+2023-02-04 16:06:56,455 [Worker-26: Launching AppcursoApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-04 16:06:56,456 [Worker-26: Launching AppcursoApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-04 16:06:56,457 [Worker-26: Launching AppcursoApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-02-04 16:06:56,458 [Worker-26: Launching AppcursoApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-02-04 16:06:56,464 [Worker-26: Launching AppcursoApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-04 16:06:56,464 [Worker-26: Launching AppcursoApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-04 16:06:56,464 [Worker-26: Launching AppcursoApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Thalita\Desktop\AT_Fundamentos_Java\appcurso\appcurso\src\test\resources
+2023-02-04 16:09:46,828 [Worker-26: Launching AppcursoApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-04 16:09:46,828 [Worker-26: Launching AppcursoApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-04 16:09:46,828 [Worker-26: Launching AppcursoApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-02-04 16:09:46,828 [Worker-26: Launching AppcursoApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-02-04 16:09:46,832 [Worker-26: Launching AppcursoApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-04 16:09:46,832 [Worker-26: Launching AppcursoApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-04 16:09:46,832 [Worker-26: Launching AppcursoApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Thalita\Desktop\AT_Fundamentos_Java\appcurso\appcurso\src\test\resources
+2023-02-04 16:10:56,202 [Worker-24: Launching AppcursoApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-04 16:10:56,202 [Worker-24: Launching AppcursoApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-04 16:10:56,203 [Worker-24: Launching AppcursoApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-02-04 16:10:56,203 [Worker-24: Launching AppcursoApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-02-04 16:10:56,207 [Worker-24: Launching AppcursoApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-04 16:10:56,207 [Worker-24: Launching AppcursoApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-04 16:10:56,207 [Worker-24: Launching AppcursoApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Thalita\Desktop\AT_Fundamentos_Java\appcurso\appcurso\src\test\resources
+2023-02-04 16:12:01,067 [Worker-30: Launching AppcursoApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-04 16:12:01,067 [Worker-30: Launching AppcursoApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-04 16:12:01,068 [Worker-30: Launching AppcursoApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-02-04 16:12:01,068 [Worker-30: Launching AppcursoApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-02-04 16:12:01,071 [Worker-30: Launching AppcursoApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-04 16:12:01,072 [Worker-30: Launching AppcursoApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-04 16:12:01,072 [Worker-30: Launching AppcursoApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Thalita\Desktop\AT_Fundamentos_Java\appcurso\appcurso\src\test\resources
+2023-02-04 16:13:20,037 [Worker-26: Launching AppcursoApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-04 16:13:20,038 [Worker-26: Launching AppcursoApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-04 16:13:20,038 [Worker-26: Launching AppcursoApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-02-04 16:13:20,039 [Worker-26: Launching AppcursoApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-02-04 16:13:20,042 [Worker-26: Launching AppcursoApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-04 16:13:20,042 [Worker-26: Launching AppcursoApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-04 16:13:20,043 [Worker-26: Launching AppcursoApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Thalita\Desktop\AT_Fundamentos_Java\appcurso\appcurso\src\test\resources
+2023-02-04 16:16:28,118 [Worker-32: Launching AppcursoApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-04 16:16:28,119 [Worker-32: Launching AppcursoApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-04 16:16:28,119 [Worker-32: Launching AppcursoApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-02-04 16:16:28,119 [Worker-32: Launching AppcursoApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-02-04 16:16:28,123 [Worker-32: Launching AppcursoApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-04 16:16:28,123 [Worker-32: Launching AppcursoApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-04 16:16:28,123 [Worker-32: Launching AppcursoApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Thalita\Desktop\AT_Fundamentos_Java\appcurso\appcurso\src\test\resources
+2023-02-04 16:18:57,696 [Worker-26: Launching AppcursoApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-04 16:18:57,696 [Worker-26: Launching AppcursoApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-04 16:18:57,696 [Worker-26: Launching AppcursoApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-02-04 16:18:57,696 [Worker-26: Launching AppcursoApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-02-04 16:18:57,701 [Worker-26: Launching AppcursoApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-04 16:18:57,702 [Worker-26: Launching AppcursoApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-04 16:18:57,702 [Worker-26: Launching AppcursoApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Thalita\Desktop\AT_Fundamentos_Java\appcurso\appcurso\src\test\resources
+2023-02-04 16:19:59,129 [Worker-34: Launching AppcursoApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-04 16:19:59,130 [Worker-34: Launching AppcursoApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-04 16:19:59,130 [Worker-34: Launching AppcursoApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-02-04 16:19:59,130 [Worker-34: Launching AppcursoApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-02-04 16:19:59,134 [Worker-34: Launching AppcursoApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-04 16:19:59,134 [Worker-34: Launching AppcursoApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-04 16:19:59,134 [Worker-34: Launching AppcursoApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Thalita\Desktop\AT_Fundamentos_Java\appcurso\appcurso\src\test\resources
+2023-02-04 16:20:46,042 [Worker-35: Launching AppcursoApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-04 16:20:46,042 [Worker-35: Launching AppcursoApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-04 16:20:46,043 [Worker-35: Launching AppcursoApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-02-04 16:20:46,043 [Worker-35: Launching AppcursoApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-02-04 16:20:46,047 [Worker-35: Launching AppcursoApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-04 16:20:46,048 [Worker-35: Launching AppcursoApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-04 16:20:46,048 [Worker-35: Launching AppcursoApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Thalita\Desktop\AT_Fundamentos_Java\appcurso\appcurso\src\test\resources
+2023-02-04 16:22:17,685 [Worker-36: Launching AppcursoApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-04 16:22:17,685 [Worker-36: Launching AppcursoApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-04 16:22:17,685 [Worker-36: Launching AppcursoApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-02-04 16:22:17,685 [Worker-36: Launching AppcursoApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-02-04 16:22:17,689 [Worker-36: Launching AppcursoApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-04 16:22:17,689 [Worker-36: Launching AppcursoApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-04 16:22:17,690 [Worker-36: Launching AppcursoApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Thalita\Desktop\AT_Fundamentos_Java\appcurso\appcurso\src\test\resources
+2023-02-06 19:41:57,484 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2023-02-06 19:42:42,532 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-06 19:42:42,534 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-06 19:42:42,538 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-02-06 19:42:42,560 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-02-06 19:42:42,566 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-06 19:42:42,566 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-06 19:42:42,566 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Thalita\Desktop\AT_Fundamentos_Java\appcurso\appcurso\src\test\resources
+2023-02-06 19:42:56,399 [Worker-11: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-06 19:42:56,399 [Worker-11: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-06 19:42:56,400 [Worker-11: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-02-06 19:42:56,401 [Worker-11: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-02-06 19:42:56,404 [Worker-11: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-06 19:42:56,404 [Worker-11: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-06 19:42:56,405 [Worker-11: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Thalita\Desktop\AT_Fundamentos_Java\appcurso\appcurso\src\test\resources
+2023-02-06 19:43:03,166 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-06 19:43:03,166 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-06 19:43:03,167 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-02-06 19:43:03,167 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-02-06 19:43:03,171 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-06 19:43:03,171 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-06 19:43:03,171 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Thalita\Desktop\AT_Fundamentos_Java\appcurso\appcurso\src\test\resources
+2023-02-06 19:49:45,407 [Worker-12: Launching AppcursoApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-06 19:49:45,408 [Worker-12: Launching AppcursoApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-06 19:49:45,408 [Worker-12: Launching AppcursoApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-02-06 19:49:45,408 [Worker-12: Launching AppcursoApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-02-06 19:49:45,413 [Worker-12: Launching AppcursoApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-06 19:49:45,414 [Worker-12: Launching AppcursoApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-06 19:49:45,414 [Worker-12: Launching AppcursoApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Thalita\Desktop\AT_Fundamentos_Java\appcurso\appcurso\src\test\resources
+2023-02-06 19:50:35,202 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-06 19:50:35,203 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-06 19:50:35,203 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-02-06 19:50:35,204 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-02-06 19:50:35,209 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-06 19:50:35,209 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-06 19:50:35,209 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Thalita\Desktop\AT_Fundamentos_Java\appcurso\appcurso\src\test\resources
+2023-02-06 19:51:07,473 [Worker-12: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-06 19:51:07,473 [Worker-12: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-06 19:51:07,473 [Worker-12: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-02-06 19:51:07,474 [Worker-12: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-02-06 19:51:07,477 [Worker-12: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-06 19:51:07,477 [Worker-12: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-06 19:51:07,478 [Worker-12: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Thalita\Desktop\AT_Fundamentos_Java\appcurso\appcurso\src\test\resources
+2023-02-06 19:52:49,736 [Worker-13: Launching AppcursoApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-06 19:52:49,737 [Worker-13: Launching AppcursoApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-06 19:52:49,738 [Worker-13: Launching AppcursoApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-02-06 19:52:49,738 [Worker-13: Launching AppcursoApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-02-06 19:52:49,743 [Worker-13: Launching AppcursoApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-06 19:52:49,744 [Worker-13: Launching AppcursoApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-06 19:52:49,744 [Worker-13: Launching AppcursoApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Thalita\Desktop\AT_Fundamentos_Java\appcurso\appcurso\src\test\resources
+2023-02-06 19:55:13,292 [Worker-4: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-06 19:55:13,292 [Worker-4: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-06 19:55:13,292 [Worker-4: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-02-06 19:55:13,292 [Worker-4: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-02-06 19:55:13,297 [Worker-4: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-06 19:55:13,297 [Worker-4: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-06 19:55:13,297 [Worker-4: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Thalita\Desktop\AT_Fundamentos_Java\appcurso\appcurso\src\test\resources
+2023-02-06 19:56:33,930 [Worker-14: Launching AppcursoApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-06 19:56:33,931 [Worker-14: Launching AppcursoApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-06 19:56:33,932 [Worker-14: Launching AppcursoApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-02-06 19:56:33,933 [Worker-14: Launching AppcursoApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-02-06 19:56:33,937 [Worker-14: Launching AppcursoApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-06 19:56:33,937 [Worker-14: Launching AppcursoApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-06 19:56:33,937 [Worker-14: Launching AppcursoApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Thalita\Desktop\AT_Fundamentos_Java\appcurso\appcurso\src\test\resources
+2023-02-06 20:02:25,044 [Worker-14: Launching AppcursoApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-06 20:02:25,044 [Worker-14: Launching AppcursoApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-06 20:02:25,045 [Worker-14: Launching AppcursoApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-02-06 20:02:25,045 [Worker-14: Launching AppcursoApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-02-06 20:02:25,048 [Worker-14: Launching AppcursoApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-06 20:02:25,049 [Worker-14: Launching AppcursoApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-02-06 20:02:25,049 [Worker-14: Launching AppcursoApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Thalita\Desktop\AT_Fundamentos_Java\appcurso\appcurso\src\test\resources

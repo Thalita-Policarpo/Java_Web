@@ -1,0 +1,102 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Cadastro de Usuárioe</title>
+<style type="text/css">
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(162, 255, 233);
+    margin: 0px;
+    line-height: 1em;
+}
+#container{
+    margin: auto;
+    min-width: 60%;
+    max-width: 80%;
+    background-color: white;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.384);
+    align-items: center;
+}
+
+form p{
+    color: #562a1f;
+    font-family:'Poppins', sans-serif;
+    font-size: 1em;
+}
+input, textarea{
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    width: 100%;
+}
+input:hover, textarea:hover{
+    background-color:rgba(162, 255, 233, 0.397);
+}
+fieldset{
+    padding: 2px 10px;
+    text-align: left;
+    border: 3px dashed #562a1f4b;
+}
+legend{
+    padding: 10px;
+    color: #562a1f;
+    font-weight: bold;
+    font-family: 'Changa', sans-serif;
+    font-size: 1.2em;
+}
+#botao{
+    background-color: rgb(255, 113, 69);
+    font-size: 1em;
+    color: white;
+    border-color: rgba(255, 112, 69, 0.815);
+    border-radius: 10px 0px;
+    width: 40%;
+    padding: 3px;
+    margin: 5px 0px;
+    
+}
+#botao:hover{
+    text-decoration: underline;
+}
+#botao:active{
+    background-color: rgba(162, 255, 233, 0.507);
+    font-size: 1em;
+    border-color: aqua;
+    color: black;
+}
+
+
+</style>
+</head>
+<body>
+	<div id="container"> 
+		<main>
+			<form method="post" action="/usuario/incluir">
+				<fieldset>
+					<legend>Cadastro de usuário</legend>
+					<p>
+						<label for="oNome">Nome:</label>
+						<input type="text" name="nome" id="oNome" placeholder="Nome completo" required>
+					</p>
+					<p>
+						<label for="oEmail">E-mail:</label>
+						<input type="email" name="email" id="oEmail"  placeholder="exemplo@exmail.com.br" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required>
+					</p>
+					<p>
+						<label for="aSenha">Senha:</label>
+						<input type="password" name="senha" id="aSenha"  placeholder="Digite sua senha" required>
+					</p>
+					<p>
+						<label for="aMsg">Comentários:</label>
+						<textarea name="msg" id="aMsg" cols="30" rows="5" placeholder="Deixe sua opinião!" required></textarea>
+					</p>
+				</fieldset>
+						<input type="submit" value="Enviar &#10146;" id="botao">
+			</form>
+		</main>
+	</div>
+</body>
+</html>
