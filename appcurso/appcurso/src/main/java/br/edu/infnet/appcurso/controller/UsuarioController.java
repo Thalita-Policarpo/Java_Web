@@ -9,7 +9,6 @@ import br.edu.infnet.appcurso.model.domain.Usuario;
 @Controller
 public class UsuarioController {
 
-//	@RequestMapping(value = "/usuario", method = RequestMethod.GET ) - pode ser feito dessa forma ou da forma seguinte
 	@GetMapping(value = "/usuario")
 	public String telaCadastro() {
 
