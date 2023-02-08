@@ -191,7 +191,7 @@ footer > p {
             <section  class="banner">
                 <aside class="titulo">
                     <h2>Bem vindo ao mundo de aprendizagem</h2>
-                    <p>Desenvolsa seu conhecimento na área de T.I, através de cursos online gratuítos, com atualizações e documentações vigentes.</p>
+                    <p>Desenvolsa seu conhecimento através de cursos online, gratuítos e atualizados.</p>
 
                 </aside>
                 <figure>
