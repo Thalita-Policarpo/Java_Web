@@ -1,0 +1,7 @@
+package br.edu.infnet.appcurso.model.domain;
+
+public class Usuario {
+
+	private String nome;
+	private String email;
+}
