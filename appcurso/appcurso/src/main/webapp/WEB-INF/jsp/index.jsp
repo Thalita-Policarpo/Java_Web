@@ -64,11 +64,11 @@ nav  ul  li  a{
     margin-right: 1.2em;
 }
 
-nav a:hover, .onde a:hover{
+nav a:hover{
     text-decoration: underline;
 }
 
-#formBusca{
+.form-busca{
     align-items: center;
     background-color:white;
     border:solid 1px #061F39;
@@ -77,7 +77,7 @@ nav a:hover, .onde a:hover{
     width:40%;
 }
 
-#txtBusca{
+.form-input-busca{
     align-items: center;
     float:left;
     background-color:transparent;
@@ -89,11 +89,12 @@ nav a:hover, .onde a:hover{
     width:86%;
 }
 
-#btnBusca{
+.button-busca{
     width: 20px;
     height: 20px;
     padding: 8px;
 }
+
 main img {
     display: block;
     margin: auto;
@@ -179,12 +180,11 @@ footer > p {
                     <li><a href="/usuario" title="CADASTRO">CADASTRO</a></li>
                 </ul>
 
-                <form action="" id="formBusca">
-                    <input type="text" id="txtBusca" placeholder="Pesquisar"/>
-                    <img src="image/search.png" id="btnBusca" alt="Buscar"/>
+                <form action="" class="form-busca">
+                    <input type="text" class="form-input-busca" placeholder="Pesquisar"/>
+                    <img src="image/search.png" class="button-busca" alt="Buscar"/>
                 </form>
-
-                <button id="entrar">Entrar</button>
+                <button class="entrar">Entrar</button>
             </nav>
         </header>
         <main>
