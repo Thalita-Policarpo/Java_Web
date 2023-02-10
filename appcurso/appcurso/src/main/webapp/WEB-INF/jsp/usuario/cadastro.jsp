@@ -91,9 +91,16 @@ nav a:hover{
 }
 
 .button-busca{
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     padding: 8px;
+    background: transparent;
+    border: none;
+}
+
+
+.button-busca:hover{
+    font-size: 1em;
 }
 
 figcaption {
@@ -206,20 +213,20 @@ footer > p {
 </head>
 <body>
 	<div id="container"> 
-<header>
+	<header>
             <nav>
                 <figure>
                     <img src="image/figure.png" alt="logo da App Cursos" title="logo da App Cursos">
                 </figure>
                 <ul>
                     <li><a href="/" title="HOME">HOME</a></li>
-                    <li><a href=" " title="SOBRE NÓS">SOBRE NÓS</a></li>
+                    <li><a href="/lista" title="LISTA">LISTA</a></li>
                     <li><a href="/usuario" title="CADASTRO">CADASTRO</a></li>
                 </ul>
 
                 <form action="" class="form-busca">
                     <input type="text" class="form-input-busca" placeholder="Pesquisar"/>
-                    <img src="image/search.png" class="button-busca" alt="Buscar"/>
+                    <input type="submit" class="button-busca" value="&#x1F50D;">
                 </form>
                 <button class="entrar">Entrar</button>
             </nav>
