@@ -18,7 +18,7 @@ public class Usuario {
 	@Override
 	public String toString() {
 
-		return String.format("\nUsuario: %s. " + "\nNascimento: %s" + "\nGenero: %s"
+		return String.format("\nUsuario: %s " + "\nNascimento: %s" + "\nGenero: %s"
 				+ "\nAcesso liberado como %s com interesses em %d cursos" + "\nCredenciais:" + "\nE-mail: %s"
 				+ "\nSenha: %s.", nome, nascimento, genero, tipoUsuario, interesses.length, email, senha);
 	}
