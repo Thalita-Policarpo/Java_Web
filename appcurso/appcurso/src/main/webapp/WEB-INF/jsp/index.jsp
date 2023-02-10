@@ -90,9 +90,16 @@ nav a:hover{
 }
 
 .button-busca{
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     padding: 8px;
+    background: transparent;
+    border: none;
+}
+
+
+.button-busca:hover{
+    font-size: 1em;
 }
 
 main img {
@@ -176,13 +183,13 @@ footer > p {
                 </figure>
                 <ul>
                     <li><a href="/" title="HOME">HOME</a></li>
-                    <li><a href=" " title="SOBRE NÓS">SOBRE NÓS</a></li>
+                    <li><a href="/lista" title="LISTA">LISTA</a></li>
                     <li><a href="/usuario" title="CADASTRO">CADASTRO</a></li>
                 </ul>
 
                 <form action="" class="form-busca">
                     <input type="text" class="form-input-busca" placeholder="Pesquisar"/>
-                    <img src="image/search.png" class="button-busca" alt="Buscar"/>
+                    <input type="submit" class="button-busca" value="&#x1F50D;">
                 </form>
                 <button class="entrar">Entrar</button>
             </nav>
@@ -192,7 +199,6 @@ footer > p {
                 <aside class="titulo">
                     <h2>Bem vindo ao mundo de aprendizagem</h2>
                     <p>Desenvolsa seu conhecimento através de cursos online, gratuítos e atualizados.</p>
-
                 </aside>
                 <figure>
                     <img src="image/logo.png" alt="Logo App Cursos" title="Logo App Cursos">
