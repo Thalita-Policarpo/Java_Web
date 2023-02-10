@@ -8,7 +8,6 @@
     <fullyQualifiedTypeName name="ch.qos.logback.core.net.SyslogOutputStream"/>
     <fullyQualifiedTypeName name="java.lang.StringBuffer"/>
     <fullyQualifiedTypeName name="br.edu.infnet.appcurso.model.domain.Curso"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="br.edu.infnet.appcurso.model.exceptions.ValorZeradoException"/>
     <fullyQualifiedTypeName name="br.edu.infnet.appcurso.model.domain.BancoDeDados"/>
     <fullyQualifiedTypeName name="br.edu.infnet.appcurso.model.domain.Agile"/>
@@ -27,4 +26,8 @@
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PostMapping"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.GetMapping"/>
     <fullyQualifiedTypeName name="java.lang.StringBuilder"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="br.edu.infnet.appcurso.model.domain.Usuario"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="br.edu.infnet.appcurso.repository.UsuarioRepository"/>
 </qualifiedTypeNameHistroy>
