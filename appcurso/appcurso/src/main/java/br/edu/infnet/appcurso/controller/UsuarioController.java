@@ -29,6 +29,11 @@ public class UsuarioController {
 		return "home";
 	}
 
+	@GetMapping(value = "/templante")
+	public String templante() {
+		return "templante/templante";
+	}
+
 	@PostMapping(value = "/usuario/incluir")
 	public String incluir(Usuario usuario) {
 
