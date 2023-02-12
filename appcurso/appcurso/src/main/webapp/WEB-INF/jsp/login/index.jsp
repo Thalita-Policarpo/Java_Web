@@ -10,7 +10,7 @@
 </head>
 <body>
     <main>
-        <form action="/home" method="get" class="form-login">
+        <form action="/templante" method="get" class="form-login">
             <fieldset>
                 <legend>Acesse sua conta</legend>
                 <p>
