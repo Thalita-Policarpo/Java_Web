@@ -4,6 +4,8 @@
 <html>
 <head>
 <meta charset="UTF-8">
+
+<script type="text/javascript" src="https://livejs.com/live.js"></script>
 <link rel="stylesheet" type="text/css" href="css/estilo.css" >
 <title>App Curso</title>
 
