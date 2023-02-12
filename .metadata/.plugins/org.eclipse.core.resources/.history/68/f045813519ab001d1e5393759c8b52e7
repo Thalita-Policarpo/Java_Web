@@ -48,7 +48,7 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
-		</plugins>
+	adicionando dependência de responsividade web em tempo real	</plugins>
 	</build>
 
 </project>
