@@ -5,7 +5,6 @@
 <head>
 <meta charset="UTF-8">
 <link rel="stylesheet" type="text/css" href="css/estilo.css" >
-<script type="text/javascript" src="https://livejs.com/live.js"></script>
 
 <title>Cadastro de Usuários</title>
 
