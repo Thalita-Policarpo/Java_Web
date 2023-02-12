@@ -24,6 +24,11 @@ public class UsuarioController {
 		return "lista/lista";
 	}
 
+	@GetMapping(value = "/home")
+	public String telaHome() {
+		return "home";
+	}
+
 	@PostMapping(value = "/usuario/incluir")
 	public String incluir(Usuario usuario) {
 

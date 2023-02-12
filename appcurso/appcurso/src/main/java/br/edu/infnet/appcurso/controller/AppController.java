@@ -8,7 +8,7 @@ public class AppController {
 
 	@GetMapping(value = "/")
 	public String telaIndex() {
-		return "index";
+		return "login/index";
 	}
 
 }
