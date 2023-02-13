@@ -7,12 +7,12 @@
 <link rel="stylesheet" type="text/css" href="css/estilo.css" >
 <script type="text/javascript" src="https://livejs.com/live.js"></script>
 
-<title>Cadastro de Usuários</title>
+<title>Usuários Cadastrados</title>
 
 </head>
 <body>
-		<main>
-<form class="form-lista-usuarios" method="get" action="/usuario" autocomplete="on" target="tela">
+	<main>
+		<form class="form-lista-usuarios" method="get" action="/usuario" autocomplete="on" target="tela">
             <div class="box-table-cadastrados">
                 <fieldset>
                     <legend>Lista de usuários</legend>
