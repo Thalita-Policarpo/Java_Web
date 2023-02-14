@@ -187,15 +187,36 @@ form {
 	padding: .3em;
 }
 
-.forms-login-cadastro {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-	width: 100%;
+.section-form-login {
+	position: absolute;
+	top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 400px;
+	max-width: 600px;
 }
 
-fieldset {
+.section-form-login p{
+	margin:auto;
+	text-align:center;
+	font-size: 1em;
+	padding: 20px;
+}
+
+
+.section-form-login a{
+	color: #051C36;
+	font-weight: bold;
+}
+
+
+.section-form-login a:hover{
+	text-decoration: underline;
+}
+
+
+
+fieldset { 
 	padding: 10px 45px;
 	text-align: left;
 	border: 3px dashed #051c36b0;
@@ -319,6 +340,7 @@ form p {
 }
 
 /* Tabela */
+
 .table-cadastrados {
 	border-collapse: collapse;
 	width: 100%;
