@@ -12,11 +12,6 @@ import br.edu.infnet.appcurso.repository.UsuarioRepository;
 @Controller
 public class UsuarioController {
 
-	@GetMapping(value = "/cadastrar-entrar")
-	public String telaLogin() {
-		return "login/index";
-	}
-
 	@GetMapping(value = "/usuario")
 	public String telaCadastro() {
 		return "usuario/cadastro";
@@ -27,23 +22,6 @@ public class UsuarioController {
 		return "lista/lista";
 	}
 
-
-	@GetMapping(value = "/cadastros")
-	public String telaCadastros() {
-		return "template/cadastros";
-	}
-
-	@GetMapping(value = "/sair")
-	public String sair() {
-		return "redirect:/";
-	}
-
-	@PostMapping(value = "/home")
-	public String validarLogin() {
-
-
-		return "home";
-	}
 
 	@PostMapping(value = "/usuario/incluir")
 	public String incluir(Usuario usuario) {
