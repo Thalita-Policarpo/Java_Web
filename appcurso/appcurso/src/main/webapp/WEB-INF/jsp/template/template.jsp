@@ -19,7 +19,6 @@
 				<ul>
 					<li><a href="/home" title="Ínicio" target="tela">Ínicio</a></li>
 					<li><a href="/lista" title="Usuários cadastrados" target="tela">Usuários cadastrados</a></li>
-					<li><a href="/usuario" title="Cadastros" target="tela">Cadastros</a></li>
 				</ul>
 
 				<div class="form-busca">
