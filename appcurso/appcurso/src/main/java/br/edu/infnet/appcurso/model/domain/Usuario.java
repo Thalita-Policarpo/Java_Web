@@ -10,10 +10,13 @@ public class Usuario {
 	private String email;
 	private String senha;
 
-	public Usuario(String nome, String email) {
+
+	public Usuario(String nome, String email, String senha) {
 		this.setNome(nome);
 		this.setEmail(email);
+		this.setSenha(senha);
 	}
+
 
 	@Override
 	public String toString() {
