@@ -21,6 +21,7 @@
 *.xmi
 .metadata/.log
 .metadata/0.log
+.metadata\.log
 *.index
 *.resources
 .xmi
