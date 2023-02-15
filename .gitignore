@@ -1,5 +1,21 @@
-*.ini
-*.metadata
-*.log
-*.resources
+ 
+# Created by git for backups. To disable backups in Git:
+# $ git config --global mergetool.keepBackup false
+*.orig
+
+# Created by git when using merge tools for conflicts
+*.BACKUP.*
+*.BASE.*
+*.LOCAL.*
+*.REMOTE.*
+*_BACKUP_*.txt
+*_BASE_*.txt
+*_LOCAL_*.txt
+*_REMOTE_*.txt
+
+# End of https://mrkandreev.name/snippets/gitignore-generator/#Git
+.metadata/.plugins/org.eclipse.core.resources/.history/6a/705bc4dad0ac001d170be63ccf7f7cc7
+*.snap
 *.index
+*.log
+*.xmi
