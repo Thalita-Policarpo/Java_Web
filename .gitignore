@@ -1,10 +1,5 @@
-
-*.ini
-.metadata/version.ini
 *.ini
 *.metadata
-*.metadata\.plugins
 *.log
-.metadata/.plugins/org.eclipse.jdt.core/externalLibsTimeStamps
 *.resources
 *.index
