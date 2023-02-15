@@ -28,3 +28,9 @@
 *.txt
 .metadata/.log
 .log
+*.properties
+*.resources
+*.tree
+.metadata/.plugins/org.eclipse.core.resources/.projects/appcurso/.markers
+*.index
+.metadata/.log
