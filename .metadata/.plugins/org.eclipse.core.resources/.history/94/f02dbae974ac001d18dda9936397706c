@@ -1,0 +1,8 @@
+package br.edu.infnet.appcurso.repository;
+
+public class AcessoRepository {
+
+	public static autenticar(Usuario usuario) { 
+		
+	}
+}

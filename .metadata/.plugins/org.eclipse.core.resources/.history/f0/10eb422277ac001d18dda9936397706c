@@ -1,0 +1,10 @@
+package br.edu.infnet.appcurso.repository;
+
+import br.edu.infnet.appcurso.model.domain.Usuario;
+
+public class AcessoRepository {
+
+	public static Usuario autenticar(Usuario usuario) {
+		return null;
+	}
+}
