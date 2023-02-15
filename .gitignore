@@ -25,3 +25,5 @@
 *.resources
 *.xmi
 *.txt
+*.log
+.metadata/.log
