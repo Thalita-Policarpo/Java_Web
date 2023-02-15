@@ -7,3 +7,4 @@
 *.log
 .metadata/.plugins/org.eclipse.jdt.core/externalLibsTimeStamps
 *.resources
+*.index
