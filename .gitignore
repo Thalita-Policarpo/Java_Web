@@ -14,8 +14,14 @@
 *_REMOTE_*.txt
 
 # End of https://mrkandreev.name/snippets/gitignore-generator/#Git
-.metadata/.plugins/org.eclipse.core.resources/.history/6a/705bc4dad0ac001d170be63ccf7f7cc7
+.metadata/
 *.snap
 *.index
 *.log
 *.xmi
+.metadata/.log
+*.index
+*.resources
+*.resources
+*.xmi
+*.txt
