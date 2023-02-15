@@ -5,6 +5,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 
 import br.edu.infnet.appcurso.model.domain.Usuario;
+import br.edu.infnet.appcurso.repository.AcessoRepository;
 
 @Controller
 public class AcessoController {
@@ -21,8 +22,8 @@ public class AcessoController {
 
 	@PostMapping(value = "/home")
 	public String validarLogin(Usuario usuario) {
-		
-		if (usuario.getEmail().equalsIgnoreCase(usuario.getSenha())) {
+
+		if (AcessoRepository.autenticar(usuario) != null) {
 			
 			return "home";
 		}else {
