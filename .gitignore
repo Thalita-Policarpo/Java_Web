@@ -3,3 +3,4 @@
 .metadata/version.ini
 *.ini
 *.metadata
+*.metadata\.plugins
