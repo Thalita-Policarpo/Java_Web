@@ -24,8 +24,9 @@ public class UsuarioRepository {
 		}
 	}
 
-	public static void excluir(Integer key) {
-		mapaUsuario.remove(key);
+	public static Usuario excluir(Integer key) {
+
+		return mapaUsuario.remove(key);
 	}
 
 	public static Collection<Usuario> obterLista() {
