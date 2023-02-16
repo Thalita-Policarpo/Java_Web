@@ -59,8 +59,7 @@
 										<td>${u.tipoUsuario}</td>
 										<td>${u.interesses}</td>
 										<td>${u.email}</td>
-										<td><a href="/usuario/${u.id}/excluir">Excluir
-												&#10060;</a></td>
+										<td><a href="/usuario/${u.id}/excluir">Excluir &#10060;</a></td>
 									</tr>
 								</c:forEach>
 							</tbody>
