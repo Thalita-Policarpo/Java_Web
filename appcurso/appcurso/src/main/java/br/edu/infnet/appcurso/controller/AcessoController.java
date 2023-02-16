@@ -13,7 +13,7 @@ public class AcessoController {
 
 	@GetMapping(value = "/cadastrar-entrar")
 	public String telaLogin() {
-		return "login/login";
+		return "/login";
 	}
 
 	@GetMapping(value = "/sair")
@@ -32,7 +32,7 @@ public class AcessoController {
 		model.addAttribute("mensagem",
 				"As credendiais para o e-mail &ldquo; " + usuario.getEmail() + " &rdquo; estão incorretas!");
 
-		return "login/login";
+		return "/login";
 		
 	}
 }
