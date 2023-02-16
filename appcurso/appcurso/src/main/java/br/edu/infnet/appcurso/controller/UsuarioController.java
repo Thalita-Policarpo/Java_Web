@@ -3,6 +3,7 @@ package br.edu.infnet.appcurso.controller;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 
 import br.edu.infnet.appcurso.model.domain.Usuario;
@@ -29,8 +30,6 @@ public class UsuarioController {
 		return "usuario/lista";
 	}
 
-
-
 	@PostMapping(value = "/usuario/incluir")
 	public String incluir(Usuario usuario) {
 
@@ -46,6 +45,17 @@ public class UsuarioController {
 //			System.out.println("A inclusao do usuario " + user.getNome() + ", foi realizada com sucesso!");
 //		}
 
+		return "redirect:/lista";
+
+	}
+
+	@GetMapping(value = "/usuario/{id}/excluir")
+	public String excluir(@PathVariable Integer id) {
+		
+		Usuario usuario = UsuarioRepository.excluir(id);
+
+		msg = "A inclusão do usuário " + usuario.getNome() + " foi realizada com sucesso!";
+		
 		return "redirect:/lista";
 	}
 
