@@ -132,8 +132,14 @@ main h2 {
 	padding: 1em;
 }
 
+h5{
+	font-family: 'Poppins', sans-serif;
+	font-size: 1em;
+	padding: .5em 1em;
+}
+
 p {
-	text-align: justify;
+	text-align: left;
 	color: black;
 	font-size: 1em;
 	padding: .5em 1em;
@@ -371,13 +377,13 @@ form p {
 	border-radius: 3px;
 }
 
-/* Handle */
+
 ::-webkit-scrollbar-thumb {
 	background: darkgray;
 	border-radius: 3px;
 }
 
-/* Handle on hover */
+
 ::-webkit-scrollbar-thumb:hover {
 	background: gray;
 }
@@ -385,4 +391,29 @@ form p {
 .box-table-cadastrados {
 	overflow-x: auto;
 	/* Criar barra de rolagem apenas na tabela, quando exibido em telas pequenas*/
+}
+
+
+/* Alertas */
+
+.alert-success {
+	padding:25px;
+    color: #0f5132;
+    background: #d1e7dd;
+   	border-color: #badbcc;
+    border-radius: 15px;
+    box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.384);
+    margin-bottom:25px; 
+}
+
+
+
+.alert-danger{
+	padding:25px;
+   	color: #842029;
+   	background: #f8d7da;
+   	border-color: #f5c2c7;
+   	border-radius: 15px;
+   	box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.384);
+   	margin-bottom:25px; 
 }
