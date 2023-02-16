@@ -15,3 +15,6 @@
 1676237302545	Rename resource 'telaCadastros.jsp'
 1676248339543	Rename resource 'templante'
 1676248349731	Rename resource 'templante.jsp'
+1676503343767	Move 'lista.jsp' to 'usuario'
+1676503377170	Delete element
+1676503388238	Rename resource 'index.jsp'
