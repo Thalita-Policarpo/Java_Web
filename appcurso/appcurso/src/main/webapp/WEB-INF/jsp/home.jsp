@@ -23,6 +23,12 @@
                 </figure>
 
             </section>
+            
+            <section class="conteudo">
+            
+            <h2>Acesse a <a href="/lista" target="tela">lista de Usuários</a></h2>
+            
+            </section>
         </main>
 </body>
 </html>
