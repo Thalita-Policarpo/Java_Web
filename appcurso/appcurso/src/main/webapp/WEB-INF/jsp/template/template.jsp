@@ -17,8 +17,8 @@
 						title="logo da App Cursos" class="menu-logo">
 				</figure>
 				<ul>
-					<li><a href="/home" title="Ínicio" target="tela">Ínicio</a></li>
-					<li><a href="/lista" title="Usuários cadastrados" target="tela">Usuários cadastrados</a></li>
+					<li>App Cursos</li>
+					
 				</ul>
 
 				<div class="form-busca">
