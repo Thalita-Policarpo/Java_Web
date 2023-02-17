@@ -14,6 +14,8 @@
 </head>
 <body>
 	<main>
+		<c:import url="/WEB-INF/jsp/template/menu.jsp"></c:import>
+
 		<c:if test="${not empty mensagem}">
 			<div class="alert-success">
 				<p>
@@ -21,56 +23,49 @@
 				</p>
 			</div>
 		</c:if>
-			
-			<form class="form-lista-usuarios" method="get" action="/usuario"
-				autocomplete="on" target="tela">
 
-			<c:if test="${empty usuarios}">
-				<h5>Não existem usuários cadastrados</h5>
-			</c:if>
 
-			<c:if test="${not empty usuarios}">
-				<h5>Quantidade de usuários cadastrados: ${usuarios.size()}!</h5>
+		<c:if test="${empty usuarios}">
+			<h5>Não existem usuários cadastrados</h5>
+		</c:if>
 
-				<div class="box-table-cadastrados">
+		<c:if test="${not empty usuarios}">
+			<h5>Quantidade de usuários cadastrados: ${usuarios.size()}!</h5>
 
-					<fieldset>
-						<legend>Lista de usuários</legend>
-
-						<table class="table-cadastrados">
-							<thead>
-								<tr>
-									<th>ID</th>
-									<th>Nome</th>
-									<th>Nascimento</th>
-									<th>Gênero</th>
-									<th>Tipo de Usuário</th>
-									<th>Interesses</th>
-									<th>E-mail</th>
-								</tr>
-							</thead>
-							<tbody>
-								<c:forEach var="u" items="${usuarios}">
-									<tr>
-										<td>${u.id}</td>
-										<td>${u.nome}</td>
-										<td>${u.nascimento}</td>
-										<td>${u.genero}</td>
-										<td>${u.tipoUsuario}</td>
-										<td>${u.interesses}</td>
-										<td>${u.email}</td>
-										<td><a href="/usuario/${u.id}/excluir">Excluir &#10060;</a></td>
-									</tr>
-								</c:forEach>
-							</tbody>
-						</table>
-					</fieldset>
-				</div>
-			</c:if>
-			<article class="box-buttons">
-			<input type="submit" class="btn-enviar" value="Novo &#10011;">
-		</article>
-		</form>
+			<div class="box-table-cadastrados">
+	<fieldset>
+	<legend>Lista de Usuários</legend>
+				<table class="table-cadastrados">
+					<thead>
+						<tr>
+							<th>ID</th>
+							<th>Nome</th>
+							<th>Nascimento</th>
+							<th>Gênero</th>
+							<th>Tipo de Usuário</th>
+							<th>Interesses</th>
+							<th colspan="2">E-mail</th>
+						</tr>
+					</thead>
+					<tbody>
+						<c:forEach var="u" items="${usuarios}">
+							<tr>
+								<td>${u.id}</td>
+								<td>${u.nome}</td>
+								<td>${u.nascimento}</td>
+								<td>${u.genero}</td>
+								<td>${u.tipoUsuario}</td>
+								<td>${u.interesses}</td>
+								<td>${u.email}</td>
+								<td><a href="/usuario/${u.id}/excluir">Excluir &#10060;</a></td>
+							</tr>
+						</c:forEach>
+					</tbody>
+				</table>
+	</fieldset>
+			</div>
+		</c:if>
 	</main>
+	<c:import url="/WEB-INF/jsp/template/footer.jsp"></c:import>
 </body>
 </html>

@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -12,13 +13,16 @@
 </head>
 <body>
 	<main>
+		<c:import url="/WEB-INF/jsp/template/menu.jsp"></c:import>
 		<form class="form-cadastro" method="post" action="/usuario/incluir"
-			autocomplete="on" target="tela">
+			autocomplete="on">
 			<fieldset>
 				<legend>Cadastro de usuário</legend>
 				<p>
-					<label for="nome">Nome:</label> 
-					<input type="text" class="form-input-nome" name="nome" value="Thalita Policarpo" placeholder="Nome completo" required minlength="5" autocomplete="name">
+					<label for="nome">Nome:</label> <input type="text"
+						class="form-input-nome" name="nome" value="Thalita Policarpo"
+						placeholder="Nome completo" required minlength="5"
+						autocomplete="name">
 				</p>
 				<p>
 					<label for="nascimento">Data de nascimento:</label> <input
@@ -83,5 +87,8 @@
 			</article>
 		</form>
 	</main>
+	
+	<c:import url="/WEB-INF/jsp/template/footer.jsp"></c:import>
+
 </body>
 </html>
