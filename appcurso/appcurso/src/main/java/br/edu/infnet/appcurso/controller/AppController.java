@@ -8,12 +8,12 @@ public class AppController {
 
 	@GetMapping(value = "/")
 	public String telaIndex() {
-		return "template/template";
+		return "index";
 	}
 
 	@GetMapping(value = "/home")
 	public String telaHome() {
-		return "home";
+		return "index";
 	}
 
 

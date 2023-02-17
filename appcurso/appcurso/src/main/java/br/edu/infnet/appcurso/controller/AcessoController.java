@@ -18,7 +18,7 @@ public class AcessoController {
 
 	@GetMapping(value = "/sair")
 	public String sair() {
-		return "redirect:/";
+		return "/login";
 	}
 	
 	@PostMapping(value = "/home")
@@ -26,7 +26,7 @@ public class AcessoController {
 
 		if (AcessoRepository.autenticar(usuario) != null) {
 
-			return "home";
+			return "index";
 		}
 
 		model.addAttribute("mensagem",

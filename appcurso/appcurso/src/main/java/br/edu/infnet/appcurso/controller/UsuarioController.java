@@ -45,7 +45,7 @@ public class UsuarioController {
 //			System.out.println("A inclusao do usuario " + user.getNome() + ", foi realizada com sucesso!");
 //		}
 
-		return "redirect:/lista";
+		return "redirect:/home";
 
 	}
 
