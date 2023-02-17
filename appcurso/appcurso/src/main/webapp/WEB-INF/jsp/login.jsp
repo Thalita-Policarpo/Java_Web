@@ -21,7 +21,7 @@
 	
 		<!--   Formulário de Login    -->
 		<section class="section-form-login">
-			<form action="/home" method="post" class="form-login" target="tela">
+			<form action="/home" method="post" class="form-login">
 				<fieldset>
 					<legend>Acesse sua conta</legend>
 					<p>
