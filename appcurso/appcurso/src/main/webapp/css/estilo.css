@@ -6,10 +6,9 @@
 	text-decoration: none;
 }
 
-a:hover{
+a:hover {
 	text-decoration: underline;
 }
-
 
 html, body {
 	width: 100%;
@@ -35,7 +34,6 @@ main {
 	background-color: white;
 }
 
-
 header {
 	position: -webkit-sticky;
 	position: sticky;
@@ -43,7 +41,6 @@ header {
 	margin: auto;
 	border-radius: 8px 8px 0px 0px;
 }
-
 
 nav figure .menu-logo {
 	width: 50px;
@@ -63,7 +60,7 @@ nav {
 nav  ul  li {
 	display: inline-flex;
 	flex-direction: row;
-	color: white; 
+	color: white;
 	text-align: left;
 }
 
@@ -94,11 +91,11 @@ main h2 {
 	padding: 1em;
 }
 
-h5{
+h5 {
 	font-family: 'Poppins', sans-serif;
 	font-size: 1.1em;
 	padding: .5em 1em;
-	margin:.5em 1em;
+	margin: .5em 1em;
 }
 
 p {
@@ -152,7 +149,6 @@ footer>p {
 }
 
 /* Formulário */
-
 form {
 	padding: .3em;
 }
@@ -160,33 +156,29 @@ form {
 .section-form-login {
 	position: absolute;
 	top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    min-width: 400px;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	min-width: 400px;
 	max-width: 600px;
 }
 
-.section-form-login p{
-	margin:auto;
-	text-align:center;
+.section-form-login p {
+	margin: auto;
+	text-align: center;
 	font-size: 1em;
 	padding: 20px;
 }
 
-
-.section-form-login a{
+.section-form-login a {
 	color: #051C36;
 	font-weight: bold;
 }
 
-
-.section-form-login a:hover{
+.section-form-login a:hover {
 	text-decoration: underline;
 }
 
-
-
-fieldset { 
+fieldset {
 	padding: 10px 45px;
 	text-align: left;
 	border: 3px dashed #051c36b0;
@@ -215,7 +207,9 @@ form p {
 }
 
 .form-input-nome, .form-date-nascimento, .form-input-email,
-	.form-input-senha, .form-input-nomeCurso, .form-input-valor, .form-input-metodologia, .form-input-duracao {
+	.form-input-senha, .form-input-nomeCurso, .form-input-valor,
+	.form-input-metodologia, .form-input-duracao, .form-input-linguagem,
+	.form-input-instituicao, .form-input-cpf, .form-input-idade {
 	height: 40px;
 	padding: 0px 10px;
 	font-family: 'Poppins', sans-serif;
@@ -227,11 +221,14 @@ form p {
 }
 
 .form-input-nome:hover, .form-date-nascimento:hover, .form-input-email:hover,
-	.form-input-senha:hover, .form-input-nomeCurso:hover, .form-input-valor:hover, .form-input-metodologia:hover, .form-input-duracao:hover  {
+	.form-input-senha:hover, .form-input-nomeCurso:hover, .form-input-valor:hover,
+	.form-input-metodologia:hover, .form-input-duracao:hover,
+	.form-input-linguagem:hover, .form-input-instituicao:hover,
+	.form-input-cpf:hover, .form-input-idade:hover {
 	background-color: rgba(183, 241, 245, 0.288);
 }
 
-.form-radio-genero, .form-radio-presencial{
+.form-radio-genero, .form-radio-presencial {
 	padding: .5em 1em;
 }
 
@@ -284,11 +281,10 @@ form p {
 	font-size: 1.1em;
 }
 
-
 .btn-menu {
 	background-color: transparent;
 	font-size: .9em;
-	border:none;
+	border: none;
 	color: white;
 	padding: 5px;
 }
@@ -298,19 +294,18 @@ form p {
 }
 
 .btn-menu:active {
-	background-color:lightblue;
-	color:black;
+	background-color: lightblue;
+	color: black;
 }
 
 /* Tabela */
-
 .table-cadastrados {
 	border-collapse: collapse;
 	width: 100%;
 	display: table;
-	margin:auto;
-	margin-top:25px;
-	margin-bottom:50px;
+	margin: auto;
+	margin-top: 25px;
+	margin-bottom: 50px;
 	text-align: center;
 }
 
@@ -322,7 +317,7 @@ form p {
 .table-cadastrados th, .table-cadastrados td {
 	border: 1px solid black;
 	padding: 10px;
-	border:none;
+	border: none;
 }
 
 .table-cadastrados tr:nth-child(even) { /* para fazer o efeito zebrado*/
@@ -339,12 +334,10 @@ form p {
 	border-radius: 3px;
 }
 
-
 ::-webkit-scrollbar-thumb {
 	background: darkgray;
 	border-radius: 3px;
 }
-
 
 ::-webkit-scrollbar-thumb:hover {
 	background: gray;
@@ -355,27 +348,23 @@ form p {
 	/* Criar barra de rolagem apenas na tabela, quando exibido em telas pequenas*/
 }
 
-
 /* Alertas */
-
 .alert-success {
-	padding:25px;
-    color: #0f5132;
-    background: #d1e7dd;
-   	border-color: #badbcc;
-    border-radius: 15px;
-    box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.384);
-    margin-bottom:25px; 
+	padding: 25px;
+	color: #0f5132;
+	background: #d1e7dd;
+	border-color: #badbcc;
+	border-radius: 15px;
+	box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.384);
+	margin-bottom: 25px;
 }
 
-
-
-.alert-danger{
-	padding:25px;
-   	color: #842029;
-   	background: #f8d7da;
-   	border-color: #f5c2c7;
-   	border-radius: 15px;
-   	box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.384);
-   	margin-bottom:25px; 
+.alert-danger {
+	padding: 25px;
+	color: #842029;
+	background: #f8d7da;
+	border-color: #f5c2c7;
+	border-radius: 15px;
+	box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.384);
+	margin-bottom: 25px;
 }
