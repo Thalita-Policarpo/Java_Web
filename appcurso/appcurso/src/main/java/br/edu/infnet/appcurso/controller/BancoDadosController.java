@@ -14,21 +14,27 @@ public class BancoDadosController {
 
 	private String msg = null;
 
-	@GetMapping(value = "/cadastro-banco-dados")
+	@GetMapping(value = "/home-banco-dados")
 	public String TelaBancoDeDados() {
+
+		return "curso-banco-de-dados/home-banco-dados";
+	}
+
+	@GetMapping(value = "/cadastro-banco-dados")
+	public String TelaCadastroBancoDeDados() {
 
 		return "curso-banco-de-dados/cadastro-banco-dados";
 	}
 
-	@GetMapping(value = "/home-banco-dados")
+	@GetMapping(value = "/banco-dados-lista")
 	public String telaListaBancoDados(Model model) {
 
-		model.addAttribute("cursos-banco-dados", BancoDeDadosRepository.obterLista());
+		model.addAttribute("cursosDados", BancoDeDadosRepository.obterLista());
 
 		model.addAttribute("mensagem", msg);
 		msg = null;
 
-		return "curso-banco-de-dados/home-banco-dados";
+		return "curso-banco-de-dados/banco-dados-lista";
 	}
 
 	@PostMapping(value = "/banco-de-dados/incluir")
@@ -38,18 +44,18 @@ public class BancoDadosController {
 
 		msg = "A inclusão do curso " + bancoDeDados.getNomeCurso() + " foi realizada com sucesso!";
 
-		return "redirect:/home-banco-dados";
+		return "redirect:/banco-dados-lista";
 
 	}
 
-	@GetMapping(value = "/bd/{id}/excluir")
+	@GetMapping(value = "/cursosDados/{id}/excluir")
 	public String excluir(@PathVariable Integer id) {
 		
 		BancoDeDados bancoDeDados = BancoDeDadosRepository.excluir(id);
 
 		msg = "A exclusão do curso " + bancoDeDados.getNomeCurso() + " foi realizada com sucesso!";
 		
-		return "redirect:/home-banco-dados";
+		return "redirect:/banco-dados-lista";
 	}
 
 }
