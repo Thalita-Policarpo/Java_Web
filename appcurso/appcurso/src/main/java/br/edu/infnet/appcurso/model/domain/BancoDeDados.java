@@ -8,10 +8,10 @@ public class BancoDeDados extends Curso {
 	private boolean exigencia;
 	private boolean relacional;
 
-	public BancoDeDados(String nomeCurso, float valor, int codigo, String tipo, boolean exigencia, boolean relacional)
+	public BancoDeDados(String nomeCurso, float valor, String tipo, boolean exigencia, boolean relacional)
 			throws ValorZeradoException, TipoNuloException {
 
-		super(nomeCurso, valor, codigo);
+		super(nomeCurso, valor);
 
 		if (tipo == null) {
 			throw new TipoNuloException("O tipo do curso, precisa ser preenchido!");
@@ -47,6 +47,7 @@ public class BancoDeDados extends Curso {
 
 		return sb.toString() + "\r\n" + retornarMensagem();
 	}
+
 
 	public String getTipo() {
 		return tipo;

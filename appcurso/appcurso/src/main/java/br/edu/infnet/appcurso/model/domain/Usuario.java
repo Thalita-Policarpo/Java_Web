@@ -6,10 +6,9 @@ public class Usuario {
 	private String nome;
 	private String nascimento;
 	private String genero;
-	private String tipoUsuario;
-	private String[] interesses;
 	private String email;
 	private String senha;
+
 
 	public Usuario() {
 
@@ -30,9 +29,8 @@ public class Usuario {
 	@Override
 	public String toString() {
 
-		return String.format("\nUsuario: %s " + "\nNascimento: %s" + "\nGenero: %s"
-				+ "\nAcesso liberado como %s com interesses em %d cursos" + "\nCredenciais:" + "\nE-mail: %s"
-				+ "\nSenha: %s.", nome, nascimento, genero, tipoUsuario, interesses.length, email, senha);
+		return String.format("\nUsuario: %s " + "\nNascimento: %s" + "\nGenero: %s" + "\nCredenciais:" + "\nE-mail: %s"
+				+ "\nSenha: %s.", nome, nascimento, genero, email, senha);
 	}
 
 	public String getNome() {
@@ -59,22 +57,6 @@ public class Usuario {
 		this.genero = genero;
 	}
 
-	public String getTipoUsuario() {
-		return tipoUsuario;
-	}
-
-	public void setTipoUsuario(String tipoUsuario) {
-		this.tipoUsuario = tipoUsuario;
-	}
-
-	public String[] getInteresses() {
-		return interesses;
-	}
-
-	public void setInteresses(String[] interesses) {
-		this.interesses = interesses;
-	}
-
 	public String getEmail() {
 		return email;
 	}
@@ -98,5 +80,4 @@ public class Usuario {
 	public void setId(int id) {
 		this.id = id;
 	}
-
 }

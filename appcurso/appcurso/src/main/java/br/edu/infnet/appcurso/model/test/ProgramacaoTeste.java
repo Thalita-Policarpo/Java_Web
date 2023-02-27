@@ -9,7 +9,7 @@ public class ProgramacaoTeste {
 	public static void main(String[] args) {
 	
 		try {
-			Programacao p1 = new Programacao("Java basico", 800, 1, "java", "Infnet", 1);
+			Programacao p1 = new Programacao("Java basico", 800, "java", "Infnet", 1);
 			System.out.println(p1);
 		} catch (ValorZeradoException e) {
 			System.out.println("[ERRO] " + e.getMessage());
@@ -19,7 +19,7 @@ public class ProgramacaoTeste {
 	
 			
 		try {
-			Programacao p2 = new Programacao("Java intermediario", 900, 2, "java", "Infnet", 4);
+			Programacao p2 = new Programacao("Java intermediario", 900, "java", "Infnet", 4);
 			System.out.println(p2);
 		} catch (ValorZeradoException e) {
 			System.out.println("[ERRO] " + e.getMessage());
@@ -29,7 +29,7 @@ public class ProgramacaoTeste {
 
 		
 		try {
-			Programacao p3 = new Programacao("Java intermediario", -900, 2, "java", "Infnet", 4);
+			Programacao p3 = new Programacao("Java intermediario", -900, "java", "Infnet", 4);
 			System.out.println(p3);
 		} catch (ValorZeradoException e) {
 			System.out.println("[ERRO] " + e.getMessage());
@@ -40,7 +40,7 @@ public class ProgramacaoTeste {
 		
 		
 		try {
-			Programacao p4 = new Programacao("Java avancado", 0, 3, "java", "Infnet", 3);
+			Programacao p4 = new Programacao("Java avancado", 0, "java", "Infnet", 3);
 			System.out.println(p4);
 		} catch (ValorZeradoException e) {
 			System.out.println("[ERRO] " + e.getMessage());
@@ -51,7 +51,7 @@ public class ProgramacaoTeste {
 		
 		
 		try {
-			Programacao p5 = new Programacao("Java avancado", 100, 3, "java", "Infnet", 0);
+			Programacao p5 = new Programacao("Java avancado", 100, "java", "Infnet", 0);
 			System.out.println(p5);
 		} catch (ValorZeradoException e) {
 			System.out.println("[ERRO] " + e.getMessage());
@@ -62,7 +62,7 @@ public class ProgramacaoTeste {
 		
 		
 		try {
-			Programacao p6 = new Programacao("Java avancado", 300, 3, "java", "Infnet", 50);
+			Programacao p6 = new Programacao("Java avancado", 300, "java", "Infnet", 50);
 			System.out.println(p6);
 		} catch (ValorZeradoException e) {
 			System.out.println("[ERRO] " + e.getMessage());

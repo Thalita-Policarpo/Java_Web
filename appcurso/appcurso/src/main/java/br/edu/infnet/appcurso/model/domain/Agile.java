@@ -4,13 +4,14 @@ import br.edu.infnet.appcurso.model.exceptions.DuracaoInvalidaException;
 import br.edu.infnet.appcurso.model.exceptions.ValorZeradoException;
 
 public class Agile extends Curso {
+
 	private String metodologia;
 	private int duracao;
 	private boolean presencial;
 
-	public Agile(String nomeCurso, float valor, int codigo, String metodologia, int duracao, boolean presencial)
+	public Agile(String nomeCurso, float valor, String metodologia, int duracao, boolean presencial)
 			throws ValorZeradoException, DuracaoInvalidaException {
-		super(nomeCurso, valor, codigo);
+		super(nomeCurso, valor);
 
 		if (duracao < 1) {
 			throw new DuracaoInvalidaException("A duracao do curso nao pode ser inferior a 1 mes");
@@ -52,10 +53,11 @@ public class Agile extends Curso {
 		sb.append(";");
 		sb.append(duracao);
 		sb.append(";");
-		sb.append(presencial ? "E presencial" : "Nao e presencial");
+		sb.append(presencial ? "É presencial" : "Nao é presencial");
 
 		return sb.toString() + "\r\n" + retornarMensagem();
 	}
+
 
 	public String getMetodologia() {
 		return metodologia;

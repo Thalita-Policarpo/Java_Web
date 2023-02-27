@@ -66,8 +66,8 @@ public class ArquivoTeste {
 					case "A":
 
 						try {
-							agile = new Agile(campos[1], Float.valueOf(campos[2]), Integer.parseInt(campos[3]),
-									campos[4], Integer.parseInt(campos[5]), Boolean.valueOf(campos[2]));
+							agile = new Agile(campos[1], Float.valueOf(campos[2]), campos[4],
+									Integer.parseInt(campos[5]), Boolean.valueOf(campos[2]));
 							curso.add(agile);
 						} catch (ValorZeradoException | DuracaoInvalidaException e) {
 							System.out.println("[ERRO] " + e.getMessage());
@@ -77,7 +77,7 @@ public class ArquivoTeste {
 					case "B":
 						try {
 							bancoDados = new BancoDeDados(campos[1], Float.valueOf(campos[2]),
-									Integer.parseInt(campos[3]), campos[4], Boolean.valueOf(campos[5]),
+									campos[4], Boolean.valueOf(campos[5]),
 									Boolean.valueOf(campos[6]));
 							curso.add(bancoDados);
 						} catch (ValorZeradoException | TipoNuloException e) {
@@ -88,7 +88,7 @@ public class ArquivoTeste {
 					case "P":
 						try {
 							programacao = new Programacao(campos[1], Float.valueOf(campos[2]),
-									Integer.parseInt(campos[3]), campos[4], campos[5], Integer.parseInt(campos[6]));
+									campos[4], campos[5], Integer.parseInt(campos[6]));
 							curso.add(programacao);
 						} catch (ValorZeradoException | DuracaoInvalidaException e) {
 							System.out.println("[ERRO] " + e.getMessage());

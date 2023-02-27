@@ -8,7 +8,7 @@ public class CursoTeste {
 	public static void main(String[] args) {
 
 		try {
-			Curso c1 = new Curso("kamban", 70, 1) {
+			Curso c1 = new Curso("kamban", 70) {
 
 				@Override
 				public String retornarMensagem() {
@@ -30,7 +30,7 @@ public class CursoTeste {
 		}
 
 		try {
-			Curso c2 = new Curso("Java", 1000, 2) {
+			Curso c2 = new Curso("Java", 1000) {
 
 				@Override
 				public String retornarMensagem() {
@@ -51,7 +51,7 @@ public class CursoTeste {
 		}
 
 		try {
-			Curso c3 = new Curso("JSON", 500, 3) {
+			Curso c3 = new Curso("JSON", 500) {
 
 				@Override
 				public String retornarMensagem() {
@@ -73,7 +73,7 @@ public class CursoTeste {
 		}
 
 		try {
-			Curso c4 = new Curso("JSON", 0, 3) {
+			Curso c4 = new Curso("JSON", 0) {
 
 				@Override
 				public String retornarMensagem() {
@@ -95,7 +95,7 @@ public class CursoTeste {
 		}
 
 		try {
-			Curso c5 = new Curso("JSON", -50, 3) {
+			Curso c5 = new Curso("JSON", -50) {
 
 				@Override
 				public String retornarMensagem() {

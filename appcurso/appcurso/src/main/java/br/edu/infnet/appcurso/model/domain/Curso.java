@@ -3,11 +3,11 @@ package br.edu.infnet.appcurso.model.domain;
 import br.edu.infnet.appcurso.model.exceptions.ValorZeradoException;
 
 public abstract class Curso {
+	private int id;
 	private String nomeCurso;
 	private float valor;
-	private int codigo;
 
-	public Curso(String nomeCurso, float valor, int codigo) throws ValorZeradoException {
+	public Curso(String nomeCurso, float valor) throws ValorZeradoException {
 
 		if (valor < 0) {
 			throw new ValorZeradoException("O valor do produto nao pode ser negativo!");
@@ -18,7 +18,6 @@ public abstract class Curso {
 
 		this.nomeCurso = nomeCurso;
 		this.valor = valor;
-		this.codigo = codigo;
 	}
 
 	public abstract String obterLinha();
@@ -33,9 +32,16 @@ public abstract class Curso {
 		sb.append(";");
 		sb.append(valor);
 		sb.append(";");
-		sb.append(codigo);
 
 		return sb.toString();
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
 	}
 
 	public String getNomeCurso() {
@@ -44,10 +50,6 @@ public abstract class Curso {
 
 	public float getValor() {
 		return valor;
-	}
-
-	public int getCodigo() {
-		return codigo;
 	}
 
 }
