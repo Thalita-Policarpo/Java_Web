@@ -7,6 +7,7 @@ import java.util.Map;
 import br.edu.infnet.appcurso.model.domain.Agile;
 
 public class AgileRepository {
+
 	private static Integer id = 1;
 
 	private static Map<Integer, Agile> mapaAgile = new HashMap<Integer, Agile>();
