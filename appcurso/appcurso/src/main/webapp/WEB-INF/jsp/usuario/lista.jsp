@@ -13,8 +13,8 @@
 
 </head>
 <body>
+	<c:import url="/WEB-INF/jsp/template/menu.jsp"></c:import>
 	<main>
-		<c:import url="/WEB-INF/jsp/template/menu.jsp"></c:import>
 
 		<c:if test="${not empty mensagem}">
 			<div class="alert-success">
@@ -42,8 +42,6 @@
 							<th>Nome</th>
 							<th>Nascimento</th>
 							<th>Gênero</th>
-							<th>Tipo de Usuário</th>
-							<th>Interesses</th>
 							<th colspan="2">E-mail</th>
 						</tr>
 					</thead>
@@ -54,8 +52,6 @@
 								<td>${u.nome}</td>
 								<td>${u.nascimento}</td>
 								<td>${u.genero}</td>
-								<td>${u.tipoUsuario}</td>
-								<td>${u.interesses}</td>
 								<td>${u.email}</td>
 								<td><a href="/usuario/${u.id}/excluir">Excluir &#10060;</a></td>
 							</tr>
