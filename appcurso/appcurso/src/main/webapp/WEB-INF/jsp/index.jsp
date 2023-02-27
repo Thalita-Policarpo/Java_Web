@@ -12,13 +12,12 @@
 
 </head>
 <body>
+	<c:import url="/WEB-INF/jsp/template/menu.jsp"></c:import>
 	<main>
-		<c:import url="/WEB-INF/jsp/template/menu.jsp"></c:import>
 		<section class="banner">
 			<aside class="titulo">
 				<h2>Bem vindo ao mundo de aprendizagem</h2>
-				<p>Desenvolsa seu conhecimento através de cursos online,
-					gratuítos e atualizados.</p>
+				<p>Desenvolsa seu conhecimento através de cursos atualizados e online.</p>
 
 			</aside>
 			<figure>
@@ -27,6 +26,7 @@
 			</figure>
 
 		</section>
+
 
 	</main>
 	<c:import url="/WEB-INF/jsp/template/footer.jsp"></c:import>

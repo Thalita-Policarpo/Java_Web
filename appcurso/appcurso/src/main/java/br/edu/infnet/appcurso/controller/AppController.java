@@ -8,7 +8,7 @@ public class AppController {
 
 	@GetMapping(value = "/")
 	public String telaIndex() {
-		return "/login";
+		return "index";
 	}
 
 	@GetMapping(value = "/home")
@@ -17,4 +17,16 @@ public class AppController {
 	}
 
 
+
+	@GetMapping(value = "/curso-banco-de-dados")
+	public String TelaBancoDados() {
+
+		return "curso-banco-de-dados/home-banco-dados";
+	}
+
+	@GetMapping(value = "/curso-programacao")
+	public String TelaProgramacao() {
+
+		return "curso-programacao/home-programacao";
+	}
 }

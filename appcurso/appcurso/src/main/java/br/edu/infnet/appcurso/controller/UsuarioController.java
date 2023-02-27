@@ -37,14 +37,6 @@ public class UsuarioController {
 
 		msg = "A inclusão do usuário " + usuario.getNome() + " foi realizada com sucesso!";
 
-//		Collection<Usuario> lista = UsuarioRepository.obterLista();
-//
-//		System.out.println("Quantidade de uarios:" + lista.size());
-//
-//		for (Usuario user : lista) {
-//			System.out.println("A inclusao do usuario " + user.getNome() + ", foi realizada com sucesso!");
-//		}
-
 		return "redirect:/home";
 
 	}
