@@ -15,7 +15,7 @@
 		<li><a href="/home">Home</a></li>
 		<c:if test="${not empty usuario}">
 			<li><a href="/lista">Usuario</a></li>
-			<li><a href="">Cliente</a></li>
+			<li><a href="/home-cliente">Cliente</a></li>
 			<li><a href="">Pacote</a></li>
 			<li><a href="">Curso</a></li>
 			<li><a href="/home-agile">Agile</a></li>

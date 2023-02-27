@@ -14,21 +14,27 @@ public class AgileController {
 
 	private String msg = null;
 
+	@GetMapping(value = "/home-agile")
+	public String TelaHomeAgile() {
+
+		return "curso-agile/home-agile";
+	}
+
 	@GetMapping(value = "/cadastro-agile")
-	public String TelaAgile() {
+	public String TelaCadastroAgile() {
 
 		return "curso-agile/cadastro-agile";
 	}
 
-	@GetMapping(value = "/home-agile")
-	public String telaLista(Model model) {
+	@GetMapping(value = "/agile-lista")
+	public String telaListaAgile(Model model) {
 
-		model.addAttribute("cursos-agile", AgileRepository.obterLista());
+		model.addAttribute("agiles", AgileRepository.obterLista());
 
 		model.addAttribute("mensagem", msg);
 		msg = null;
 
-		return "curso-agile/home-agile";
+		return "curso-agile/agile-lista";
 	}
 
 	@PostMapping(value = "/agile/incluir")
@@ -38,7 +44,7 @@ public class AgileController {
 
 		msg = "A inclusão do curso " + agile.getNomeCurso() + " foi realizada com sucesso!";
 
-		return "redirect:/home-agile";
+		return "redirect:/agile-lista";
 
 	}
 
@@ -49,7 +55,7 @@ public class AgileController {
 
 		msg = "A exclusão do curso " + agile.getNomeCurso() + " foi realizada com sucesso!";
 		
-		return "redirect:/home-agile";
+		return "redirect:/agile-lista";
 	}
 
 }
