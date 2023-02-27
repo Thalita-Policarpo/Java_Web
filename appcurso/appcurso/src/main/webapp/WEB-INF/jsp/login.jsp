@@ -11,6 +11,7 @@
 <title>Document</title>
 </head>
 <body>
+	<c:import url="/WEB-INF/jsp/template/menu.jsp"></c:import>
 	<main>
 	<c:if test="${not empty mensagem}"> 
 		
@@ -21,7 +22,7 @@
 	
 		<!--   Formulário de Login    -->
 		<section class="section-form-login">
-			<form action="/home" method="post" class="form-login">
+			<form action="/login" method="post" class="form-login">
 				<fieldset>
 					<legend>Acesse sua conta</legend>
 					<p>
@@ -47,5 +48,6 @@
 			<p>Ainda não é usuário? Então <a href="/usuario">Cadastre-se</a></p>						
 		</section>
 	</main>
+	<!-- <c:import url="/WEB-INF/jsp/template/footer.jsp"></c:import> //corrigir posicionamento-->
 </body>
 </html>
