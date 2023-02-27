@@ -3,6 +3,7 @@ package br.edu.infnet.appcurso.model.domain;
 import br.edu.infnet.appcurso.model.exceptions.DadosPessoaisNaoPreenchidosException;
 
 public class Cliente {
+	private int id;
 	private String nome;
 	private String cpf;
 	private int idade;
@@ -36,6 +37,15 @@ public class Cliente {
 		sb.append(idade);
 
 		return sb.toString();
+	}
+
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
 	}
 
 	public String getNome() {
