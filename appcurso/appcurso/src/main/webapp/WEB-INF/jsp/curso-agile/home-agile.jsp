@@ -18,57 +18,12 @@
 
 
 		<p>
-			Para cadastrar um novo curso <a href="/cadastro-agile">acesse aqui</a>
+			Para cadastrar um novo curso <a href="/cadastro-agile">acesse aqui.</a>
 		</p>
 
 
 
-		<c:if test="${not empty mensagem}">
-			<div class="alert-success">
-				<p>
-					<strong>Atenção!</strong> ${mensagem}
-				</p>
-			</div>
-		</c:if>
-
-
-		<c:if test="${empty agile}">
-			<h5>Não existem Cursos cadastrados</h5>
-		</c:if>
-
-		<c:if test="${not empty agile}">
-			<h5>Quantidade de cursos cadastrados: ${agile.size()}!</h5>
-
-			<div class="box-table-cadastrados">
-				<fieldset>
-					<legend>Lista de Cursos</legend>
-					<table class="table-cadastrados">
-						<thead>
-							<tr>
-								<th>ID</th>
-								<th>Nome do curso</th>
-								<th>Metodologia</th>
-								<th>Duração</th>
-								<th colspan="2">Presencial</th>
-							</tr>
-						</thead>
-						<tbody>
-							<c:forEach var="a" items="${agile}">
-								<tr>
-									<td>${a.id}</td>
-									<td>${a.nomeCurso}</td>
-									<td>${a.metodologia}</td>
-									<td>${a.duracao}</td>
-									<td>${a.presencial}</td>
-									<td><a href="/agile/${a.id}/excluir">Excluir
-											&#10060;</a></td>
-								</tr>
-							</c:forEach>
-						</tbody>
-					</table>
-				</fieldset>
-			</div>
-		</c:if>
+		<p>Para visualizar os cursos já cadastrados <a href="/agile-lista">acesse aqui.</a></p>
 
 	</main>
 	
