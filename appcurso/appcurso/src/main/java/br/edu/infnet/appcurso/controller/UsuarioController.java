@@ -46,7 +46,7 @@ public class UsuarioController {
 		
 		Usuario usuario = UsuarioRepository.excluir(id);
 
-		msg = "A inclusão do usuário " + usuario.getNome() + " foi realizada com sucesso!";
+		msg = "A exclusão do usuário " + usuario.getNome() + " foi realizada com sucesso!";
 		
 		return "redirect:/lista";
 	}
