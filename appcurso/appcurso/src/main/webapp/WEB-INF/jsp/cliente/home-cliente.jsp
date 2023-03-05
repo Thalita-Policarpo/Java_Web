@@ -23,7 +23,7 @@
 
 
 
-		<p>Para visualizar clientes já cadastrados <a href="/cliente-lista">acesse aqui.</a></p>
+		<p>Para visualizar clientes já cadastrados <a href="/lista-cliente">acesse aqui.</a></p>
 
 	</main>
 	

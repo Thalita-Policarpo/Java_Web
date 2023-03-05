@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 
 import br.edu.infnet.appcurso.model.domain.BancoDeDados;
-import br.edu.infnet.appcurso.repository.BancoDeDadosRepository;
+import br.edu.infnet.appcurso.model.repository.BancoDeDadosRepository;
 
 @Controller
 public class BancoDadosController {
@@ -26,7 +26,7 @@ public class BancoDadosController {
 		return "curso-banco-de-dados/cadastro-banco-dados";
 	}
 
-	@GetMapping(value = "/banco-dados-lista")
+	@GetMapping(value = "/lista-banco-dados")
 	public String telaListaBancoDados(Model model) {
 
 		model.addAttribute("cursosDados", BancoDeDadosRepository.obterLista());
@@ -34,7 +34,7 @@ public class BancoDadosController {
 		model.addAttribute("mensagem", msg);
 		msg = null;
 
-		return "curso-banco-de-dados/banco-dados-lista";
+		return "curso-banco-de-dados/lista-banco-dados";
 	}
 
 	@PostMapping(value = "/banco-de-dados/incluir")
@@ -44,7 +44,7 @@ public class BancoDadosController {
 
 		msg = "A inclusão do curso " + bancoDeDados.getNomeCurso() + " foi realizada com sucesso!";
 
-		return "redirect:/banco-dados-lista";
+		return "redirect:/lista-banco-dados";
 
 	}
 
@@ -55,7 +55,7 @@ public class BancoDadosController {
 
 		msg = "A exclusão do curso " + bancoDeDados.getNomeCurso() + " foi realizada com sucesso!";
 		
-		return "redirect:/banco-dados-lista";
+		return "redirect:/lista-banco-dados";
 	}
 
 }

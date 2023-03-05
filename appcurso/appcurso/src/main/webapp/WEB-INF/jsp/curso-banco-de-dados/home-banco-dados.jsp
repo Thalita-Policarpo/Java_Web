@@ -23,7 +23,7 @@
 		</p>
 
 		<p>
-			Para visualizar os cursos já cadastrados <a href="/banco-dados-lista">acesse
+			Para visualizar os cursos já cadastrados <a href="/lista-banco-dados">acesse
 				aqui.</a>
 		</p>
 

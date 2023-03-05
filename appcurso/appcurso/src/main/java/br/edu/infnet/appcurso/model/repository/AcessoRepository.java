@@ -1,4 +1,4 @@
-package br.edu.infnet.appcurso.repository;
+package br.edu.infnet.appcurso.model.repository;
 
 import br.edu.infnet.appcurso.model.domain.Usuario;
 

@@ -1,18 +1,21 @@
-package br.edu.infnet.appcurso.repository;
+package br.edu.infnet.appcurso.model.repository;
 
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 
+import org.springframework.stereotype.Repository;
+
 import br.edu.infnet.appcurso.model.domain.Usuario;
 
+@Repository
 public class UsuarioRepository {
 
 	private static Integer id = 1;
 
 	private static Map<Integer, Usuario> mapaUsuario = new HashMap<Integer, Usuario>();
 	
-	public static boolean incluir(Usuario usuario) {
+	public boolean incluir(Usuario usuario) {
 
 		usuario.setId(id++);
 
@@ -24,12 +27,12 @@ public class UsuarioRepository {
 		}
 	}
 
-	public static Usuario excluir(Integer key) {
+	public Usuario excluir(Integer key) {
 
 		return mapaUsuario.remove(key);
 	}
 
-	public static Collection<Usuario> obterLista() {
+	public Collection<Usuario> obterLista() {
 		return mapaUsuario.values();
 	}
 }

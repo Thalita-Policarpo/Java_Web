@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 
 import br.edu.infnet.appcurso.model.domain.Agile;
-import br.edu.infnet.appcurso.repository.AgileRepository;
+import br.edu.infnet.appcurso.model.repository.AgileRepository;
 
 @Controller
 public class AgileController {
@@ -26,7 +26,7 @@ public class AgileController {
 		return "curso-agile/cadastro-agile";
 	}
 
-	@GetMapping(value = "/agile-lista")
+	@GetMapping(value = "/lista-agile")
 	public String telaListaAgile(Model model) {
 
 		model.addAttribute("agiles", AgileRepository.obterLista());
@@ -34,7 +34,7 @@ public class AgileController {
 		model.addAttribute("mensagem", msg);
 		msg = null;
 
-		return "curso-agile/agile-lista";
+		return "curso-agile/lista-agile";
 	}
 
 	@PostMapping(value = "/agile/incluir")
@@ -44,8 +44,7 @@ public class AgileController {
 
 		msg = "A inclusão do curso " + agile.getNomeCurso() + " foi realizada com sucesso!";
 
-		return "redirect:/agile-lista";
-
+		return "redirect:/lista-agile";
 	}
 
 	@GetMapping(value = "/agile/{id}/excluir")
@@ -55,7 +54,6 @@ public class AgileController {
 
 		msg = "A exclusão do curso " + agile.getNomeCurso() + " foi realizada com sucesso!";
 		
-		return "redirect:/agile-lista";
+		return "redirect:/lista-agile";
 	}
-
 }

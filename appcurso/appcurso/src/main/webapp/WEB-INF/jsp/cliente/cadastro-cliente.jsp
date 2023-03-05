@@ -8,7 +8,7 @@
 <link rel="stylesheet" type="text/css" href="css/estilo.css">
 <script type="text/javascript" src="https://livejs.com/live.js"></script>
 
-<title>Cadastro Agile</title>
+<title>Cadastro do cliente</title>
 
 </head>
 <body>
@@ -17,16 +17,16 @@
 		<form class="form-cadastro" method="post" action="/cliente/incluir"
 			autocomplete="on">
 			<fieldset>
-				<legend>Cadastro Agile</legend>
+				<legend>Cadastro do cliente</legend>
 				<p>
-					<label for="nome">Nome do curso:</label> <input type="text"
+					<label for="nome">Nome:</label> <input type="text"
 						class="form-input-nome" id="nome" name="nome"
 						value="Thalita Policarpo" placeholder="Nome completo" required>
 				</p>
 				<p>
 					<label for="cpf">CPF:</label> <input type="text"
 						class="form-input-cpf" id="cpf" name="cpf"
-						value="Thalita Policarpo" placeholder="insira seu CPF" required>
+						value="000.000.000-00" placeholder="insira seu CPF" required>
 				</p>
 
 				<p>

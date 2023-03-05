@@ -9,7 +9,7 @@
 <link rel="stylesheet" type="text/css" href="css/estilo.css">
 <script type="text/javascript" src="https://livejs.com/live.js"></script>
 
-<title>Usuários Cadastrados</title>
+<title>Lista dos cursos Banco de Dados cadastrados</title>
 
 </head>
 <body>
@@ -25,36 +25,36 @@
 		</c:if>
 
 
-		<c:if test="${empty cursosProgramacao}">
-			<h5>Não existem Cursos cadastrados</h5>
+		<c:if test="${empty cursosDados}">
+			<h5>Não existem cursos de Banco de dados cadastrados</h5>
 		</c:if>
 
-		<c:if test="${not empty cursosProgramacao}">
-			<h5>Quantidade de cursos cadastrados: ${cursosProgramacao.size()}!</h5>
+		<c:if test="${not empty cursosDados}">
+			<h5>Quantidade de cursos cadastrados: ${cursosDados.size()}!</h5>
 
 			<div class="box-table-cadastrados">
 				<fieldset>
-					<legend>Lista de Cursos de Programação</legend>
+					<legend>Lista de Cursos de Banco de Dados</legend>
 					<table class="table-cadastrados">
 						<thead>
 							<tr>
 								<th>ID</th>
 								<th>Nome do curso</th>
-								<th>Linguagem</th>
-								<th>Instituicao</th>
-								<th>Duracao</th>
+								<th>Tipo</th>
+								<th>Exigência</th>
+								<th>Relacional</th>
 								<th> </th>
 							</tr>
 						</thead>
 						<tbody>
-							<c:forEach var="p" items="${cursosProgramacao}">
+							<c:forEach var="b" items="${cursosDados}">
 								<tr>
-									<td>${p.id}</td>
-									<td>${p.nomeCurso}</td>
-									<td>${p.linguagem}</td>
-									<td>${p.instituicao}</td>
-									<td>${p.duracao}</td>
-									<td><a href="/cursosProgramacao/${p.id}/excluir">Excluir
+									<td>${b.id}</td>
+									<td>${b.nomeCurso}</td>
+									<td>${b.tipo}</td>
+									<td>${b.exigencia}</td>
+									<td>${b.relacional}</td>
+									<td><a href="/cursosDados/${b.id}/excluir">Excluir
 											&#10060;</a></td>
 								</tr>
 							</c:forEach>

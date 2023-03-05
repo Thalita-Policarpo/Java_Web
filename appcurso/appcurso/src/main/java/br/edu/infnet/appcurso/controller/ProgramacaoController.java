@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 
 import br.edu.infnet.appcurso.model.domain.Programacao;
-import br.edu.infnet.appcurso.repository.ProgramacaoRepository;
+import br.edu.infnet.appcurso.model.repository.ProgramacaoRepository;
 
 @Controller
 public class ProgramacaoController {
@@ -26,7 +26,7 @@ public class ProgramacaoController {
 		return "curso-programacao/cadastro-programacao";
 	}
 
-	@GetMapping(value = "/programacao-lista")
+	@GetMapping(value = "/lista-programacao")
 	public String telaListaProgramacao(Model model) {
 
 		model.addAttribute("cursosProgramacao", ProgramacaoRepository.obterLista());
@@ -34,7 +34,7 @@ public class ProgramacaoController {
 		model.addAttribute("mensagem", msg);
 		msg = null;
 
-		return "curso-programacao/programacao-lista";
+		return "curso-programacao/lista-programacao";
 	}
 
 	@PostMapping(value = "/programacao/incluir")
@@ -44,7 +44,7 @@ public class ProgramacaoController {
 
 		msg = "A inclusão do curso " + programacao.getNomeCurso() + " foi realizada com sucesso!";
 
-		return "redirect:/programacao-lista";
+		return "redirect:/lista-programacao";
 
 	}
 
@@ -55,7 +55,7 @@ public class ProgramacaoController {
 
 		msg = "A exclusão do curso " + programacao.getNomeCurso() + " foi realizada com sucesso!";
 		
-		return "redirect:/programacao-lista";
+		return "redirect:/lista-programacao";
 	}
 
 }

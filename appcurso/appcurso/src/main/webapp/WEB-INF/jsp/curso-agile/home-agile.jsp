@@ -23,7 +23,7 @@
 
 
 
-		<p>Para visualizar os cursos já cadastrados <a href="/agile-lista">acesse aqui.</a></p>
+		<p>Para visualizar os cursos já cadastrados <a href="/lista-agile">acesse aqui.</a></p>
 
 	</main>
 	

@@ -9,7 +9,7 @@
 <link rel="stylesheet" type="text/css" href="css/estilo.css">
 <script type="text/javascript" src="https://livejs.com/live.js"></script>
 
-<title>Cursos Agile Cadastrados</title>
+<title>Lista dos cursos Agile cadastrados</title>
 
 </head>
 <body>
@@ -26,7 +26,7 @@
 
 
 		<c:if test="${empty agiles}">
-			<h5>Não existem Cursos cadastrados</h5>
+			<h5>Não existem cursos de Agile cadastrados</h5>
 		</c:if>
 
 		<c:if test="${not empty agiles}">

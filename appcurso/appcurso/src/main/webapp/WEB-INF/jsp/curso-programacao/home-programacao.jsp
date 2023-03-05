@@ -22,7 +22,7 @@
 		</p>
 
 		<p>
-			Para visualizar os cursos já cadastrados <a href="/programacao-lista">acesse
+			Para visualizar os cursos já cadastrados <a href="/lista-programacao">acesse
 				aqui.</a>
 		</p>
 

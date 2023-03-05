@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.SessionAttributes;
 import org.springframework.web.bind.support.SessionStatus;
 
 import br.edu.infnet.appcurso.model.domain.Usuario;
-import br.edu.infnet.appcurso.repository.AcessoRepository;
+import br.edu.infnet.appcurso.model.repository.AcessoRepository;
 
 @Controller
 @SessionAttributes("usuario")

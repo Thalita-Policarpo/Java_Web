@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 
 import br.edu.infnet.appcurso.model.domain.Cliente;
-import br.edu.infnet.appcurso.repository.ClienteRepository;
+import br.edu.infnet.appcurso.model.repository.ClienteRepository;
 
 @Controller
 public class ClienteController {
@@ -26,7 +26,7 @@ public class ClienteController {
 		return "cliente/cadastro-cliente";
 	}
 
-	@GetMapping(value = "/cliente-lista")
+	@GetMapping(value = "/lista-cliente")
 	public String telaListaCliente(Model model) {
 
 		model.addAttribute("clientes", ClienteRepository.obterLista());
@@ -34,7 +34,7 @@ public class ClienteController {
 		model.addAttribute("mensagem", msg);
 		msg = null;
 
-		return "cliente/cliente-lista";
+		return "cliente/lista-cliente";
 	}
 
 	@PostMapping(value = "/cliente/incluir")
@@ -44,7 +44,7 @@ public class ClienteController {
 
 		msg = "A inclusão do cliente " + cliente.getNome() + " foi realizada com sucesso!";
 
-		return "redirect:/cliente-lista";
+		return "redirect:/lista-cliente";
 
 	}
 
@@ -55,7 +55,7 @@ public class ClienteController {
 
 		msg = "A exclusão do cliente " + cliente.getNome() + " foi realizada com sucesso!";
 		
-		return "redirect:/cliente-lista";
+		return "redirect:/lista-cliente";
 	}
 
 }
