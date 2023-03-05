@@ -2,6 +2,8 @@
 <section name="Workbench">
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="C:\Users\Thalita\Desktop\Java_Web\appcurso"/>
+			<item value="C:\Users\Thalita\Desktop\Java_Web"/>
 			<item value="C:\Users\Thalita\Desktop\AT_Fundamentos_Java\appcurso"/>
 		</list>
 		<list key="projectNameTemplate">
