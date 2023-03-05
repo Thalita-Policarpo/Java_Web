@@ -84,7 +84,6 @@ h1 {
 }
 
 main h2 {
-	text-align: left;
 	font-family: 'Poppins', sans-serif;
 	color: #051C36;
 	font-size: 1.3em;
@@ -99,7 +98,6 @@ h5 {
 }
 
 p {
-	text-align: left;
 	color: black;
 	font-size: 1em;
 	padding: .5em 1em;
@@ -122,30 +120,21 @@ footer>p {
 
 /* Página inicial*/
 .banner {
-	display: inline-flex;
-	align-items: flex-start;
-	padding: 15px 35px;
+	display: grid;
+	grid-template-columns:	50% 50%;
+	align-items: center;
 	width: 100%;
-	flex: none;
-	order: 0;
-	align-self: stretch;
-	flex-grow: 0;
 }
 
 .titulo {
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	gap: 15px;
-	width: 45%;
-	flex: none;
-	order: 0;
-	flex-grow: 1;
+	padding: 50px 25px;
+	text-align:center;
+	width: 100%;
 }
 
 .img-banner {
-	width: 80%;
-	padding-left: 1.3em;
+	max-width: 100%;
+	padding-left: 20px;	
 }
 
 /* Formulário */
