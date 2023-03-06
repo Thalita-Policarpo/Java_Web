@@ -4,14 +4,17 @@ import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 
+import org.springframework.stereotype.Repository;
+
 import br.edu.infnet.appcurso.model.domain.Programacao;
 
+@Repository
 public class ProgramacaoRepository {
 	private static Integer id = 1;
 
 	private static Map<Integer, Programacao> mapaProgramacao = new HashMap<Integer, Programacao>();
 
-	public static boolean incluir(Programacao programacao) {
+	public boolean incluir(Programacao programacao) {
 
 		programacao.setId(id++);
 
@@ -23,12 +26,12 @@ public class ProgramacaoRepository {
 		}
 	}
 
-	public static Programacao excluir(Integer key) {
+	public Programacao excluir(Integer key) {
 
 		return mapaProgramacao.remove(key);
 	}
 
-	public static Collection<Programacao> obterLista() {
+	public Collection<Programacao> obterLista() {
 		return mapaProgramacao.values();
 	}
 }
