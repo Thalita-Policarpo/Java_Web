@@ -42,7 +42,7 @@
 								<th>Nome do curso</th>
 								<th>Metodologia</th>
 								<th>Duração</th>
-								<th>Presencial</th>								
+								<th>Modalidade</th>								
 								<th> </th>
 							</tr>
 						</thead>
@@ -53,7 +53,7 @@
 									<td>${a.nomeCurso}</td>
 									<td>${a.metodologia}</td>
 									<td>${a.duracao}</td>
-									<td>${a.presencial}</td>
+									<td>${a.modalidade}</td>
 									<td><a href="/agile/${a.id}/excluir">Excluir
 											&#10060;</a></td>
 								</tr>
