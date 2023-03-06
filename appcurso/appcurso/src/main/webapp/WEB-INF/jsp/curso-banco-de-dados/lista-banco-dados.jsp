@@ -52,8 +52,8 @@
 									<td>${b.id}</td>
 									<td>${b.nomeCurso}</td>
 									<td>${b.tipo}</td>
-									<td>${b.exigencia}</td>
-									<td>${b.relacional}</td>
+									<td>${b.comunicado}</td>
+									<td>${b.retorno}</td>
 									<td><a href="/cursosDados/${b.id}/excluir">Excluir
 											&#10060;</a></td>
 								</tr>
