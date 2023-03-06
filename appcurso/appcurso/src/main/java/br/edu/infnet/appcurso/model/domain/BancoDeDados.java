@@ -6,7 +6,9 @@ import br.edu.infnet.appcurso.model.exceptions.ValorZeradoException;
 public class BancoDeDados extends Curso {
 	private String tipo;
 	private boolean exigencia;
+	private String comunicado;
 	private boolean relacional;
+	private String retorno;
 
 	public BancoDeDados(String nomeCurso, float valor, String tipo, boolean exigencia, boolean relacional)
 			throws ValorZeradoException, TipoNuloException {
@@ -15,6 +17,18 @@ public class BancoDeDados extends Curso {
 
 		if (tipo == null) {
 			throw new TipoNuloException("O tipo do curso, precisa ser preenchido!");
+		}
+
+		if (exigencia) {
+			comunicado = " Requer conhecimento prévio ";
+		} else {
+			comunicado = " Não requer conhecimento prévio ";
+		}
+
+		if (relacional) {
+			retorno = " Sim ";
+		} else {
+			retorno = " Não";
 		}
 
 		this.tipo = tipo;
@@ -41,7 +55,7 @@ public class BancoDeDados extends Curso {
 		sb.append(";");
 		sb.append(tipo);
 		sb.append(";");
-		sb.append(exigencia ? " Requer conhecimento previo " : " Nao requer conhecimento previo ");
+		sb.append(comunicado);
 		sb.append(";");
 		sb.append(relacional ? "Banco de dados relacional" : "Banco de dados nao relacional");
 
@@ -71,6 +85,22 @@ public class BancoDeDados extends Curso {
 
 	public void setRelacional(boolean relacional) {
 		this.relacional = relacional;
+	}
+
+	public String getComunicado() {
+		return comunicado;
+	}
+
+	public void setComunicado(String comunicado) {
+		this.comunicado = comunicado;
+	}
+
+	public String getRetorno() {
+		return retorno;
+	}
+
+	public void setRetorno(String retorno) {
+		this.retorno = retorno;
 	}
 
 }

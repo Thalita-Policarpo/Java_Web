@@ -8,6 +8,7 @@ public class Agile extends Curso {
 	private String metodologia;
 	private int duracao;
 	private boolean presencial;
+	private String modalidade;
 
 	public Agile(String nomeCurso, float valor, String metodologia, int duracao, boolean presencial)
 			throws ValorZeradoException, DuracaoInvalidaException {
@@ -19,6 +20,12 @@ public class Agile extends Curso {
 
 		if (duracao > 6) {
 			throw new DuracaoInvalidaException("A duracao do curso nao pode ser superior a 6 meses");
+		}
+		
+		if (presencial) {
+			modalidade = "Presencial";
+		} else {
+			modalidade = "online";
 		}
 
 		this.metodologia = metodologia;
@@ -40,7 +47,7 @@ public class Agile extends Curso {
 	@Override
 	public String obterLinha() {
 		return getNomeCurso() + ";" + getValor() + ";" + this.getMetodologia() + ";" + this.getDuracao() + ";"
-				+ this.isPresencial() + "\r\n";
+				+ modalidade + "\r\n";
 
 	}
 
@@ -81,6 +88,14 @@ public class Agile extends Curso {
 
 	public void setPresencial(boolean presencial) {
 		this.presencial = presencial;
+	}
+
+	public String getModalidade() {
+		return modalidade;
+	}
+
+	public void setModalidade(String modalidade) {
+		this.modalidade = modalidade;
 	}
 
 }
