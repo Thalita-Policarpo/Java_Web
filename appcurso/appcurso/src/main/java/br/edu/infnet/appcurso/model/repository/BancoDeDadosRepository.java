@@ -4,14 +4,17 @@ import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 
+import org.springframework.stereotype.Repository;
+
 import br.edu.infnet.appcurso.model.domain.BancoDeDados;
 
+@Repository
 public class BancoDeDadosRepository {
 	private static Integer id = 1;
 
 	private static Map<Integer, BancoDeDados> mapaBancoDeDados = new HashMap<Integer, BancoDeDados>();
 
-	public static boolean incluir(BancoDeDados bancoDeDados) {
+	public boolean incluir(BancoDeDados bancoDeDados) {
 
 		bancoDeDados.setId(id++);
 
@@ -23,12 +26,12 @@ public class BancoDeDadosRepository {
 		}
 	}
 
-	public static BancoDeDados excluir(Integer key) {
+	public BancoDeDados excluir(Integer key) {
 
 		return mapaBancoDeDados.remove(key);
 	}
 
-	public static Collection<BancoDeDados> obterLista() {
+	public Collection<BancoDeDados> obterLista() {
 		return mapaBancoDeDados.values();
 	}
 }

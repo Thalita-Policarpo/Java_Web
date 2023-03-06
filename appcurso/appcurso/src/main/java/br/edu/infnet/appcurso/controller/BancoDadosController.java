@@ -1,5 +1,6 @@
 package br.edu.infnet.appcurso.controller;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -7,10 +8,13 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 
 import br.edu.infnet.appcurso.model.domain.BancoDeDados;
-import br.edu.infnet.appcurso.model.repository.BancoDeDadosRepository;
+import br.edu.infnet.appcurso.model.service.BancoDeDadosService;
 
 @Controller
 public class BancoDadosController {
+
+	@Autowired
+	private BancoDeDadosService bancoDeDadosService;
 
 	private String msg = null;
 
@@ -29,7 +33,7 @@ public class BancoDadosController {
 	@GetMapping(value = "/lista-banco-dados")
 	public String telaListaBancoDados(Model model) {
 
-		model.addAttribute("cursosDados", BancoDeDadosRepository.obterLista());
+		model.addAttribute("cursosDados", bancoDeDadosService.obterLista());
 
 		model.addAttribute("mensagem", msg);
 		msg = null;
@@ -40,7 +44,7 @@ public class BancoDadosController {
 	@PostMapping(value = "/banco-de-dados/incluir")
 	public String incluir(BancoDeDados bancoDeDados) {
 
-		BancoDeDadosRepository.incluir(bancoDeDados);
+		bancoDeDadosService.incluir(bancoDeDados);
 
 		msg = "A inclusão do curso " + bancoDeDados.getNomeCurso() + " foi realizada com sucesso!";
 
@@ -51,7 +55,7 @@ public class BancoDadosController {
 	@GetMapping(value = "/cursosDados/{id}/excluir")
 	public String excluir(@PathVariable Integer id) {
 		
-		BancoDeDados bancoDeDados = BancoDeDadosRepository.excluir(id);
+		BancoDeDados bancoDeDados = bancoDeDadosService.excluir(id);
 
 		msg = "A exclusão do curso " + bancoDeDados.getNomeCurso() + " foi realizada com sucesso!";
 		
