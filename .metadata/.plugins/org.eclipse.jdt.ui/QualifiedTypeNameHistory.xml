@@ -8,8 +8,6 @@
     <fullyQualifiedTypeName name="java.lang.StringBuffer"/>
     <fullyQualifiedTypeName name="br.edu.infnet.appcurso.model.domain.Curso"/>
     <fullyQualifiedTypeName name="br.edu.infnet.appcurso.model.exceptions.ValorZeradoException"/>
-    <fullyQualifiedTypeName name="br.edu.infnet.appcurso.model.domain.BancoDeDados"/>
-    <fullyQualifiedTypeName name="br.edu.infnet.appcurso.model.domain.Agile"/>
     <fullyQualifiedTypeName name="br.edu.infnet.appcurso.model.exceptions.DuracaoInvalidaException"/>
     <fullyQualifiedTypeName name="br.edu.infnet.appcurso.model.exceptions.PacoteSemClienteException"/>
     <fullyQualifiedTypeName name="br.edu.infnet.appcurso.model.domain.PacoteSemCursosException"/>
@@ -17,7 +15,6 @@
     <fullyQualifiedTypeName name="java.io.BufferedReader"/>
     <fullyQualifiedTypeName name="java.io.FileWriter"/>
     <fullyQualifiedTypeName name="java.io.BufferedWriter"/>
-    <fullyQualifiedTypeName name="br.edu.infnet.appcurso.model.domain.Programacao"/>
     <fullyQualifiedTypeName name="java.util.Arrays"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMapping"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMethod"/>
@@ -33,7 +30,6 @@
     <fullyQualifiedTypeName name="org.springframework.web.bind.support.SessionStatus"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestParam"/>
     <fullyQualifiedTypeName name="br.edu.infnet.appcurso.repository.BancoDeDadosRepository"/>
-    <fullyQualifiedTypeName name="br.edu.infnet.appcurso.model.domain.Cliente"/>
     <fullyQualifiedTypeName name="br.edu.infnet.appcurso.repository.ClienteRepository"/>
     <fullyQualifiedTypeName name="java.util.HashMap"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PostMapping"/>
@@ -51,4 +47,13 @@
     <fullyQualifiedTypeName name="br.edu.infnet.appcurso.model.domain.Usuario"/>
     <fullyQualifiedTypeName name="br.edu.infnet.appcurso.model.service.UsuarioService"/>
     <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+    <fullyQualifiedTypeName name="br.edu.infnet.appcurso.model.domain.Agile"/>
+    <fullyQualifiedTypeName name="br.edu.infnet.appcurso.model.service.BandoDeDadosService"/>
+    <fullyQualifiedTypeName name="br.edu.infnet.appcurso.model.domain.BancoDeDados"/>
+    <fullyQualifiedTypeName name="br.edu.infnet.appcurso.model.service.BancoDeDadosService"/>
+    <fullyQualifiedTypeName name="br.edu.infnet.appcurso.model.service.ProgramacaoService"/>
+    <fullyQualifiedTypeName name="br.edu.infnet.appcurso.model.domain.Programacao"/>
+    <fullyQualifiedTypeName name="br.edu.infnet.appcurso.model.repository.ClienteRepository"/>
+    <fullyQualifiedTypeName name="br.edu.infnet.appcurso.model.service.ClienteService"/>
+    <fullyQualifiedTypeName name="br.edu.infnet.appcurso.model.domain.Cliente"/>
 </qualifiedTypeNameHistroy>
