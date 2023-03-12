@@ -1,5 +1,9 @@
 package br.edu.infnet.appcurso;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
@@ -17,14 +21,43 @@ public class UsuarioLoader implements ApplicationRunner {
 	@Override
 	public void run(ApplicationArguments args) throws Exception {
 		
-		for (int i = 0; i < 5; i++) {
-			Usuario usuario = new Usuario("Administrador" + i, "administrador" + i + "@adm.com", "123" + i);
-			usuario.setId(i);
-			usuario.setGenero("feminino");
-			usuario.setNascimento("11-12-198" + i);
+		try {
 
-			usuarioService.incluir(usuario);
+			String arq = "usuario.txt";
 
+			try {
+				FileReader fileR = new FileReader(arq);
+				BufferedReader leitura = new BufferedReader(fileR);
+
+				String linha = leitura.readLine();
+				String[] campos = null;
+
+				while (linha != null) {
+
+					campos = linha.split(";");
+
+					Usuario usuario = new Usuario(campos[0], campos[1], campos[2]);
+					for (int i = 0; i < linha.length(); i++) {
+						usuario.setId(i);
+					}
+					usuario.setGenero(campos[3]);
+					usuario.setNascimento(campos[4]);
+
+					usuarioService.incluir(usuario);
+
+					linha = leitura.readLine();
+				}
+
+				leitura.close();
+				fileR.close();
+
+			} catch (IOException e) {
+				System.out.println("[ERRO]" + e.getMessage());
+
+			}
+
+		} finally {
+			System.out.println("Processamento realizado!");
 		}
 		
 	}

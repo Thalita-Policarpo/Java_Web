@@ -1,5 +1,9 @@
 package br.edu.infnet.appcurso;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
@@ -16,14 +20,42 @@ public class BancoDeDadosLoader implements ApplicationRunner {
 
 	@Override
 	public void run(ApplicationArguments args) throws Exception {
-		
-		for (int i = 0; i < 5; i++) {
-			BancoDeDados bancoDeDados = new BancoDeDados("Banco de dados" + i, 560 + i, "SQL", false, true);
 
-			bancoDeDadosService.incluir(bancoDeDados);
+		try {
 
+			String arq = "bancoDeDados.txt";
+
+			try {
+				FileReader fileR = new FileReader(arq);
+				BufferedReader leitura = new BufferedReader(fileR);
+
+				String linha = leitura.readLine();
+				String[] campos = null;
+
+				while (linha != null) {
+
+					campos = linha.split(";");
+
+					BancoDeDados bancoDeDados = new BancoDeDados(campos[0], Float.parseFloat(campos[1]), campos[2],
+							campos[3], Boolean.parseBoolean(campos[4]), Boolean.parseBoolean(campos[5]));
+
+					bancoDeDadosService.incluir(bancoDeDados);
+
+					linha = leitura.readLine();
+				}
+
+				leitura.close();
+				fileR.close();
+
+			} catch (IOException e) {
+				System.out.println("[ERRO]" + e.getMessage());
+
+			}
+
+		} finally {
+			System.out.println("Processamento realizado!");
 		}
-		
+
 	}
 
 }
