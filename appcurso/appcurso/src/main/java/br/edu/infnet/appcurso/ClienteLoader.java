@@ -58,7 +58,6 @@ public class ClienteLoader implements ApplicationRunner {
 			} finally {
 				System.out.println("Processamento realizado!");
 			}
-
 	}
 
 }
