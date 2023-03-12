@@ -42,7 +42,8 @@
 							<th>Nome</th>
 							<th>Nascimento</th>
 							<th>Gênero</th>
-							<th colspan="2">E-mail</th>
+							<th>E-mail</th>
+							<th></th>
 						</tr>
 					</thead>
 					<tbody>

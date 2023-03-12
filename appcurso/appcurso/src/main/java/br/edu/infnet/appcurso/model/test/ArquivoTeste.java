@@ -66,7 +66,7 @@ public class ArquivoTeste {
 					case "A":
 
 						try {
-							agile = new Agile(campos[1], Float.valueOf(campos[2]), campos[4],
+							agile = new Agile(campos[1], Float.valueOf(campos[2]), campos[3], campos[4],
 									Integer.parseInt(campos[5]), Boolean.valueOf(campos[2]));
 							curso.add(agile);
 						} catch (ValorZeradoException | DuracaoInvalidaException e) {
@@ -76,7 +76,7 @@ public class ArquivoTeste {
 						break;
 					case "B":
 						try {
-							bancoDados = new BancoDeDados(campos[1], Float.valueOf(campos[2]),
+							bancoDados = new BancoDeDados(campos[1], Float.valueOf(campos[2]), campos[3],
 									campos[4], Boolean.valueOf(campos[5]),
 									Boolean.valueOf(campos[6]));
 							curso.add(bancoDados);
@@ -87,7 +87,7 @@ public class ArquivoTeste {
 						break;
 					case "P":
 						try {
-							programacao = new Programacao(campos[1], Float.valueOf(campos[2]),
+							programacao = new Programacao(campos[1], Float.valueOf(campos[2]), campos[3],
 									campos[4], campos[5], Integer.parseInt(campos[6]));
 							curso.add(programacao);
 						} catch (ValorZeradoException | DuracaoInvalidaException e) {

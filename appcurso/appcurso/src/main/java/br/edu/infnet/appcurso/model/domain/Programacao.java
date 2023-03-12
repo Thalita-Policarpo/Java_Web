@@ -8,9 +8,10 @@ public class Programacao extends Curso {
 	private String instituicao;
 	private int duracao;
 
-	public Programacao(String nomeCurso, float valor, String linguagem, String instituição, int duracao)
+	public Programacao(String nomeCurso, float valor, String descricao, String linguagem, String instituição,
+			int duracao)
 			throws ValorZeradoException, DuracaoInvalidaException {
-		super(nomeCurso, valor);
+		super(nomeCurso, valor, descricao);
 
 		if (duracao < 1) {
 			throw new DuracaoInvalidaException("A duracao do curso nao pode ser inferior a 1h");

@@ -10,9 +10,9 @@ public class Agile extends Curso {
 	private boolean presencial;
 	private String modalidade;
 
-	public Agile(String nomeCurso, float valor, String metodologia, int duracao, boolean presencial)
+	public Agile(String nomeCurso, float valor, String descricao, String metodologia, int duracao, boolean presencial)
 			throws ValorZeradoException, DuracaoInvalidaException {
-		super(nomeCurso, valor);
+		super(nomeCurso, valor, descricao);
 
 		if (duracao < 1) {
 			throw new DuracaoInvalidaException("A duracao do curso nao pode ser inferior a 1 mes");

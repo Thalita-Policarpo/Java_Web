@@ -10,10 +10,11 @@ public class BancoDeDados extends Curso {
 	private boolean relacional;
 	private String retorno;
 
-	public BancoDeDados(String nomeCurso, float valor, String tipo, boolean exigencia, boolean relacional)
+	public BancoDeDados(String nomeCurso, float valor, String descricao, String tipo, boolean exigencia,
+			boolean relacional)
 			throws ValorZeradoException, TipoNuloException {
 
-		super(nomeCurso, valor);
+		super(nomeCurso, valor, descricao);
 
 		if (tipo == null) {
 			throw new TipoNuloException("O tipo do curso, precisa ser preenchido!");
@@ -26,9 +27,9 @@ public class BancoDeDados extends Curso {
 		}
 
 		if (relacional) {
-			retorno = " Sim ";
+			retorno = "Banco de dados relacional";
 		} else {
-			retorno = " Não";
+			retorno = "Banco de dados não relacional";
 		}
 
 		this.tipo = tipo;

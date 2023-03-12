@@ -30,7 +30,7 @@ public class PacoteTeste {
 		List<Curso> cursoP9 = new ArrayList<Curso>();
 		
 		try {
-			BancoDeDados b1 = new BancoDeDados("SQL", 800, "Banco de dados", true, true);
+			BancoDeDados b1 = new BancoDeDados("SQL", 800, "descrição", "Banco de dados", true, true);
 			cursoP1.add(b1);
 			cursoP2.add(b1);
 			cursoP3.add(b1);
@@ -40,7 +40,7 @@ public class PacoteTeste {
 		
 		
 		try {
-			BancoDeDados b2 = new BancoDeDados("NoSQL", 800, "Banco de dados", false, false);
+			BancoDeDados b2 = new BancoDeDados("NoSQL", 800, "descrição", "Banco de dados", false, false);
 			cursoP2.add(b2);
 			cursoP3.add(b2);
 		} catch (ValorZeradoException | TipoNuloException e) {
@@ -49,7 +49,7 @@ public class PacoteTeste {
 		
 		
 		try {
-			Agile a1 = new Agile("Kanbam", 500, "metodologia Aigl", 3, false);
+			Agile a1 = new Agile("Kanbam", 500, "descrição", "metodologia Aigl", 3, false);
 			cursoP3.add(a1);
 		} catch (ValorZeradoException e) {
 			System.out.println("[ERRO] " + e.getMessage());
@@ -58,7 +58,7 @@ public class PacoteTeste {
 		}
 		
 		try {
-			BancoDeDados b4 = new BancoDeDados("NoSQL", -800, "Banco de dados", false, false);
+			BancoDeDados b4 = new BancoDeDados("NoSQL", -800, "descrição", "Banco de dados", false, false);
 			cursoP4.add(b4);
 			cursoP5.add(b4);
 		} catch (ValorZeradoException | TipoNuloException e) {
@@ -67,14 +67,14 @@ public class PacoteTeste {
 		
 		
 		try {
-			BancoDeDados b5 = new BancoDeDados("JSON", 0, "Banco de dados", true, false);
+			BancoDeDados b5 = new BancoDeDados("JSON", 0, "descrição", "Banco de dados", true, false);
 			cursoP5.add(b5);
 		} catch (ValorZeradoException | TipoNuloException e) {
 			System.out.println("[ERRO] " + e.getMessage());
 		}
 
 		try {
-			BancoDeDados b6 = new BancoDeDados("NoSQL", 800, "Banco de dados", false, false);
+			BancoDeDados b6 = new BancoDeDados("NoSQL", 800, "descrição", "Banco de dados", false, false);
 			cursoP7.add(b6);
 			cursoP6.add(b6);
 		} catch (ValorZeradoException | TipoNuloException e) {
@@ -83,7 +83,7 @@ public class PacoteTeste {
 		
 		
 		try {
-			BancoDeDados b7 = new BancoDeDados("JSON", 900, "Banco de dados", true, false);
+			BancoDeDados b7 = new BancoDeDados("JSON", 900, "descrição", "Banco de dados", true, false);
 			cursoP6.add(b7);
 			cursoP7.add(b7);
 		} catch (ValorZeradoException | TipoNuloException e) {
