@@ -1,14 +1,33 @@
 package br.edu.infnet.appcurso.model.domain;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
 import br.edu.infnet.appcurso.model.exceptions.DadosPessoaisNaoPreenchidosException;
 
+@Entity
+@Table(name = "TCliente")
 public class Cliente {
+	
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
 	private String nome;
 	private String cpf;
 	private int idade;
 
+
+	public Cliente() {
+
+	}
+
 	public Cliente(String nome, String cpf, int idade) throws DadosPessoaisNaoPreenchidosException {
+
+		this();
+
 		if (nome == null) {
 			throw new DadosPessoaisNaoPreenchidosException("O nome precisa ser preenchido!");
 		}
@@ -23,6 +42,18 @@ public class Cliente {
 
 		this.nome = nome;
 		this.cpf = cpf;
+		this.idade = idade;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public void setCpf(String cpf) {
+		this.cpf = cpf;
+	}
+
+	public void setIdade(int idade) {
 		this.idade = idade;
 	}
 

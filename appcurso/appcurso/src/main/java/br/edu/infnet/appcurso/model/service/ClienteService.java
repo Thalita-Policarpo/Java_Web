@@ -15,17 +15,16 @@ public class ClienteService {
 	private ClienteRepository clienteRepository;
 
 
-	public boolean incluir(Cliente cliente) {
-		return clienteRepository.incluir(cliente);
+	public Cliente incluir(Cliente cliente) {
+		return clienteRepository.save(cliente);
 	}
 	
-	public Cliente excluir(Integer key) {
-
-		return clienteRepository.excluir(key);
+	public void excluir(Integer key) {
+		clienteRepository.deleteById(key);
 	}
 
 	public Collection<Cliente> obterLista() {
 
-		return clienteRepository.obterLista();
+		return (Collection<Cliente>) clienteRepository.findAll();
 	}
 }
