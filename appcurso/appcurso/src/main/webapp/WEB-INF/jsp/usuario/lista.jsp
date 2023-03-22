@@ -43,6 +43,7 @@
 							<th>Nascimento</th>
 							<th>Gênero</th>
 							<th>E-mail</th>
+							<th>Clientes</th>							
 							<th></th>
 						</tr>
 					</thead>
@@ -54,6 +55,7 @@
 								<td>${u.nascimento}</td>
 								<td>${u.genero}</td>
 								<td>${u.email}</td>
+								<td>${u.clientes.size()}</td>
 								<td><a href="/usuario/${u.id}/excluir">Excluir &#10060;</a></td>
 							</tr>
 						</c:forEach>

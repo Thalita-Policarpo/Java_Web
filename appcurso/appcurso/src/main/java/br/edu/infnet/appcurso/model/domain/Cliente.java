@@ -4,6 +4,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 import br.edu.infnet.appcurso.model.exceptions.DadosPessoaisNaoPreenchidosException;
@@ -18,7 +20,9 @@ public class Cliente {
 	private String nome;
 	private String cpf;
 	private int idade;
-
+	@ManyToOne
+	@JoinColumn(name = "idUsuario")
+	private Usuario usuario;
 
 	public Cliente() {
 
@@ -89,6 +93,14 @@ public class Cliente {
 
 	public int getIdade() {
 		return idade;
+	}
+
+	public Usuario getUsuario() {
+		return usuario;
+	}
+
+	public void setUsuario(Usuario usuario) {
+		this.usuario = usuario;
 	}
 
 }

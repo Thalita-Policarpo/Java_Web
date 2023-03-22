@@ -28,14 +28,14 @@
 					<p>
 						<label for="email">E-mail:</label> <input type="email"
 							class="form-input-email" name="email"
-							value="thalita_policarpo@outlook.com"
+							value="thalita@admin.com"
 							placeholder="exemplo@exmail.com.br"
 							pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required
 							autocomplete="email">
 					</p>
 					<p>
 						<label for="senha">Senha:</label> <input type="password"
-							class="form-input-senha" name="senha" value="thalita_policarpo@outlook.com"
+							class="form-input-senha" name="senha" value="123456"
 							placeholder="Digite sua senha (mínimo 8 letras)" required
 							minlength="6" maxlength="10" autocomplete="new-password">
 					</p>

@@ -42,6 +42,7 @@
 								<th>Nome</th>
 								<th>CPF</th>
 								<th>Idade</th>							
+								<th>Usuário</th>							
 								<th> </th>
 							</tr>
 						</thead>
@@ -52,6 +53,7 @@
 									<td>${c.nome}</td>
 									<td>${c.cpf}</td>
 									<td>${c.idade}</td>
+									<td>${c.usuario.nome}</td>
 									<td><a href="/cliente/${c.id}/excluir">Excluir
 											&#10060;</a></td>
 								</tr>

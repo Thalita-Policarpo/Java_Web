@@ -7,11 +7,14 @@ import java.io.IOException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
+import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
 import br.edu.infnet.appcurso.model.domain.Cliente;
+import br.edu.infnet.appcurso.model.domain.Usuario;
 import br.edu.infnet.appcurso.model.service.ClienteService;
 
+@Order(2)
 @Component
 public class ClienteLoader implements ApplicationRunner {
 
@@ -38,8 +41,12 @@ public class ClienteLoader implements ApplicationRunner {
 
 						campos = linha.split(";");
 
+						Usuario usuario = new Usuario();
+						usuario.setId(1);
 
 							Cliente cliente = new Cliente(campos[0], campos[1], Integer.parseInt(campos[2]));
+
+							cliente.setUsuario(usuario);
 
 							clienteService.incluir(cliente);
 

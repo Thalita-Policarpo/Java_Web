@@ -6,8 +6,10 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.SessionAttribute;
 
 import br.edu.infnet.appcurso.model.domain.Cliente;
+import br.edu.infnet.appcurso.model.domain.Usuario;
 import br.edu.infnet.appcurso.model.service.ClienteService;
 
 @Controller
@@ -31,9 +33,9 @@ public class ClienteController {
 	}
 
 	@GetMapping(value = "/lista-cliente")
-	public String telaListaCliente(Model model) {
+	public String telaListaCliente(Model model, @SessionAttribute("usuario") Usuario usuario) {
 
-		model.addAttribute("clientes", clienteService.obterLista());
+		model.addAttribute("clientes", clienteService.obterLista(usuario));
 
 		model.addAttribute("mensagem", msg);
 		msg = null;
@@ -42,7 +44,9 @@ public class ClienteController {
 	}
 
 	@PostMapping(value = "/cliente/incluir")
-	public String incluir(Cliente cliente) {
+	public String incluir(Cliente cliente, @SessionAttribute("usuario") Usuario usuario) {
+
+		cliente.setUsuario(usuario);
 
 		clienteService.incluir(cliente);
 
