@@ -7,11 +7,13 @@ import java.io.IOException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
+import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
 import br.edu.infnet.appcurso.model.domain.Agile;
 import br.edu.infnet.appcurso.model.service.AgileService;
 
+@Order(3)
 @Component
 public class AgileLoader implements ApplicationRunner {
 
@@ -36,8 +38,10 @@ public class AgileLoader implements ApplicationRunner {
 
 					campos = linha.split(";");
 
+
 					Agile agile = new Agile(campos[0], Float.parseFloat(campos[1]), campos[2], campos[3],
 							Integer.parseInt(campos[4]), Boolean.parseBoolean(campos[5]));
+
 
 					agileService.incluir(agile);
 
@@ -55,5 +59,16 @@ public class AgileLoader implements ApplicationRunner {
 		} finally {
 			System.out.println("Processamento realizado!");
 		}
+		
+//		System.out.println("Lista Agile:");
+//		for (Agile agile : agileService.obterLista()) {
+//
+//			System.out.printf("%d - %s - %s\n",
+//					agile.getId(),
+//					agile.getNomeCurso(), agile.getMetodologia()
+//					);
+//
+//		}
+
 	}
 }

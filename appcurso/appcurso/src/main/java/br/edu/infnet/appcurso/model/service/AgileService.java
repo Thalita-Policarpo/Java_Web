@@ -15,17 +15,22 @@ public class AgileService {
 	private AgileRepository agileRepository;
 
 
-	public boolean incluir(Agile agile) {
-		return agileRepository.incluir(agile);
+	public Agile incluir(Agile agile) {
+		return agileRepository.save(agile);
 	}
 	
-	public Agile excluir(Integer key) {
+	public void excluir(Integer key) {
 
-		return agileRepository.excluir(key);
+		agileRepository.deleteById(key);
 	}
 
 	public Collection<Agile> obterLista() {
 
-		return agileRepository.obterLista();
+		return (Collection<Agile>) agileRepository.findAll();
+	}
+
+	public Agile obterPorId(Integer id) {
+
+		return agileRepository.findById(id).orElse(null);
 	}
 }

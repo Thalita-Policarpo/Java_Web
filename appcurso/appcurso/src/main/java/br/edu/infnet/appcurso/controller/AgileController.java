@@ -54,9 +54,9 @@ public class AgileController {
 	@GetMapping(value = "/agile/{id}/excluir")
 	public String excluir(@PathVariable Integer id) {
 		
-		Agile agile = agileService.excluir(id);
+		agileService.excluir(id);
 
-		msg = "A exclusão do curso " + agile.getNomeCurso() + " foi realizada com sucesso!";
+		msg = "A exclusão do curso " + id + " foi realizada com sucesso!";
 		
 		return "redirect:/lista-agile";
 	}

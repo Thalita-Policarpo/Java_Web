@@ -1,14 +1,23 @@
 package br.edu.infnet.appcurso.model.domain;
 
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
 import br.edu.infnet.appcurso.model.exceptions.DuracaoInvalidaException;
 import br.edu.infnet.appcurso.model.exceptions.ValorZeradoException;
 
+@Entity
+@Table(name = "TAgile")
 public class Agile extends Curso {
 
 	private String metodologia;
 	private int duracao;
 	private boolean presencial;
 	private String modalidade;
+
+	public Agile() {
+		super();
+	}
 
 	public Agile(String nomeCurso, float valor, String descricao, String metodologia, int duracao, boolean presencial)
 			throws ValorZeradoException, DuracaoInvalidaException {
@@ -22,15 +31,15 @@ public class Agile extends Curso {
 			throw new DuracaoInvalidaException("A duracao do curso nao pode ser superior a 6 meses");
 		}
 		
+		this.metodologia = metodologia;
+		this.duracao = duracao;
+		this.presencial = presencial;
+
 		if (presencial) {
 			modalidade = "Presencial";
 		} else {
 			modalidade = "online";
 		}
-
-		this.metodologia = metodologia;
-		this.duracao = duracao;
-		this.presencial = presencial;
 	}
 
 	@Override
