@@ -55,9 +55,9 @@ public class ProgramacaoController {
 	@GetMapping(value = "/cursosProgramacao/{id}/excluir")
 	public String excluir(@PathVariable Integer id) {
 		
-		Programacao programacao = programacaoService.excluir(id);
+		programacaoService.excluir(id);
 
-		msg = "A exclusão do curso " + programacao.getNomeCurso() + " foi realizada com sucesso!";
+		msg = "A exclusão do curso " + id + " foi realizada com sucesso!";
 		
 		return "redirect:/lista-programacao";
 	}
