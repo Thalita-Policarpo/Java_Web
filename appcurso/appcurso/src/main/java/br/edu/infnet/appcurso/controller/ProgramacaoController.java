@@ -6,8 +6,10 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.SessionAttribute;
 
 import br.edu.infnet.appcurso.model.domain.Programacao;
+import br.edu.infnet.appcurso.model.domain.Usuario;
 import br.edu.infnet.appcurso.model.service.ProgramacaoService;
 
 @Controller
@@ -18,12 +20,6 @@ public class ProgramacaoController {
 	
 	private String msg = null;
 
-	@GetMapping(value = "/home-programacao")
-	public String TelaProgramacao() {
-
-		return "curso-programacao/home-programacao";
-	}
-
 	@GetMapping(value = "/cadastro-programacao")
 	public String TelaCadastroProgramacao() {
 
@@ -31,9 +27,9 @@ public class ProgramacaoController {
 	}
 
 	@GetMapping(value = "/lista-programacao")
-	public String telaListaProgramacao(Model model) {
+	public String telaListaProgramacao(Model model, @SessionAttribute("usuario") Usuario usuario) {
 
-		model.addAttribute("cursosProgramacao", programacaoService.obterLista());
+		model.addAttribute("cursosProgramacao", programacaoService.obterLista(usuario));
 
 		model.addAttribute("mensagem", msg);
 		msg = null;
@@ -42,7 +38,9 @@ public class ProgramacaoController {
 	}
 
 	@PostMapping(value = "/programacao/incluir")
-	public String incluir(Programacao programacao) {
+	public String incluir(Programacao programacao, @SessionAttribute("usuario") Usuario usuario) {
+
+		programacao.setUsuario(usuario);
 
 		programacaoService.incluir(programacao);
 
@@ -55,9 +53,11 @@ public class ProgramacaoController {
 	@GetMapping(value = "/cursosProgramacao/{id}/excluir")
 	public String excluir(@PathVariable Integer id) {
 		
+		Programacao programacao = programacaoService.obterPorId(id);
+
 		programacaoService.excluir(id);
 
-		msg = "A exclusão do curso " + id + " foi realizada com sucesso!";
+		msg = "A exclusão do curso " + programacao.getNomeCurso() + " foi realizada com sucesso!";
 		
 		return "redirect:/lista-programacao";
 	}

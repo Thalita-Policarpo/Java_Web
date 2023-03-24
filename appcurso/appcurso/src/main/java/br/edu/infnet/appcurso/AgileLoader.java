@@ -11,6 +11,7 @@ import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
 import br.edu.infnet.appcurso.model.domain.Agile;
+import br.edu.infnet.appcurso.model.domain.Usuario;
 import br.edu.infnet.appcurso.model.service.AgileService;
 
 @Order(3)
@@ -37,11 +38,14 @@ public class AgileLoader implements ApplicationRunner {
 				while (linha != null) {
 
 					campos = linha.split(";");
-
+					
+					Usuario admin = new Usuario();
+					admin.setId(1);
 
 					Agile agile = new Agile(campos[0], Float.parseFloat(campos[1]), campos[2], campos[3],
 							Integer.parseInt(campos[4]), Boolean.parseBoolean(campos[5]));
 
+					agile.setUsuario(admin);
 
 					agileService.incluir(agile);
 

@@ -6,8 +6,10 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.SessionAttribute;
 
 import br.edu.infnet.appcurso.model.domain.BancoDeDados;
+import br.edu.infnet.appcurso.model.domain.Usuario;
 import br.edu.infnet.appcurso.model.service.BancoDeDadosService;
 
 @Controller
@@ -18,12 +20,6 @@ public class BancoDadosController {
 
 	private String msg = null;
 
-	@GetMapping(value = "/home-banco-dados")
-	public String TelaBancoDeDados() {
-
-		return "curso-banco-de-dados/home-banco-dados";
-	}
-
 	@GetMapping(value = "/cadastro-banco-dados")
 	public String TelaCadastroBancoDeDados() {
 
@@ -31,9 +27,9 @@ public class BancoDadosController {
 	}
 
 	@GetMapping(value = "/lista-banco-dados")
-	public String telaListaBancoDados(Model model) {
+	public String telaListaBancoDados(Model model, @SessionAttribute("usuario") Usuario usuario) {
 
-		model.addAttribute("cursosDados", bancoDeDadosService.obterLista());
+		model.addAttribute("cursosDados", bancoDeDadosService.obterLista(usuario));
 
 		model.addAttribute("mensagem", msg);
 		msg = null;
@@ -42,7 +38,9 @@ public class BancoDadosController {
 	}
 
 	@PostMapping(value = "/banco-de-dados/incluir")
-	public String incluir(BancoDeDados bancoDeDados) {
+	public String incluir(BancoDeDados bancoDeDados, @SessionAttribute("usuario") Usuario usuario) {
+
+		bancoDeDados.setUsuario(usuario);
 
 		bancoDeDadosService.incluir(bancoDeDados);
 
@@ -55,11 +53,12 @@ public class BancoDadosController {
 	@GetMapping(value = "/cursosDados/{id}/excluir")
 	public String excluir(@PathVariable Integer id) {
 		
+		BancoDeDados bancoDeDados = bancoDeDadosService.obterPorId(id);
+		
 		bancoDeDadosService.excluir(id);
 
-		msg = "A exclusão do curso " + id + " foi realizada com sucesso!";
+		msg = "A exclusão do curso " + bancoDeDados.getNomeCurso() + " foi realizada com sucesso!";
 		
 		return "redirect:/lista-banco-dados";
 	}
-
 }

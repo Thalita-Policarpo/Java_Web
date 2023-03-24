@@ -6,6 +6,8 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Inheritance;
 import javax.persistence.InheritanceType;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 import br.edu.infnet.appcurso.model.exceptions.ValorZeradoException;
@@ -21,6 +23,9 @@ public abstract class Curso {
 	private String nomeCurso;
 	private String descricao;
 	private float valor;
+	@ManyToOne
+	@JoinColumn(name = "idUsuario")
+	private Usuario usuario;
 
 	public Curso() {
 
@@ -86,6 +91,14 @@ public abstract class Curso {
 
 	public void setValor(float valor) {
 		this.valor = valor;
+	}
+
+	public Usuario getUsuario() {
+		return usuario;
+	}
+
+	public void setUsuario(Usuario usuario) {
+		this.usuario = usuario;
 	}
 
 }

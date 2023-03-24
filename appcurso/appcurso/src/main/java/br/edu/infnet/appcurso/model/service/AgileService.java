@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import br.edu.infnet.appcurso.model.domain.Agile;
+import br.edu.infnet.appcurso.model.domain.Usuario;
 import br.edu.infnet.appcurso.model.repository.AgileRepository;
 
 @Service
@@ -25,6 +26,10 @@ public class AgileService {
 
 	public Collection<Agile> obterLista() {
 		return (Collection<Agile>) agileRepository.findAll();
+	}
+
+	public Collection<Agile> obterLista(Usuario usuario) {
+		return (Collection<Agile>) agileRepository.obterLista(usuario.getId());
 	}
 
 	public Agile obterPorId(Integer id) {

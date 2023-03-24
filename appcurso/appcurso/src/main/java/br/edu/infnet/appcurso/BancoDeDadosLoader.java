@@ -11,6 +11,7 @@ import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
 import br.edu.infnet.appcurso.model.domain.BancoDeDados;
+import br.edu.infnet.appcurso.model.domain.Usuario;
 import br.edu.infnet.appcurso.model.service.BancoDeDadosService;
 
 @Order(4)
@@ -38,8 +39,13 @@ public class BancoDeDadosLoader implements ApplicationRunner {
 
 					campos = linha.split(";");
 
+					Usuario admin = new Usuario();
+					admin.setId(1);
+
 					BancoDeDados bancoDeDados = new BancoDeDados(campos[0], Float.parseFloat(campos[1]), campos[2],
 							campos[3], Boolean.parseBoolean(campos[4]), Boolean.parseBoolean(campos[5]));
+
+					bancoDeDados.setUsuario(admin);
 
 					bancoDeDadosService.incluir(bancoDeDados);
 
@@ -57,7 +63,5 @@ public class BancoDeDadosLoader implements ApplicationRunner {
 		} finally {
 			System.out.println("Processamento realizado!");
 		}
-
 	}
-
 }

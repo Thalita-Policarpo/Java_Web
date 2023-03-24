@@ -11,6 +11,7 @@ import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
 import br.edu.infnet.appcurso.model.domain.Programacao;
+import br.edu.infnet.appcurso.model.domain.Usuario;
 import br.edu.infnet.appcurso.model.service.ProgramacaoService;
 
 @Order(5)
@@ -38,8 +39,13 @@ public class ProgramacaoLoader implements ApplicationRunner {
 
 					campos = linha.split(";");
 
+					Usuario admin = new Usuario();
+					admin.setId(1);
+
 					Programacao programacao = new Programacao(campos[0], Integer.parseInt(campos[1]), campos[2],
 							campos[3], campos[4], Integer.parseInt(campos[5]));
+
+					programacao.setUsuario(admin);
 
 					programacaoService.incluir(programacao);
 
