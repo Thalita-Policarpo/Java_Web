@@ -59,16 +59,5 @@ public class AgileLoader implements ApplicationRunner {
 		} finally {
 			System.out.println("Processamento realizado!");
 		}
-		
-//		System.out.println("Lista Agile:");
-//		for (Agile agile : agileService.obterLista()) {
-//
-//			System.out.printf("%d - %s - %s\n",
-//					agile.getId(),
-//					agile.getNomeCurso(), agile.getMetodologia()
-//					);
-//
-//		}
-
 	}
 }
