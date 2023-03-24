@@ -9,7 +9,7 @@
 <link rel="stylesheet" type="text/css" href="css/estilo.css">
 <script type="text/javascript" src="https://livejs.com/live.js"></script>
 
-<title>Lista dos cursos Banco de Dados cadastrados</title>
+<title>Lista dos cursos cadastrados</title>
 
 </head>
 <body>
@@ -25,36 +25,34 @@
 		</c:if>
 
 
-		<c:if test="${empty cursosDados}">
-			<h5>Não existem cursos de Banco de dados cadastrados</h5>
+		<c:if test="${empty cursos}">
+			<h5>Não existem cursos cadastrados</h5>
 		</c:if>
 
-		<c:if test="${not empty cursosDados}">
-			<h5>Quantidade de cursos cadastrados: ${cursosDados.size()}!</h5>
+		<c:if test="${not empty cursos}">
+			<h5>Quantidade de cursos cadastrados: ${cursos.size()}!</h5>
 
 			<div class="box-table-cadastrados">
 				<fieldset>
-					<legend>Lista de Cursos de Banco de Dados</legend>
+					<legend>Lista de Cursos</legend>
 					<table class="table-cadastrados">
 						<thead>
 							<tr>
 								<th>ID</th>
-								<th>Nome do curso</th>
-								<th>Tipo</th>
-								<th>Exigência</th>
-								<th>Relacional</th>
-								<th></th>
+								<th>Descrição</th>
+								<th>Nome do curso</th>						
+								<th>Valor</th>						
+								<th> </th>
 							</tr>
 						</thead>
 						<tbody>
-							<c:forEach var="b" items="${cursosDados}">
+							<c:forEach var="c" items="${cursos}">
 								<tr>
-									<td>${b.id}</td>
-									<td>${b.nomeCurso}</td>
-									<td>${b.tipo}</td>
-									<td>${b.comunicado}</td>
-									<td>${b.retorno}</td>
-									<td><a href="/cursosDados/${b.id}/excluir">Excluir
+									<td>${c.id}</td>
+									<td>${c.descricao}</td>
+									<td>${c.nomeCurso}</td>
+									<td>${c.valor}</td>
+									<td><a href="/curso/${c.id}/excluir">Excluir
 											&#10060;</a></td>
 								</tr>
 							</c:forEach>
@@ -63,10 +61,6 @@
 				</fieldset>
 			</div>
 		</c:if>
-		<form class="form-cadastro" method="get"
-			action="/cadastro-banco-dados" autocomplete="on">
-			<input type="submit" class="btn-enviar" value="Novo &#10011;">
-		</form>
 	</main>
 	<c:import url="/WEB-INF/jsp/template/footer.jsp"></c:import>
 </body>

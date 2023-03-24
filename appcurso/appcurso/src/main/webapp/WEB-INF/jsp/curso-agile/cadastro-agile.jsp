@@ -18,16 +18,9 @@
 			autocomplete="on">
 			<fieldset>
 				<legend>Cadastro Agile</legend>
-				<p>
-					<label for="nomeCurso">Nome do curso:</label> <input type="text"
-						class="form-input-nomeCurso" id="nomeCurso" name="nomeCurso"
-						value="Agile 1" placeholder="Nome do curso" required>
-				</p>
-				<p>
-					<label for="valor">Valor do Curso R$:</label> <input type="number"
-						class="form-input-valor" id="valor" name="valor" value=200
-						placeholder="Valor do curso R$" required>
-				</p>
+				
+				<c:import url="/WEB-INF/jsp/curso/cadastro.jsp"></c:import>
+				
 				<p>
 
 					<label for="metodologia">Metodologia:</label> <input type="text"

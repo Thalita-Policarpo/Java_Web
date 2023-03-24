@@ -14,20 +14,13 @@
 <body>
 	<c:import url="/WEB-INF/jsp/template/menu.jsp"></c:import>
 	<main>
-		<form class="form-cadastro" method="post" action="/programacao/incluir"
-			autocomplete="on">
+		<form class="form-cadastro" method="post"
+			action="/programacao/incluir" autocomplete="on">
 			<fieldset>
-				<legend>Cadastro Agile</legend>
-				<p>
-					<label for="nomeCurso">Nome do curso:</label> <input type="text"
-						class="form-input-nomeCurso" id="nomeCurso" name="nomeCurso"
-						value="Java" placeholder="Nome do curso" required>
-				</p>
-				<p>
-					<label for="valor">Valor do Curso R$:</label> <input type="number"
-						class="form-input-valor" id="valor" name="valor" value=500
-						placeholder="Valor do curso R$" required>
-				</p>
+				<legend>Cadastro Programação</legend>
+
+				<c:import url="/WEB-INF/jsp/curso/cadastro.jsp"></c:import>
+
 				<p>
 
 					<label for="linguagem">Linguagem:</label> <input type="text"

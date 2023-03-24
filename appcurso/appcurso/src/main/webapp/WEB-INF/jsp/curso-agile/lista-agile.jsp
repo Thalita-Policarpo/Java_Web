@@ -63,6 +63,10 @@
 				</fieldset>
 			</div>
 		</c:if>
+		<form class="form-cadastro" method="get" action="/cadastro-agile"
+			autocomplete="on">
+			<input type="submit" class="btn-enviar" value="Novo &#10011;">
+		</form>
 	</main>
 	<c:import url="/WEB-INF/jsp/template/footer.jsp"></c:import>
 </body>

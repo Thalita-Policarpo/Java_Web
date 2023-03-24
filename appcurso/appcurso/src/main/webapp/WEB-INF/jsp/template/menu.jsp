@@ -15,12 +15,12 @@
 			<li><a href="/home">Home</a></li>
 			<c:if test="${not empty usuario}">
 				<li><a href="/lista">Usuario</a></li>
-				<li><a href="/home-cliente">Cliente</a></li>
+				<li><a href="/lista-cliente">Cliente</a></li>
 				<li><a href="/home-pacote">Pacote</a></li>
-				<li><a href="/home-curso">Curso</a></li>
-				<li><a href="/home-agile">Agile</a></li>
-				<li><a href="/home-banco-dados">Banco de dados</a></li>
-				<li><a href="/curso-programacao">Programação</a></li>
+				<li><a href="/lista-curso">Curso</a></li>
+				<li><a href="/lista-agile">Agile</a></li>
+				<li><a href="/lista-banco-dados">Banco de dados</a></li>
+				<li><a href="/lista-programacao">Programação</a></li>
 			</c:if>
 		</ul>
 

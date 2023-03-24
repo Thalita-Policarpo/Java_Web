@@ -30,7 +30,8 @@
 		</c:if>
 
 		<c:if test="${not empty cursosProgramacao}">
-			<h5>Quantidade de cursos cadastrados: ${cursosProgramacao.size()}!</h5>
+			<h5>Quantidade de cursos cadastrados:
+				${cursosProgramacao.size()}!</h5>
 
 			<div class="box-table-cadastrados">
 				<fieldset>
@@ -43,7 +44,7 @@
 								<th>Linguagem</th>
 								<th>Instituicao</th>
 								<th>Duracao</th>
-								<th> </th>
+								<th></th>
 							</tr>
 						</thead>
 						<tbody>
@@ -63,6 +64,10 @@
 				</fieldset>
 			</div>
 		</c:if>
+		<form class="form-cadastro" method="get"
+			action="/cadastro-programacao" autocomplete="on">
+			<input type="submit" class="btn-enviar" value="Novo &#10011;">
+		</form>
 	</main>
 	<c:import url="/WEB-INF/jsp/template/footer.jsp"></c:import>
 </body>

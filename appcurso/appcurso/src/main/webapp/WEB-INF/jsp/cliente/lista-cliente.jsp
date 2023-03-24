@@ -41,9 +41,9 @@
 								<th>ID</th>
 								<th>Nome</th>
 								<th>CPF</th>
-								<th>Idade</th>							
-								<th>Usuário</th>							
-								<th> </th>
+								<th>Idade</th>
+								<th>Usuário</th>
+								<th></th>
 							</tr>
 						</thead>
 						<tbody>
@@ -63,6 +63,10 @@
 				</fieldset>
 			</div>
 		</c:if>
+		<form class="form-cadastro" method="get" action="/cadastro-cliente"
+			autocomplete="on">
+			<input type="submit" class="btn-enviar" value="Novo &#10011;">
+		</form>
 	</main>
 	<c:import url="/WEB-INF/jsp/template/footer.jsp"></c:import>
 </body>
