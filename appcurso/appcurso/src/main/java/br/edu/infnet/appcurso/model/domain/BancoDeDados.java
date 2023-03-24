@@ -16,6 +16,10 @@ public class BancoDeDados extends Curso {
 	private boolean relacional;
 	private String retorno;
 
+	public BancoDeDados() {
+
+	}
+
 	public BancoDeDados(String nomeCurso, float valor, String descricao, String tipo, boolean exigencia,
 			boolean relacional)
 			throws ValorZeradoException, TipoNuloException {

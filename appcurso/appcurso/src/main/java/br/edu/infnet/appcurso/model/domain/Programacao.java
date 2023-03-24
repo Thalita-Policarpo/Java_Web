@@ -14,6 +14,10 @@ public class Programacao extends Curso {
 	private String instituicao;
 	private int duracao;
 
+	public Programacao() {
+
+	}
+
 	public Programacao(String nomeCurso, float valor, String descricao, String linguagem, String instituição,
 			int duracao)
 			throws ValorZeradoException, DuracaoInvalidaException {

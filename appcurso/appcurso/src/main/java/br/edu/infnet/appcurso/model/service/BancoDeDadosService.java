@@ -24,12 +24,10 @@ public class BancoDeDadosService {
 	}
 
 	public Collection<BancoDeDados> obterLista() {
-
 		return (Collection<BancoDeDados>) bancoDeDadosRepository.findAll();
 	}
 
 	public BancoDeDados obterPorId(Integer id) {
-
 		return bancoDeDadosRepository.findById(id).orElse(null);
 	}
 }
