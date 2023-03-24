@@ -73,7 +73,6 @@ public class BancoDeDados extends Curso {
 		return sb.toString() + "\r\n" + retornarMensagem();
 	}
 
-
 	public String getTipo() {
 		return tipo;
 	}
@@ -90,20 +89,20 @@ public class BancoDeDados extends Curso {
 		this.exigencia = exigencia;
 	}
 
-	public boolean isRelacional() {
-		return relacional;
-	}
-
-	public void setRelacional(boolean relacional) {
-		this.relacional = relacional;
-	}
-
 	public String getComunicado() {
 		return comunicado;
 	}
 
 	public void setComunicado(String comunicado) {
 		this.comunicado = comunicado;
+	}
+
+	public boolean isRelacional() {
+		return relacional;
+	}
+
+	public void setRelacional(boolean relacional) {
+		this.relacional = relacional;
 	}
 
 	public String getRetorno() {

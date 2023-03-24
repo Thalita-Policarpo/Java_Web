@@ -79,8 +79,8 @@ public class Programacao extends Curso {
 		return instituicao;
 	}
 
-	public void setInstituicao(String instituição) {
-		this.instituicao = instituição;
+	public void setInstituicao(String instituicao) {
+		this.instituicao = instituicao;
 	}
 
 	public int getDuracao() {
@@ -90,5 +90,4 @@ public class Programacao extends Curso {
 	public void setDuracao(int duracao) {
 		this.duracao = duracao;
 	}
-
 }

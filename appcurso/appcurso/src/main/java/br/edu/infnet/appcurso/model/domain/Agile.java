@@ -74,7 +74,6 @@ public class Agile extends Curso {
 		return sb.toString() + "\r\n" + retornarMensagem();
 	}
 
-
 	public String getMetodologia() {
 		return metodologia;
 	}
