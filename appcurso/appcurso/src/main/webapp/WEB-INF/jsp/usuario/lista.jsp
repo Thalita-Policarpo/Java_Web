@@ -44,6 +44,7 @@
 							<th>Gênero</th>
 							<th>E-mail</th>
 							<th>Clientes</th>							
+							<th>Cursos</th>							
 							<th></th>
 						</tr>
 					</thead>
@@ -56,6 +57,7 @@
 								<td>${u.genero}</td>
 								<td>${u.email}</td>
 								<td>${u.clientes.size()}</td>
+								<td>${u.cursos.size()}</td>
 								<td><a href="/usuario/${u.id}/excluir">Excluir &#10060;</a></td>
 							</tr>
 						</c:forEach>
