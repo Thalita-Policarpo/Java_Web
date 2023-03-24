@@ -7,7 +7,7 @@ import br.edu.infnet.appcurso.model.exceptions.TipoNuloException;
 import br.edu.infnet.appcurso.model.exceptions.ValorZeradoException;
 
 @Entity
-@Table(name = "TAgile")
+@Table(name = "Tabela_Banco_de_Dados")
 public class BancoDeDados extends Curso {
 
 	private String tipo;

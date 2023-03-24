@@ -11,7 +11,7 @@ import javax.persistence.Table;
 import br.edu.infnet.appcurso.model.exceptions.DadosPessoaisNaoPreenchidosException;
 
 @Entity
-@Table(name = "TCliente")
+@Table(name = "Tabela_Cliente")
 public class Cliente {
 	
 	@Id

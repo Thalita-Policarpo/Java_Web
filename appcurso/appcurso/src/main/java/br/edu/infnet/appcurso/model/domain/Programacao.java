@@ -7,7 +7,7 @@ import br.edu.infnet.appcurso.model.exceptions.DuracaoInvalidaException;
 import br.edu.infnet.appcurso.model.exceptions.ValorZeradoException;
 
 @Entity
-@Table(name = "TAgile")
+@Table(name = "Tabela_Programacao")
 public class Programacao extends Curso {
 
 	private String linguagem;

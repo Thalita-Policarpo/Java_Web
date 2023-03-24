@@ -13,7 +13,7 @@ import org.springframework.stereotype.Component;
 import br.edu.infnet.appcurso.model.domain.Programacao;
 import br.edu.infnet.appcurso.model.service.ProgramacaoService;
 
-@Order(4)
+@Order(5)
 @Component
 public class ProgramacaoLoader implements ApplicationRunner {
 

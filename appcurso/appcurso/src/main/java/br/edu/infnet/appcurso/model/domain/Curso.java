@@ -11,7 +11,7 @@ import javax.persistence.Table;
 import br.edu.infnet.appcurso.model.exceptions.ValorZeradoException;
 
 @Entity
-@Table(name = "TCurso")
+@Table(name = "Tabela_Curso")
 @Inheritance(strategy = InheritanceType.JOINED)
 public abstract class Curso {
 
