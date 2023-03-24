@@ -14,8 +14,8 @@ INDEX VERSION 1.131+C:\Users\Thalita\Desktop\AT_Fundamentos_Java\.metadata\.plug
 584351773.index
 4005607180.index
 3707228454.index
-1638888927.index
 578083141.index
+1638888927.index
 2279859063.index
 1941659238.index
 3778902266.index
@@ -67,7 +67,6 @@ INDEX VERSION 1.131+C:\Users\Thalita\Desktop\AT_Fundamentos_Java\.metadata\.plug
 710797129.index
 1597744820.index
 763259682.index
-3883721231.index
 2645536573.index
 3707761568.index
 3816745507.index
@@ -90,12 +89,12 @@ INDEX VERSION 1.131+C:\Users\Thalita\Desktop\AT_Fundamentos_Java\.metadata\.plug
 73595481.index
 594100248.index
 2081972686.index
-3501608780.index
-147830113.index
 2072226693.index
 2387699560.index
 1970766320.index
 2677733733.index
+147830113.index
+3501608780.index
 1865797976.index
 237775956.index
 2562608396.index
