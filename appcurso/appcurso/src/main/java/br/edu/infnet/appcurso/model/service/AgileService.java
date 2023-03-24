@@ -20,17 +20,14 @@ public class AgileService {
 	}
 	
 	public void excluir(Integer key) {
-
 		agileRepository.deleteById(key);
 	}
 
 	public Collection<Agile> obterLista() {
-
 		return (Collection<Agile>) agileRepository.findAll();
 	}
 
 	public Agile obterPorId(Integer id) {
-
 		return agileRepository.findById(id).orElse(null);
 	}
 }

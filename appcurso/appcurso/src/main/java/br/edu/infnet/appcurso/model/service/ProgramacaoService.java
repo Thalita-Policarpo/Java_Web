@@ -15,17 +15,19 @@ public class ProgramacaoService {
 	private ProgramacaoRepository programacaoRepository;
 
 
-	public boolean incluir(Programacao programacao) {
-		return programacaoRepository.incluir(programacao);
+	public Programacao incluir(Programacao programacao) {
+		return programacaoRepository.save(programacao);
 	}
 	
-	public Programacao excluir(Integer key) {
-
-		return programacaoRepository.excluir(key);
+	public void excluir(Integer key) {
+		programacaoRepository.deleteById(key);
 	}
 
 	public Collection<Programacao> obterLista() {
-
-		return programacaoRepository.obterLista();
+		return (Collection<Programacao>) programacaoRepository.findAll();
+	}
+	
+	public Programacao obterPorId(Integer id) {
+		return programacaoRepository.findById(id).orElse(null);
 	}
 }
