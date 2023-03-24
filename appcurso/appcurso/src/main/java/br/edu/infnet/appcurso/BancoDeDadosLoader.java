@@ -7,11 +7,13 @@ import java.io.IOException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
+import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
 import br.edu.infnet.appcurso.model.domain.BancoDeDados;
 import br.edu.infnet.appcurso.model.service.BancoDeDadosService;
 
+@Order(4)
 @Component
 public class BancoDeDadosLoader implements ApplicationRunner {
 

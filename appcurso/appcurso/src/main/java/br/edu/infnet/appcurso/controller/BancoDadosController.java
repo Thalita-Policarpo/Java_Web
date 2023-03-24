@@ -55,9 +55,9 @@ public class BancoDadosController {
 	@GetMapping(value = "/cursosDados/{id}/excluir")
 	public String excluir(@PathVariable Integer id) {
 		
-		BancoDeDados bancoDeDados = bancoDeDadosService.excluir(id);
+		bancoDeDadosService.excluir(id);
 
-		msg = "A exclusão do curso " + bancoDeDados.getNomeCurso() + " foi realizada com sucesso!";
+		msg = "A exclusão do curso " + id + " foi realizada com sucesso!";
 		
 		return "redirect:/lista-banco-dados";
 	}

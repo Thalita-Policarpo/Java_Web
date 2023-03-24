@@ -15,17 +15,21 @@ public class BancoDeDadosService {
 	private BancoDeDadosRepository bancoDeDadosRepository;
 
 
-	public boolean incluir(BancoDeDados bancoDeDados) {
-		return bancoDeDadosRepository.incluir(bancoDeDados);
+	public BancoDeDados incluir(BancoDeDados bancoDeDados) {
+		return bancoDeDadosRepository.save(bancoDeDados);
 	}
 	
-	public BancoDeDados excluir(Integer key) {
-
-		return bancoDeDadosRepository.excluir(key);
+	public void excluir(Integer key) {
+		bancoDeDadosRepository.deleteById(key);
 	}
 
 	public Collection<BancoDeDados> obterLista() {
 
-		return bancoDeDadosRepository.obterLista();
+		return (Collection<BancoDeDados>) bancoDeDadosRepository.findAll();
+	}
+
+	public BancoDeDados obterPorId(Integer id) {
+
+		return bancoDeDadosRepository.findById(id).orElse(null);
 	}
 }

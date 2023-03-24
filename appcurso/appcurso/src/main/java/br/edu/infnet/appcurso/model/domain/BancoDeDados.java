@@ -1,9 +1,15 @@
 package br.edu.infnet.appcurso.model.domain;
 
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
 import br.edu.infnet.appcurso.model.exceptions.TipoNuloException;
 import br.edu.infnet.appcurso.model.exceptions.ValorZeradoException;
 
+@Entity
+@Table(name = "TAgile")
 public class BancoDeDados extends Curso {
+
 	private String tipo;
 	private boolean exigencia;
 	private String comunicado;
