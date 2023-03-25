@@ -4,15 +4,46 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.List;
 
+import javax.persistence.CascadeType;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToMany;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToOne;
+import javax.persistence.Table;
+
 import br.edu.infnet.appcurso.model.exceptions.PacoteSemClienteException;
 import br.edu.infnet.appcurso.model.exceptions.PacoteSemCursosException;
 
+@Entity
+@Table(name = "Tabela_Pedido")
 public class Pacote {
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private int id;
 	private String descricao;
 	private boolean mobile;
 	private LocalDateTime data;
+
+	@OneToOne(cascade = CascadeType.DETACH)
+	@JoinColumn(name = "idCliente")
 	private Cliente cliente;
+
+	@ManyToMany(cascade = CascadeType.DETACH)
 	private List<Curso> cursos;
+
+	@ManyToOne
+	@JoinColumn(name = "idUsuario")
+	private Usuario usuario;
+
+
+	public Pacote() {
+
+	}
 
 	public Pacote(Cliente cliente, List<Curso> cursos) throws PacoteSemClienteException, PacoteSemCursosException {
 
@@ -54,6 +85,14 @@ public class Pacote {
 		}
 	}
 
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
 	public String getDescricao() {
 		return descricao;
 	}
@@ -70,16 +109,37 @@ public class Pacote {
 		this.mobile = mobile;
 	}
 
+	public LocalDateTime getData() {
+		return data;
+	}
+
+	public void setData(LocalDateTime data) {
+		this.data = data;
+	}
+
 	public Cliente getCliente() {
 		return cliente;
+	}
+
+	public void setCliente(Cliente cliente) {
+		this.cliente = cliente;
 	}
 
 	public List<Curso> getCursos() {
 		return cursos;
 	}
 
-	public LocalDateTime getData() {
-		return data;
+	public void setCursos(List<Curso> cursos) {
+		this.cursos = cursos;
 	}
+
+	public Usuario getUsuario() {
+		return usuario;
+	}
+
+	public void setUsuario(Usuario usuario) {
+		this.usuario = usuario;
+	}
+
 
 }
