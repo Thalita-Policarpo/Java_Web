@@ -34,11 +34,11 @@
 						class="form-radio-presencial" id="mobile" name="mobile"
 						value=false checked> Não
 				</p>
-				<p>
+<!-- 				<p>
 					<label for="data">Data:</label> <input type="number"
 						class="form-input-duracao" id="data" name="data" value="25/02/2023"
 						placeholder="informe a data" required>
-				</p>
+				</p> -->
 
 			</fieldset>
 			<article class="box-buttons">
