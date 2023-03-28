@@ -39,6 +39,24 @@
 						class="form-input-duracao" id="data" name="data" value="25/02/2023"
 						placeholder="informe a data" required>
 				</p> -->
+				
+				<p>
+				<label> Cliente </label>
+				<select name="cliente" class="form-input-metodologia">
+				<c:forEach var="s" items="${clientes}">
+				<option value="${s.id}" >${s.nome}</option>
+				</c:forEach>
+				</select>
+				</p>
+				
+				<p>
+					<label for="cursos">Cursos:</label>
+				</p>
+				<c:forEach var="c" items="${cursos}">
+				<p>
+					 <input type="checkbox" class="form-radio-presencial" name="cursos" value="${c.id}"> ${c.id} - ${c.nomeCurso} <br>
+				</p>
+				</c:forEach>                        
 
 			</fieldset>
 			<article class="box-buttons">
