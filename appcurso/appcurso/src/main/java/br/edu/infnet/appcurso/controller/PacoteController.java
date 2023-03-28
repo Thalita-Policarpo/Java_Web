@@ -10,6 +10,8 @@ import org.springframework.web.bind.annotation.SessionAttribute;
 
 import br.edu.infnet.appcurso.model.domain.Pacote;
 import br.edu.infnet.appcurso.model.domain.Usuario;
+import br.edu.infnet.appcurso.model.service.ClienteService;
+import br.edu.infnet.appcurso.model.service.CursoService;
 import br.edu.infnet.appcurso.model.service.PacoteService;
 
 @Controller
@@ -17,12 +19,21 @@ public class PacoteController {
 
 	@Autowired
 	private PacoteService pacoteService;
+	@Autowired
+	private ClienteService clienteService;
+
+	@Autowired
+	private CursoService cursoService;
 
 	private String msg = null;
 
 	@GetMapping(value = "/cadastro-pacote")
-	public String TelaCadastroPacote() {
+	public String TelaCadastroPacote(Model model, @SessionAttribute("usuario") Usuario usuario) {
 
+		model.addAttribute("clientes", clienteService.obterLista(usuario));
+
+		model.addAttribute("cursos", cursoService.obterLista(usuario));
+		
 		return "pacote/cadastro-pacote";
 	}
 
@@ -43,6 +54,9 @@ public class PacoteController {
 		pacote.setUsuario(usuario);
 
 		pacoteService.incluir(pacote);
+
+//		System.out.println("Cliente:" + pacote.getCliente().getId());
+//		System.out.println("Cursos:" + pacote.getCursos());
 
 		msg = "A inclusão do pacote " + pacote.getDescricao() + " foi realizada com sucesso!";
 
