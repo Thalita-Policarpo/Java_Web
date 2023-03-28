@@ -20,7 +20,6 @@ org.eclipse.jdt.ui.text.custom_code_templates=<?xml version\="1.0" encoding\="UT
 org.eclipse.jdt.ui.text.custom_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates/>
 org.eclipse.jdt.ui.typefilter.disabled=java.awt.*;java.rmi.*;org.graalvm.*
 org.eclipse.jdt.ui.typefilter.enabled=com.sun.*;io.micrometer.shaded.*;jdk.*;sun.*;java.awt.List
-sourceHoverBackgroundColor=255,255,225
 sp_cleanup.add_all=false
 sp_cleanup.add_default_serial_version_id=true
 sp_cleanup.add_generated_serial_version_id=false
