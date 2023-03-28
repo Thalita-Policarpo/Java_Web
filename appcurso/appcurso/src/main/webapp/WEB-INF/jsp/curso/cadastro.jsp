@@ -5,7 +5,7 @@
 <p>
 	<label for="nomeCurso">Nome do curso:</label> <input type="text"
 		class="form-input-nomeCurso" id="nomeCurso" name="nomeCurso"
-		value="Agile 1" placeholder="Nome do curso" required>
+		value="Curso 1" placeholder="Nome do curso" required>
 </p>
 <p>
 
