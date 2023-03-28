@@ -31,7 +31,7 @@ public abstract class Curso {
 	@JoinColumn(name = "idUsuario")
 	private Usuario usuario;
 
-	@ManyToMany(mappedBy = "produtos")
+	@ManyToMany(mappedBy = "cursos")
 	private List<Pacote> pacotes;
 
 	public Curso() {
