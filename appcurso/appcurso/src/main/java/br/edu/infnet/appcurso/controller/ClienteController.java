@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.SessionAttribute;
 
 import br.edu.infnet.appcurso.model.domain.Cliente;
+import br.edu.infnet.appcurso.model.domain.Endereco;
 import br.edu.infnet.appcurso.model.domain.Usuario;
 import br.edu.infnet.appcurso.model.service.ClienteService;
 
@@ -44,10 +45,13 @@ public class ClienteController {
 	}
 
 	@PostMapping(value = "/cliente/incluir")
-	public String incluir(Cliente cliente, @SessionAttribute("usuario") Usuario usuario) {
+	public String incluir(Cliente cliente, Endereco endereco, @SessionAttribute("usuario") Usuario usuario) {
 
 		cliente.setUsuario(usuario);
 
+		cliente.setEndereco(endereco);
+
+		System.out.println("Bairro do cliente: " + cliente.getEndereco().getBairro());
 		clienteService.incluir(cliente);
 
 		msg = "A inclusão do cliente " + cliente.getNome() + " foi realizada com sucesso!";
