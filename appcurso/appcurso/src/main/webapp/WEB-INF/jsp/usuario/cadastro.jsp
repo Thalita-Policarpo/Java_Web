@@ -56,6 +56,8 @@
 						placeholder="Digite sua senha (mínimo 8 letras)" required
 						minlength="6" maxlength="10" autocomplete="new-password">
 				</p>
+				
+				<c:import url="/WEB-INF/jsp/endereco/cadastro.jsp"></c:import>
 			
 			</fieldset>
 			<article class="box-buttons">

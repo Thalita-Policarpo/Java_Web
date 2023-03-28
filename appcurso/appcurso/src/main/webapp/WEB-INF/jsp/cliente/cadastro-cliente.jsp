@@ -34,6 +34,8 @@
 						class="form-input-idade" id="idade" name="idade" value="29"
 						placeholder="insira sua idade" required>
 				</p>
+				
+				<c:import url="/WEB-INF/jsp/endereco/cadastro.jsp"></c:import>
 
 			</fieldset>
 			<article class="box-buttons">
