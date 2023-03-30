@@ -3,6 +3,8 @@ package br.edu.infnet.appcurso.model.service;
 import java.util.Collection;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Sort;
+import org.springframework.data.domain.Sort.Direction;
 import org.springframework.stereotype.Service;
 
 import br.edu.infnet.appcurso.model.domain.Curso;
@@ -25,7 +27,7 @@ public class CursoService {
 	}
 
 	public Collection<Curso> obterLista(Usuario usuario) {
-		return (Collection<Curso>) cursoRepository.obterLista(usuario.getId());
+		return (Collection<Curso>) cursoRepository.obterLista(usuario.getId(), Sort.by(Direction.ASC, "nomeCurso"));
 	}
 
 	public Curso obterPorId(Integer id) {
