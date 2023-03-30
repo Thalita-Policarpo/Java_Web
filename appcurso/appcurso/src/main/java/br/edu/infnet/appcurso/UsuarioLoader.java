@@ -26,6 +26,7 @@ public class UsuarioLoader implements ApplicationRunner {
 		Usuario usuarioAdmin = new Usuario("Thalita Policarpo", "thalita@admin.com", "123456");
 		usuarioAdmin.setGenero("feminino");
 		usuarioAdmin.setNascimento("11-12-1993");
+		usuarioAdmin.setAdmin(true);
 
 		usuarioService.incluir(usuarioAdmin);
 
@@ -50,6 +51,7 @@ public class UsuarioLoader implements ApplicationRunner {
 					}
 					usuario.setGenero(campos[3]);
 					usuario.setNascimento(campos[4]);
+
 
 					usuarioService.incluir(usuario);
 
