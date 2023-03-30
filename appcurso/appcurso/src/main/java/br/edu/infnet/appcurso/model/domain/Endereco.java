@@ -24,6 +24,13 @@ public class Endereco {
 
 	}
 
+
+	@Override
+	public String toString() {
+		return String.format("%s - CEP:%s - %s / %s ", logradouro, cep, bairro, localidade, uf);
+
+	}
+
 	public Integer getId() {
 		return id;
 	}
