@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 
+import br.edu.infnet.appcurso.model.domain.Endereco;
 import br.edu.infnet.appcurso.model.domain.Usuario;
 import br.edu.infnet.appcurso.model.service.UsuarioService;
 
@@ -17,6 +18,7 @@ public class UsuarioController {
 	private UsuarioService usuarioService;
 
 	private String msg = null;
+
 
 	@GetMapping(value = "/usuario")
 	public String telaCadastro() {
@@ -35,7 +37,11 @@ public class UsuarioController {
 	}
 
 	@PostMapping(value = "/usuario/incluir")
-	public String incluir(Usuario usuario) {
+	public String incluir(Usuario usuario, Endereco endereco) {
+		
+		usuario.setEndereco(endereco);
+
+		System.out.println("Bairro do usuario: " + usuario.getEndereco().getBairro());
 
 		usuarioService.incluir(usuario);
 
