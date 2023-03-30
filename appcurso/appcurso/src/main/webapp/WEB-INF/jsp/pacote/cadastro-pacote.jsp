@@ -12,6 +12,7 @@
 
 </head>
 <body>
+	<c:set var="botao" value=""/>
 	<c:import url="/WEB-INF/jsp/template/menu.jsp"></c:import>
 	<main>
 		<form class="form-cadastro" method="post" action="/pacote/incluir"
@@ -39,29 +40,44 @@
 						class="form-input-duracao" id="data" name="data" value="25/02/2023"
 						placeholder="informe a data" required>
 				</p> -->
-				
+				<c:if test="${not empty clientes}">
 				<p>
 				<label> Cliente </label>
 				<select name="cliente" class="form-input-metodologia">
 				<c:forEach var="s" items="${clientes}">
-				<option value="${s.id}" >${s.nome}</option>
+					<option value="${s.id}" >${s.nome}</option>
 				</c:forEach>
 				</select>
 				</p>
+				</c:if>
 				
+				<c:if test="${empty clientes}">
+				<c:set var="botao" value="disabled"/>
+				
+				<p>Não existem clientes cadastrados!</p>
+				
+				</c:if>
 				<p>
 					<label for="cursos">Cursos:</label>
 				</p>
+				<c:if test="${not empty cursos}">
 				<c:forEach var="c" items="${cursos}">
 				<p>
 					 <input type="checkbox" class="form-radio-presencial" name="cursos" value="${c.id}"> ${c.id} - ${c.nomeCurso} <br>
 				</p>
-				</c:forEach>                        
+				</c:forEach>  
+				</c:if> 
+				
+				<c:if test="${ empty cursos}">
+				<c:set var="botao" value="disabled"/>
+				<p>Não existem cursos cadastrados!</p>
+				
+				</c:if>                     
 
 			</fieldset>
 			<article class="box-buttons">
 				<input type="reset" class="btn-limpar" value="Limpar &#128465; ">
-				<input type="submit" class="btn-enviar" value="Enviar &#9993;">
+				<input ${botao} type="submit" class="btn-enviar" value="Enviar &#9993;">
 			</article>
 		</form>
 	</main>
