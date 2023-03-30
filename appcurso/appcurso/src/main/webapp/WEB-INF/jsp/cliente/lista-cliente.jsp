@@ -63,8 +63,7 @@
 				</fieldset>
 			</div>
 		</c:if>
-		<form class="form-cadastro" method="get" action="/cadastro-cliente"
-			autocomplete="on">
+		<form class="form-cadastro" method="get" action="/cadastro-cliente"	autocomplete="on">
 			<input type="submit" class="btn-enviar" value="Novo &#10011;">
 		</form>
 	</main>

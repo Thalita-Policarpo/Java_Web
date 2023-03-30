@@ -14,10 +14,17 @@
 <body>
 	<c:import url="/WEB-INF/jsp/template/menu.jsp"></c:import>
 	<main>
+	
+<!-- 		<form action="/cep" method="post">
+			<label for="cep">CEP:</label> 
+			<input type="text"class="form-input-nomeCurso" id="cep" name="cep" value="01153000" placeholder="CEP" required>
+			<button type="submit">Buscar</button>
+		</form> -->
+		
 		<form class="form-cadastro" method="post" action="/cliente/incluir"
 			autocomplete="on">
-			<fieldset>
 				<legend>Cadastro do cliente</legend>
+			<fieldset>
 				<p>
 					<label for="nome">Nome:</label> <input type="text"
 						class="form-input-nome" id="nome" name="nome"
@@ -25,8 +32,8 @@
 				</p>
 				<p>
 					<label for="cpf">CPF:</label> <input type="text"
-						class="form-input-cpf" id="cpf" name="cpf"
-						value="000.000.000-00" placeholder="insira seu CPF" required>
+						class="form-input-cpf" id="cpf" name="cpf" value="000.000.000-00"
+						placeholder="insira seu CPF" required>
 				</p>
 
 				<p>
@@ -34,7 +41,7 @@
 						class="form-input-idade" id="idade" name="idade" value="29"
 						placeholder="insira sua idade" required>
 				</p>
-				
+
 				<c:import url="/WEB-INF/jsp/endereco/cadastro.jsp"></c:import>
 
 			</fieldset>

@@ -17,7 +17,7 @@
 		<section class="banner">
 			<aside class="titulo">
 				<h2>Bem vindo ao mundo de aprendizagem</h2>
-				<p>Desenvolsa seu conhecimento através de cursos atualizados e online.</p>
+				<p>Desenvolsa seu conhecimento através de cursos online.</p>
 
 			</aside>
 			<figure>

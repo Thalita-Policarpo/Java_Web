@@ -14,6 +14,13 @@
 <body>
 	<c:import url="/WEB-INF/jsp/template/menu.jsp"></c:import>
 	<main>
+	
+		<form action="/cep" method="post">
+			<label for="cep">CEP:</label> 
+			<input type="text"class="form-input-nomeCurso" id="cep" name="cep" value="01153000" placeholder="CEP" required>
+			<button type="submit">Buscar</button>
+		</form>
+	
 		<form class="form-cadastro" method="post" action="/usuario/incluir"
 			autocomplete="on">
 			<fieldset>
