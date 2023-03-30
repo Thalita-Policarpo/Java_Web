@@ -39,26 +39,38 @@
 					<thead>
 						<tr>
 							<th>ID</th>
+							<th>Admin</th>
 							<th>Nome</th>
 							<th>Nascimento</th>
 							<th>Gênero</th>
 							<th>E-mail</th>
+							<th>Endereco</th>
 							<th>Clientes</th>							
 							<th>Cursos</th>							
+							<th>Pacotes</th>
+							<c:if test="${usuario.admin}">
 							<th></th>
+							</c:if>
 						</tr>
 					</thead>
 					<tbody>
 						<c:forEach var="u" items="${usuarios}">
 							<tr>
 								<td>${u.id}</td>
+								<td>${u.admin}</td>
 								<td>${u.nome}</td>
 								<td>${u.nascimento}</td>
 								<td>${u.genero}</td>
 								<td>${u.email}</td>
+								<td>${u.endereco}</td>
 								<td>${u.clientes.size()}</td>
 								<td>${u.cursos.size()}</td>
-								<td><a href="/usuario/${u.id}/excluir">Excluir &#10060;</a></td>
+								<td>${u.pacotes.size()}</td>
+								<td>
+									<c:if test="${usuario.admin}">
+										<a href="/usuario/${u.id}/excluir">Excluir &#10060;</a>
+									</c:if>
+								</td>
 							</tr>
 						</c:forEach>
 					</tbody>
