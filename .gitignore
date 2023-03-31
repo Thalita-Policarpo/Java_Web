@@ -9,7 +9,6 @@
 *.index
 *.resources
 .xmi
-*.txt
 *.properties
 *.resources
 *.tree
