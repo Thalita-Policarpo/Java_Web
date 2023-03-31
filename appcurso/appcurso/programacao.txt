@@ -1,0 +1,3 @@
+Introdução à Programação;400;Curso introdutório para programação em linguagens como Python, Java e C++;Python, Java, C++;Universidade Federal de São Paulo;40
+Desenvolvimento Web;1000;Curso para desenvolvedores que desejam aprender a criar aplicações web modernas com HTML, CSS, JavaScript e outras tecnologias;HTML, CSS, JavaScript;Senac;12
+Desenvolvimento de Aplicativos Móveis;1200;Curso para desenvolvedores que desejam criar aplicativos móveis para Android e iOS;Android, iOS;Universidade Estadual de Campinas;15

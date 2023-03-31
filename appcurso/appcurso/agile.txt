@@ -1,0 +1,3 @@
+Kanban;800;Curso introdutório sobre a metodologia Kanban e seus conceitos básicos para gerenciamento de projetos;Kanban;1;false
+Scrum;1200;Curso para formação de Scrum Masters e utilização da metodologia Scrum em projetos;Scrum;2;true
+Introdução ao Agile;500;Curso introdutório sobre metodologias ágeis de desenvolvimento de software;Agile;1;false

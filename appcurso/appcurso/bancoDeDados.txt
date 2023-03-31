@@ -1,0 +1,3 @@
+Introdução a Bancos de Dados;500;Curso introdutório sobre conceitos de bancos de dados relacionais e suas aplicações;básico;Não requer conhecimento prévio;Banco de dados relacional
+Modelagem de Dados;800;Curso para desenvolvedores que desejam aprender a modelar bancos de dados relacionais;básico;Requer conhecimento prévio;Banco de dados relacional
+Gerenciamento de Bancos de Dados;1200;Curso para administradores de bancos de dados que desejam aprender a gerenciar sistemas de bancos de dados relacionais;básico;Requer conhecimento prévio;Banco de dados relacional
