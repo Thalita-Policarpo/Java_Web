@@ -19,7 +19,7 @@ import br.edu.infnet.appcurso.model.exceptions.PacoteSemClienteException;
 import br.edu.infnet.appcurso.model.exceptions.PacoteSemCursosException;
 
 @Entity
-@Table(name = "Tabela_Pedido")
+@Table(name = "Tabela_Pacote")
 public class Pacote {
 
 	@Id
@@ -28,6 +28,7 @@ public class Pacote {
 	private String descricao;
 	private boolean mobile;
 	private LocalDateTime data;
+
 
 	@OneToOne(cascade = CascadeType.DETACH)
 	@JoinColumn(name = "idCliente")
@@ -43,6 +44,10 @@ public class Pacote {
 
 	public Pacote() {
 
+		data = LocalDateTime.now();
+
+		DateTimeFormatter formato = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+		data.format(formato);
 	}
 
 	public Pacote(Cliente cliente, List<Curso> cursos) throws PacoteSemClienteException, PacoteSemCursosException {
@@ -68,7 +73,7 @@ public class Pacote {
 	@Override
 	public String toString() {
 
-		DateTimeFormatter formato = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm");
+		DateTimeFormatter formato = DateTimeFormatter.ofPattern("dd/MM/yyyy");
 
 		return String.format("%s;%s;%s", descricao,
 				mobile ? " Pode ser acessado por dispositivo moblie" : " Nao pode ser acessado por dispositivo moblie ",
