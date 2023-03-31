@@ -11,6 +11,7 @@ import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
 import br.edu.infnet.appcurso.model.domain.Cliente;
+import br.edu.infnet.appcurso.model.domain.Endereco;
 import br.edu.infnet.appcurso.model.domain.Usuario;
 import br.edu.infnet.appcurso.model.service.ClienteService;
 
@@ -45,6 +46,16 @@ public class ClienteLoader implements ApplicationRunner {
 						usuario.setId(1);
 
 							Cliente cliente = new Cliente(campos[0], campos[1], Integer.parseInt(campos[2]));
+							
+							Endereco endereco = new Endereco();
+							endereco.setCep(campos[3]);
+							endereco.setLogradouro(campos[4]);
+							endereco.setComplemento(campos[5]);
+							endereco.setBairro(campos[6]);
+							endereco.setLocalidade(campos[7]);
+							endereco.setUf(campos[8]);
+							
+							cliente.setEndereco(endereco);
 
 							cliente.setUsuario(usuario);
 
