@@ -30,4 +30,5 @@ public class UsuarioService {
 
 		return (Collection<Usuario>) usuarioRepository.findAll();
 	}
+
 }
