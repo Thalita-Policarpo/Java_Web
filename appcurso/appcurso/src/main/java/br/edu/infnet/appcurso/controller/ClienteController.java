@@ -69,7 +69,7 @@ public class ClienteController {
 			msg = "A exclusão do cliente " + id + " foi realizada com sucesso!";
 
 		} catch (Exception e) {
-			msg = "Impossível realizar a exclusão do curso " + id;
+			msg = "Impossível realizar a exclusão do cliente " + id;
 		}
 		return "redirect:/lista-cliente";
 	}
