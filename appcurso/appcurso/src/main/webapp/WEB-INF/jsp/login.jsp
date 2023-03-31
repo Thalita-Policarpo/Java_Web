@@ -37,7 +37,7 @@
 						<label for="senha">Senha:</label> <input type="password"
 							class="form-input-senha" name="senha" value="123456"
 							placeholder="Digite sua senha (mínimo 8 letras)" required
-							minlength="6" maxlength="10" autocomplete="new-password">
+							autocomplete="new-password">
 					</p>
 				</fieldset>
 				<article class="box-buttons">
