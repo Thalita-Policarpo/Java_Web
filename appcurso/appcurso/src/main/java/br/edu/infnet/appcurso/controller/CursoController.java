@@ -34,10 +34,12 @@ public class CursoController {
 	public String excluir(@PathVariable Integer id) {
 		
 		Curso curso = cursoService.obterPorId(id);
-
-		cursoService.excluir(id);
-
-		msg = "A exclusão do curso " + curso.getNomeCurso() + " foi realizada com sucesso!";
+		try {
+			cursoService.excluir(id);
+			msg = "A exclusão do curso " + curso.getNomeCurso() + " foi realizada com sucesso!";
+		} catch (Exception e) {
+			msg = "Impossível realizar a exclusão do curso " + curso.getNomeCurso();
+		}
 		
 		return "redirect:/lista-curso";
 	}

@@ -55,10 +55,13 @@ public class BancoDadosController {
 		
 		BancoDeDados bancoDeDados = bancoDeDadosService.obterPorId(id);
 		
-		bancoDeDadosService.excluir(id);
+		try {
+			bancoDeDadosService.excluir(id);
+			msg = "A exclusão do curso " + bancoDeDados.getNomeCurso() + " foi realizada com sucesso!";
 
-		msg = "A exclusão do curso " + bancoDeDados.getNomeCurso() + " foi realizada com sucesso!";
-		
+		} catch (Exception e) {
+			msg = "Impossível realizar a exclusão do curso " + bancoDeDados.getNomeCurso();
+		}
 		return "redirect:/lista-banco-dados";
 	}
 }

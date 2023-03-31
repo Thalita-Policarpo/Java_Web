@@ -55,10 +55,14 @@ public class ProgramacaoController {
 		
 		Programacao programacao = programacaoService.obterPorId(id);
 
-		programacaoService.excluir(id);
+		try {
+			programacaoService.excluir(id);
 
-		msg = "A exclusão do curso " + programacao.getNomeCurso() + " foi realizada com sucesso!";
-		
+			msg = "A exclusão do curso " + programacao.getNomeCurso() + " foi realizada com sucesso!";
+
+		} catch (Exception e) {
+			msg = "Impossível realizar a exclusão do curso " + programacao.getNomeCurso();
+		}
 		return "redirect:/lista-programacao";
 	}
 

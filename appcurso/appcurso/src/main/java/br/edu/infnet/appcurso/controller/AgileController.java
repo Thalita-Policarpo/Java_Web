@@ -54,10 +54,15 @@ public class AgileController {
 		
 		Agile agile = agileService.obterPorId(id);
 
-		agileService.excluir(id);
-
-		msg = "A exclusão do curso " + agile.getNomeCurso() + " foi realizada com sucesso!";
 		
+		try {
+			agileService.excluir(id);
+
+			msg = "A exclusão do curso " + agile.getNomeCurso() + " foi realizada com sucesso!";
+		} catch (Exception e) {
+			msg = "Impossível realizar a exclusão do curso " + agile.getNomeCurso();
+		}
+
 		return "redirect:/lista-agile";
 	}
 }
