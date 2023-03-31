@@ -27,7 +27,7 @@ public class CursoService {
 	}
 
 	public Collection<Curso> obterLista(Usuario usuario) {
-		return (Collection<Curso>) cursoRepository.obterLista(usuario.getId(), Sort.by(Direction.ASC, "nomeCurso"));
+		return (Collection<Curso>) cursoRepository.obterLista(usuario.getId(), Sort.by(Direction.ASC, "valor"));
 	}
 
 	public Curso obterPorId(Integer id) {
